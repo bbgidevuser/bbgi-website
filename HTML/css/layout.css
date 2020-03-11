@@ -78,7 +78,7 @@ a:focus, a:hover, a:active {
   right: -15px;
   width: 9px;
   height: 2px;
-  background: #17bed2;
+  background: #ffd700;
   content: " ";
 }
 
@@ -186,7 +186,7 @@ h4 {
   left: -20px;
   font-size: 60px;
   display: inline-block;
-  color: #17bed2;
+  color: #ffd700;
   content: '“';
 }
 
@@ -260,20 +260,20 @@ fieldset[disabled] .btn-theme {
 
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
   color: #fff;
-  background: #17bed2;
+  background: #ffd700;
   border-color: transparent;
 }
 
 .btn-base-bg {
   color: #fff;
-  background: #17bed2;
+  background: #ffd700;
   border-color: transparent;
   border-width: 0;
 }
 
 .btn-base-bg:hover, .btn-base-bg:focus, .btn-base-bg.focus {
   color: #fff;
-  background: #63cbd7;
+  background: #ffd700;
   border-color: transparent;
 }
 
@@ -331,7 +331,7 @@ fieldset[disabled] .btn-theme {
   left: 0;
   width: 9px;
   height: 2px;
-  background: #17bed2;
+  background: #ffd700;
   content: " ";
   margin-right: 10px;
 }
@@ -581,7 +581,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .navbar-toggle:hover .toggle-icon {
-  background: #17bed2;
+  background: #ffd700;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -590,7 +590,7 @@ fieldset[disabled] .btn-theme {
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
   height: 1px;
-  background: #17bed2;
+  background: #ffd700;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -697,7 +697,7 @@ fieldset[disabled] .btn-theme {
   left: 0;
   width: 9px;
   height: 2px;
-  background: #17bed2;
+  background: #ffd700;
   opacity: 0;
   content: " ";
   transition-duration: 400ms;
@@ -1158,7 +1158,7 @@ fieldset[disabled] .btn-theme {
   	[Text Colors]
 ------------------------------------------------------------------*/
 .color-base {
-  color: #17bed2;
+  color: #ffd700;
 }
 
 .color-white {
@@ -1189,7 +1189,7 @@ fieldset[disabled] .btn-theme {
   	[Background Colors]
 ------------------------------------------------------------------*/
 .bg-color-base {
-  background: #17bed2;
+  background: #ffd700;
 }
 
 .bg-color-white {
