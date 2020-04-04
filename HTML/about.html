@@ -140,7 +140,7 @@
                     <p>With the support of attendees, venue sponsors, business education speakers and a solid team we are able to deliver events that bring value to both career professionals and business owners. </p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <img class="img-responsive" src="img/640x380/02.jpg" alt="Our Office">
                 </div>
             </div>
             <!--// end row -->
@@ -320,7 +320,7 @@
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="bg-color-white margin-b-20">
                             <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="img/770x860/02.jpg" alt="Team Image">
+                                <img class="img-responsive" src="img/770x860/05.jpg" alt="Team Image">
                             </div>
                         </div>
                         <h4><a href="#">James Millner</a> <span class="text-uppercase margin-l-20">Lead Developer</span></h4>
@@ -333,10 +333,10 @@
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="bg-color-white margin-b-20">
                             <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                <img class="img-responsive" src="img/770x860/03.jpg" alt="Team Image">
+                                <img class="img-responsive" src="img/770x860/06.jpg" alt="Team Image">
                             </div>
                         </div>
-                        <h4><a href="#">Scarlet Johanson</a> <span class="text-uppercase margin-l-20">Designer</span></h4>
+                        <h4><a href="#">Mister Mann</a> <span class="text-uppercase margin-l-20">Designer</span></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
                         <!--<a class="link" href="#">Read More</a>-->
                     </div>
@@ -378,17 +378,19 @@
                             </ul>
                             <!-- End List -->
                         </div>
+                        <form action="insert-about.php" method="POST">
                         <div class="col-sm-5 sm-margin-b-30">
                             <h2 class="color-white">Supplier Database</h2>
                             <p>It is our passion to nurture and develop black business. Benefit from and service our community by signing up on our supplier database.</p>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Company" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Industry" required>
-                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
-                            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                            <input type="text" name="name" class="form-control footer-input margin-b-20" placeholder="Name" required>
+                            <input type="email" name="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
+                            <input type="text" name="phone" class="form-control footer-input margin-b-20" placeholder="Phone" required>
+                            <input type="text" name="company" class="form-control footer-input margin-b-20" placeholder="Company" required>
+                            <input type="text" name="industry" class="form-control footer-input margin-b-20" placeholder="Industry" required>
+                            <textarea name="message" class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
+                            <button id="submit" name="submit" type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
                         </div>
+                        </form>
                     </div>
                     <!--// end row -->
                 </div>

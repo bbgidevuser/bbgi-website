@@ -180,7 +180,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.</p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <img class="img-responsive" src="img/640x380/02.jpg" alt="Our Office">
                 </div>
             </div>
             <!--// end row -->
@@ -197,13 +197,13 @@
                             <div class="pricing">
                                 <div class="margin-b-30">
                                     <i class="pricing-icon icon-chemistry"></i>
-                                    <h3>Starter Kit <span> - $</span> 49</h3>
-                                    <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                    <h3>Student Special <span> - R</span> 50</h3>
+                                    <p>Take advantage of our student special and pay half the price of a normal ticket</p>
                                 </div>
                                 <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Basic Features</li>
-                                    <li class="pricing-list-item">Up to 5 products</li>
-                                    <li class="pricing-list-item">50 Users Panels</li>
+                                    <li class="pricing-list-item">Discounted price</li>
+                                    <li class="pricing-list-item">Networking opportunity</li>
+                                    <li class="pricing-list-item">Business opportunity</li>
                                 </ul>
                                 <a href="tickets.html" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
                             </div>
@@ -216,13 +216,13 @@
                             <div class="pricing pricing-active">
                                 <div class="margin-b-30">
                                     <i class="pricing-icon icon-badge"></i>
-                                    <h3>Professional <span> - $</span> 149</h3>
-                                    <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                    <h3>Social Media <span> - R</span> 100</h3>
+                                    <p>Purchase tickets on our social media platforms</p>
                                 </div>
                                 <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Basic Features</li>
-                                    <li class="pricing-list-item">Up to 100 products</li>
-                                    <li class="pricing-list-item">100 Users Panels</li>
+                                    <li class="pricing-list-item">Facebook</li>
+                                    <li class="pricing-list-item">Webtickets</li>
+                                    <li class="pricing-list-item">Instagram</li>
                                 </ul>
                                 <a href="tickets.html" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
                             </div>
@@ -235,13 +235,13 @@
                             <div class="pricing">
                                 <div class="margin-b-30">
                                     <i class="pricing-icon icon-shield"></i>
-                                    <h3>Advanced <span> - $</span> 249</h3>
-                                    <p>Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                    <h3>Website Platform <span> - R</span> 100</h3>
+                                    <p>Use your credit or debit card to purchase tickets directly from our website</p>
                                 </div>
                                 <ul class="list-unstyled pricing-list margin-b-50">
-                                    <li class="pricing-list-item">Extended Features</li>
-                                    <li class="pricing-list-item">Unlimited products</li>
-                                    <li class="pricing-list-item">Unlimited Users Panels</li>
+                                    <li class="pricing-list-item">Credit Card Purchase</li>
+                                    <li class="pricing-list-item">Debit Card Purchase</li>
+                                    <li class="pricing-list-item">Paypal</li>
                                 </ul>
                                 <a href="tickets.html" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
                             </div>
@@ -285,17 +285,19 @@
                             </ul>
                             <!-- End List -->
                         </div>
+                        <form action="insert-faq.php" method="POST">
                         <div class="col-sm-5 sm-margin-b-30">
                             <h2 class="color-white">Supplier Database</h2>
                             <p>It is our passion to nurture and develop black business. Benefit from and service our community by signing up on our supplier database.</p>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                            <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Company" required>
-                            <input type="text" class="form-control footer-input margin-b-20" placeholder="Industry" required>
-                            <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
-                            <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                            <input type="text" name="name" class="form-control footer-input margin-b-20" placeholder="Name" required>
+                            <input type="email" name="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
+                            <input type="text" name="phone" class="form-control footer-input margin-b-20" placeholder="Phone" required>
+                            <input type="text" name="company" class="form-control footer-input margin-b-20" placeholder="Company" required>
+                            <input type="text" name="industry" class="form-control footer-input margin-b-20" placeholder="Industry" required>
+                            <textarea name="message" class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
+                            <button id="submit" name="submit" type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
                         </div>
+                        </form>
                     </div>
                     <!--// end row -->
                 </div>
