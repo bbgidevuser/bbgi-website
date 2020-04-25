@@ -5,13 +5,6 @@ if(empty($_SERVER['CONTENT_TYPE']))
   $_SERVER['CONTENT_TYPE'] = "application/x-www-form-urlencoded";
 }
 
-//print "CONTENT_TYPE: " . $_SERVER['CONTENT_TYPE'] . "<BR />";
-/*$data = file_get_contents('php://input');
-print "DATA: <pre>";
-var_dump($data);
-var_dump($_POST);
-print "</pre>";*/
-
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 $name = $_REQUEST['name'];
 $email = $_REQUEST['email'];
@@ -26,6 +19,11 @@ if(!empty($name) || !empty($email) || !empty($phone) || !empty($company) || !emp
    $dbUsername = "bbgicgch_admin";
    $dbPassword = "Ch4ng31sg00d";
    $dbname = "bbgicgch_bbgi";
+
+    //$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    $actual_link = $_SERVER["HTTP_REFERER"];
+
+    echo "Actual link " + $actual_link;
 
    //create connection
     $conn = mysqli_connect($host, $dbUsername, $dbPassword, $dbname);
@@ -58,11 +56,11 @@ if(!empty($name) || !empty($email) || !empty($phone) || !empty($company) || !emp
      $stmt->bind_param("ssssss", $name, $email, $phone, $company, $industry, $message);
      $stmt->execute();
         echo "<script type='text/javascript'>alert(' New supplier inserted successfully');
-                                             window.location.href='http://bbgi.co.za/index.html';</script>";
+                                             window.location.href='http://bbgi.co.za/index.php';</script>";
     } else {
      //echo " Supplier already registered in our database";
         echo "<script type='text/javascript'>alert(' Supplier already registered in our database');
-                                             window.location.href='http://bbgi.co.za/index.html';</script>";
+                                             window.location.href='http://bbgi.co.za/index.php';</script>";
     }
     $stmt->close();
     $conn->close();

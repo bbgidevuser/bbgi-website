@@ -51,7 +51,7 @@ if(!empty($name) || !empty($email) || !empty($phone) || !empty($company) || !emp
     $stmt->store_result();
     $rnum = $stmt->num_rows;
 
-    $url = "http://bbgi.co.za/contact.html";
+    $url = "http://bbgi.co.za/contact.php";
 
     if($rnum==0){
      $stmt->close();
@@ -60,11 +60,11 @@ if(!empty($name) || !empty($email) || !empty($phone) || !empty($company) || !emp
      $stmt->bind_param("ssssss", $name, $email, $phone, $company, $industry, $message);
      $stmt->execute();
         echo "<script type='text/javascript'>alert(' New supplier inserted successfully');
-                                             window.location.href='http://bbgi.co.za/contact.html';</script>";
+                                             window.location.href='http://bbgi.co.za/contact.php';</script>";
     } else {
      //echo " Supplier already registered in our database";
         echo "<script type='text/javascript'>alert(' Supplier already registered in our database');
-                                             window.location.href='http://bbgi.co.za/contact.html';</script>";
+                                             window.location.href='http://bbgi.co.za/contact.php';</script>";
     }
     $stmt->close();
     $conn->close();

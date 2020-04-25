@@ -1,0 +1,1 @@
+localhost:3306,bbgicgch_bbgi,bbgicgch_admin,Ch4ng31sg00d

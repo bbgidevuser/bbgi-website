@@ -58,11 +58,11 @@ if(!empty($name) || !empty($email) || !empty($phone) || !empty($company) || !emp
      $stmt->bind_param("ssssss", $name, $email, $phone, $company, $industry, $message);
      $stmt->execute();
         echo "<script type='text/javascript'>alert(' New supplier inserted successfully');
-                                             window.location.href='http://bbgi.co.za/about.html';</script>";
+                                             window.location.href='http://bbgi.co.za/about.php';</script>";
     } else {
      //echo " Supplier already registered in our database";
         echo "<script type='text/javascript'>alert(' Supplier already registered in our database');
-                                             window.location.href='http://bbgi.co.za/about.html';</script>";
+                                             window.location.href='http://bbgi.co.za/about.php';</script>";
     }
     $stmt->close();
     $conn->close();
