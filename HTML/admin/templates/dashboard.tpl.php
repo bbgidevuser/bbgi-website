@@ -98,9 +98,24 @@ document.getElementById("example").innerHTML=time;
                         <a class="title" href="about.php?id=1"><i class="fa fa-angle-double-right"></i>  About Us</a>
                        </div>
                     </article>
+                      <article class="media event">
+                          <div class="media-body">
+                              <a class="title" href="tickets.php?id=2"><i class="fa fa-angle-double-right"></i>  Tickets</a>
+                          </div>
+                      </article>
+                      <article class="media event">
+                          <div class="media-body">
+                              <a class="title" href="events.php?id=3"><i class="fa fa-angle-double-right"></i>  Events</a>
+                          </div>
+                      </article>
+                      <article class="media event">
+                          <div class="media-body">
+                              <a class="title" href="faq.php?id=4"><i class="fa fa-angle-double-right"></i>  Faq</a>
+                          </div>
+                      </article>
 					<article class="media event">
                     <div class="media-body">
-                        <a class="title" href="contact.php?id=2"><i class="fa fa-angle-double-right"></i>  Contact Us</a>
+                        <a class="title" href="contact.php?id=5"><i class="fa fa-angle-double-right"></i>  Contact Us</a>
                        </div>
                     </article>
 					</div>

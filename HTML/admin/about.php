@@ -1,6 +1,6 @@
 <?php                            
 include_once('includes/apptop.php'); 
-include_once('Classes/Cms.php');
+include_once('Classes/About.php');
 
 //checkSession($_SESSION['log_id']);
 
@@ -22,7 +22,7 @@ if($image=="")
 {
 		$old_image=trim($_POST['old_image']);
 		//echo $old_logo; die();
-		$m= new Cms();
+		$m= new About();
 		$m->SetById($id);
 		$m->setvalues(array('about'=>$description, 'image'=>$old_image));
 		
@@ -45,7 +45,7 @@ if($image=="")
 else
 {
 		
-		$path= "../images/";
+		$path= "../img/";
 	  $path = $path .$_FILES["image"]["name"];
 	  if(move_uploaded_file($_FILES['image']['tmp_name'], $path)) 
 	  {
@@ -56,7 +56,7 @@ else
 		  echo "no";
 	  }
 		
-		$m= new Cms();
+		$m= new About();
 		$m->SetById($id);
 		$m->setvalues(array('about'=>$description, 'image'=>$image));
 		
@@ -79,7 +79,7 @@ else
 }
 }
 
-$n= new Cms();
+$n= new About();
 $n->SetById($id);
 $arr= $n->Display();
 //print_r($arr);

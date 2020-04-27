@@ -26,7 +26,8 @@
                         </div>
 						<div class="col-md-5 col-sm-12 col-xs-12">
                         <p class="title">Old Image</p>
-						<img src="../images/<?php echo $arr['image'];?>" style="width:250px; height:150px">
+						<!--<img src="../images/<?php /*echo $arr['image'];*/?>" style="width:250px; height:150px">-->
+                            <img src="../img/<?php echo $arr['image'];?>" style="width:250px; height:150px">
 						</div>
 						
 						<div class="col-md-12 col-sm-12 col-xs-12">
