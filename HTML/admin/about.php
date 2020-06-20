@@ -15,9 +15,12 @@ if(isset($_POST['submit'])){
 	
  	//var_dump($_POST); die();
 		$id = trim($_POST['id']);
+	    //$header = trim($_POST['header']);
 		$description = trim($_POST['description']);
 		$main_one = trim($_POST['main_one']);
+	    $title = trim($_POST['title']);
 	    $image = trim($_FILES['image']['name']);
+	    $main_two = trim($_POST['main_two']);
 		
 if($image=="")
 {
@@ -25,7 +28,7 @@ if($image=="")
 		//echo $old_logo; die();
 		$m= new About();
 		$m->SetById($id);
-		$m->setvalues(array('description'=>$description, 'main_one'=>$main_one, 'image'=>$old_image));
+		$m->setvalues(array('description'=>$description, 'main_one'=>$main_one, 'title'=>$title, 'image'=>$old_image, 'main-two'=>$main_two));
 		
 		$res = $m->update();
 		if($res)
@@ -59,7 +62,7 @@ else
 		
 		$m= new About();
 		$m->SetById($id);
-		$m->setvalues(array('description'=>$description, 'main_one'=>$main_one, 'image'=>$image));
+		$m->setvalues(array('description'=>$description, 'main_one'=>$main_one, 'title'=>$title, 'image'=>$image, 'main-two'=>$main_two));
 		
 		$res = $m->update();
 		if($res)

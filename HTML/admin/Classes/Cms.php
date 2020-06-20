@@ -93,7 +93,7 @@ class Cms
 	   
 	   
 	   $query = "Update cms set about='$about',
-									image='$image',
+									 image='$image',
 									 address='$address',
 									 email='$email',
 									 office_email='$office_email',

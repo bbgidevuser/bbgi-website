@@ -29,15 +29,15 @@
 						<!--<img src="../images/<?php /*echo $arr['image'];*/?>" style="width:250px; height:150px">-->
                             <img src="../img/640x380/<?php echo $arr['image'];?>" style="width:250px; height:150px">
 						</div>
-						
+
 						<div class="col-md-12 col-sm-12 col-xs-12">
-                       <p class="title">Description</p>
+                       <p class="title">Empowering Black Business - Description</p>
                         <p><textarea class="form-control" name="description"><?php echo $arr['description'];?></textarea></p>
 						</div>
 
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <p class="title">Main</p>
-                            <p><textarea class="form-control" name="main"><?php echo $arr['main_one'];?></textarea></p>
+                            <p><textarea class="form-control" name="main_one"><?php echo $arr['main_one'];?></textarea></p>
                         </div>
 
                         <div class="col-md-12 col-sm-12 col-xs-12">

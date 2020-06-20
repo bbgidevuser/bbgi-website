@@ -9,7 +9,7 @@
                   <div class="count">Admin</div>
                   <h3>Profile</h3>
                 </div>
-              </div>-->
+              </div> -->
 			<!--
               <div class="animated flipInY col-lg-4 col-md-4 col-sm-6 col-xs-12">
                 <div class="tile-stats">
