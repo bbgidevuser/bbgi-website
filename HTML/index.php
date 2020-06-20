@@ -376,8 +376,8 @@
                                         Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
                                         <?php /*echo $l['testim-quote-two']; */?>
                                     </div>
-                                    <!--<p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>-->
-                                    <p><span class="fweight-700 color-link"><?php echo $l['testim-author']; ?></span>, <?php echo $l['testim-company']; ?></p>
+                                    <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
+                                    <!--<p><span class="fweight-700 color-link"><?php /*echo $l['testim-author']; */?></span>, <?php /*echo $l['testim-company']; */?></p>-->
                                 </blockquote>
                             </div>
                             <?php /*$m= mysql_query("select * from testimonials where id=2");
