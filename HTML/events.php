@@ -274,7 +274,8 @@
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/<?php echo $p['image']; ?>" alt="Our Exceptional Solutions Image">
+                            <img class="img-responsive" src="img/970x647/13.jpg" alt="Our Exceptional Solutions Image">
+                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $p['image']; */?>" alt="Our Exceptional Solutions Image">-->
                         </div>
                     </div>
                     <h4><a href="#">13 November 2019</a> <span class="text-uppercase margin-l-20">Nia on 131</span></h4>
