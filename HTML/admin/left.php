@@ -25,14 +25,14 @@
                 <h3>&nbsp;</h3>
                 <ul class="nav side-menu">
 				
-				<li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+				<li><a href="dashboard.php"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <!--<ul class="nav child_menu">
                       <li><a href="slider.php">Sliders</a></li>
 					  <li><a href="professional-service.php?id=1">Professional Services</a></li>
                      </ul>-->
                   </li>
 				
-				<li><a><i class="fa fa-bars"></i>CMS <span class="fa fa-chevron-down"></span></a>
+				<li><a><i class="fa fa-bars"></i>Content Management System <span class="fa fa-chevron-down"></span></a>
 					<ul class="nav child_menu">
                       <li><a href="about.php?id=1">About Us</a></li>
                         <li><a href="tickets.php?id=2">Tickets</a></li>
@@ -94,12 +94,12 @@
                     </ul>
                   </li>-->
 				  
-					 <li><a><i class="fa fa-bars"></i>Testimonials<span class="fa fa-chevron-down"></span></a>
+					 <!--<li><a><i class="fa fa-bars"></i>Testimonials<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                      <li><a href="testimonial.php">All Testimonials</a></li>
                      <li><a href="testimonial-new.php">Add Testimonials</a></li>
                     </ul>
-                  </li>
+                  </li>-->
 				  
 				   <!--<li><a><i class="fa fa-bars"></i>Live Streaming<span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
