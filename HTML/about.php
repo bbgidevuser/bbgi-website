@@ -95,42 +95,42 @@
 
         <!--========== PAGE LAYOUT ==========-->
         <!-- Features -->
-        <?php $a= mysql_query("select * from about where id=1");
+        <?php /*$a= mysql_query("select * from about where id=1");
         $b = mysql_fetch_array($a);
-        ?>
+        */?>
         <div class="section-seperator">
             <div class="content-lg container">
                 <div class="row">
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                            <!--<h3>Empowering Black Business</h3>-->
-                            <h3><?php echo $b['header']; ?></h3>
-                            <!--<p>We are not against any race or creed but are pro black business</p>-->
-                            <p><?php echo $b['description']; ?></p>
+                            <h3>Empowering Black Business</h3>
+                            <!--<h3><?php /*echo $b['header']; */?></h3>-->
+                            <p>We are not against any race or creed but are pro black business</p>
+                            <!--<p><?php /*echo $b['description']; */?></p>-->
                             <!--<a class="link" href="#">Read More</a>-->
                         </div>
                     </div>
-                    <?php $d= mysql_query("select * from about where id=2");
+                    <?php /*$d= mysql_query("select * from about where id=2");
                     $e = mysql_fetch_array($d);
-                    ?>
+                    */?>
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
-                            <!--<h3>Career Progression</h3>-->
-                            <h3><?php echo $e['header']; ?></h3>
-                            <!--<p>An amazing platform for black professionals to interact and share tips and build each other up</p>-->
-                            <p><?php echo $e['description']; ?></p>
+                            <h3>Career Progression</h3>
+                            <!--<h3><?php /*echo $e['header']; */?></h3>-->
+                            <p>An amazing platform for black professionals to interact and share tips and build each other up</p>
+                            <!--<p><?php /*echo $e['description']; */?></p>-->
                             <!--<a class="link" href="#">Read More</a>-->
                         </div>
                     </div>
-                    <?php $f= mysql_query("select * from about where id=3");
+                    <?php /*$f= mysql_query("select * from about where id=3");
                     $g = mysql_fetch_array($f);
-                    ?>
+                    */?>
                     <div class="col-sm-4">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!--<h3>Amazing Community</h3>-->
-                            <h3><?php echo $g['header']; ?></h3>
-                            <!--<p>Whether you are new in town or have been in Cape Town for a while, this is a great place to meet new people</p>-->
-                            <p><?php echo $g['description']; ?></p>
+                            <h3>Amazing Community</h3>
+                            <!--<h3><?php /*echo $g['header']; */?></h3>-->
+                            <p>Whether you are new in town or have been in Cape Town for a while, this is a great place to meet new people</p>
+                            <!--<p><?php /*echo $g['description']; */?></p>-->
                             <!--<a class="link" href="#">Read More</a>-->
                         </div>
                     </div>
@@ -141,14 +141,14 @@
         <!-- End Features -->
 
         <!-- About -->
-        <?php $h= mysql_query("select * from about where id=1");
+        <?php /*$h= mysql_query("select * from about where id=1");
         $i = mysql_fetch_array($h);
-        ?>
+        */?>
         <div class="content-lg container">
             <div class="row margin-b-20">
                 <div class="col-sm-6">
-                    <!--<h2>About</h2>-->
-                    <h2><?php echo $i['title']; ?></h2>
+                    <h2>About</h2>
+                    <!--<h2><?php /*echo $i['title']; */?></h2>-->
                 </div>
             </div>
             <!--// end row -->
@@ -156,15 +156,15 @@
             <div class="row">
                 <div class="col-sm-7 sm-margin-b-50">
                     <div class="margin-b-30">
-                        <!--<p>Black Business Growth Initiative was formed with the intention of creating a gathering of black African business owners and professionals. It is designed to promote unity and co-operation, a space where individuals showcase their businesses and expertise in order to support one another. </p>-->
-                        <p><?php echo $i['main_one']; ?> </p>
+                        <p>Black Business Growth Initiative was formed with the intention of creating a gathering of black African business owners and professionals. It is designed to promote unity and co-operation, a space where individuals showcase their businesses and expertise in order to support one another. </p>
+                        <!--<p><?php /*echo $i['main_one']; */?> </p>-->
                     </div>
-                    <!--<p>With the support of attendees, venue sponsors, business education speakers and a solid team we are able to deliver events that bring value to both career professionals and business owners. </p>-->
-                    <p><?php echo $i['main_two']; ?> </p>
+                    <p>With the support of attendees, venue sponsors, business education speakers and a solid team we are able to deliver events that bring value to both career professionals and business owners. </p>
+                    <!--<p><?php /*echo $i['main_two']; */?> </p>-->
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
-                    <!--<img class="img-responsive" src="img/640x380/02.jpg" alt="Our Office">-->
-                    <img class="img-responsive" src="img/640x380/<?php echo $i['image']; ?>" alt="Our Office">
+                    <img class="img-responsive" src="img/640x380/02.jpg" alt="Our Office">
+                    <!--<img class="img-responsive" src="img/640x380/<?php /*echo $i['image']; */?>" alt="Our Office">-->
                 </div>
             </div>
             <!--// end row -->
@@ -270,14 +270,14 @@
         <!-- End Service -->
 
         <!-- Testimonials -->
-        <?php $j= mysql_query("select * from notes where id=1");
+        <?php /*$j= mysql_query("select * from notes where id=1");
         $k = mysql_fetch_array($j);
-        ?>
+        */?>
         <div class="content-lg container">
             <div class="row">
                 <div class="col-sm-9">
-                    <!--<h2>Notes from our CEO</h2>-->
-                    <h2><?php echo $k['header']; ?></h2>
+                    <h2>Notes from our CEO</h2>
+                    <!--<h2><?php /*echo $k['header']; */?></h2>-->
 
                     <!-- Swiper Testimonials -->
                     <div class="swiper-slider swiper-testimonials">
@@ -286,32 +286,32 @@
                             <div class="swiper-slide">
                                 <blockquote class="blockquote">
                                     <div class="margin-b-20">
-                                        <!--An opportunity to network, learn and to grow. Come through and see for yourself!-->
-                                        <?php echo $k['text-one']; ?>
+                                        An opportunity to network, learn and to grow. Come through and see for yourself!
+                                        <?php /*echo $k['text-one']; */?>
                                     </div>
                                     <div class="margin-b-20">
-                                        <!--There is great value to be derived from these events both for professionals and for business owners.-->
-                                        <?php echo $k['text-two']; ?>
+                                        There is great value to be derived from these events both for professionals and for business owners.
+                                        <?php /*echo $k['text-two']; */?>
                                     </div>
-                                    <!--<p><span class="fweight-700 color-link">Sazi Asanda Ndwandwa</span>, Black Business Growth Initiative</p>-->
-                                    <p><span class="fweight-700 color-link"><?php echo $k['author']; ?></span>, <?php echo $k['company']; ?></p>
+                                    <p><span class="fweight-700 color-link">Sazi Asanda Ndwandwa</span>, Black Business Growth Initiative</p>
+                                    <!--<p><span class="fweight-700 color-link"><?php /*echo $k['author']; */?></span>, <?php /*echo $k['company']; */?></p>-->
                                 </blockquote>
                             </div>
-                            <?php $l= mysql_query("select * from notes where id=2");
+                            <?php /*$l= mysql_query("select * from notes where id=2");
                             $m = mysql_fetch_array($l);
-                            ?>
+                            */?>
                             <div class="swiper-slide">
                                 <blockquote class="blockquote">
                                     <div class="margin-b-20">
-                                        <!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
-                                        <?php echo $m['text-one']; ?>
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        <?php /*echo $m['text-one']; */?>
                                     </div>
                                     <div class="margin-b-20">
-                                        <!--Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
-                                        <?php echo $m['text-two']; ?>
+                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        <?php /*echo $m['text-two']; */?>
                                     </div>
-                                    <!--<p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>-->
-                                    <p><span class="fweight-700 color-link"><?php echo $m['author']; ?></span>, <?php echo $m['company']; ?></p>
+                                    <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
+                                    <!--<p><span class="fweight-700 color-link"><?php /*echo $m['author']; */?></span>, <?php /*echo $m['company']; */?></p>-->
                                 </blockquote>
                             </div>
                         </div>
