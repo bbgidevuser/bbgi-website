@@ -27,13 +27,23 @@
 						<div class="col-md-5 col-sm-12 col-xs-12">
                         <p class="title">Old Image</p>
 						<!--<img src="../images/<?php /*echo $arr['image'];*/?>" style="width:250px; height:150px">-->
-                            <img src="../img/<?php echo $arr['image'];?>" style="width:250px; height:150px">
+                            <img src="../img/640x380/<?php echo $arr['image'];?>" style="width:250px; height:150px">
 						</div>
 						
 						<div class="col-md-12 col-sm-12 col-xs-12">
                        <p class="title">Description</p>
-                        <p><textarea class="form-control" name="description"><?php echo $arr['about'];?></textarea></p>
+                        <p><textarea class="form-control" name="description"><?php echo $arr['description'];?></textarea></p>
 						</div>
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <p class="title">Main</p>
+                            <p><textarea class="form-control" name="main"><?php echo $arr['main_one'];?></textarea></p>
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <p class="title">Main Two</p>
+                            <p><textarea class="form-control" name="main_two"><?php echo $arr['main_two'];?></textarea></p>
+                        </div>
 						                       
                         <!--</div>-->
 						<div class="col-md-8 col-sm-12 col-xs-12">
@@ -43,7 +53,6 @@
                           </div>
 </div>
 					  </form>
-
                     </div> 
 
                   </div>

@@ -1,25 +1,25 @@
 <?php
 
-class About
+class Team
 {
 	private  $id;
-	private  $header;
-    private  $description;
-    private  $main_one;
+	private  $name;
 	private  $title;
+    private  $description;
     private  $image;
-	private  $main_two;
+	private  $header;
+	private  $main_description;
 	
 	
   public function __construct()
 	{
 		$this->id 			= NULL;
-		$this->header = NULL;
-        $this->description	= NULL;
-		$this->main_one 		= NULL;
+		$this->name = NULL;
 		$this->title			= NULL;
-        $this->image		= NULL;
-		$this->main_two		= NULL;
+        $this->description	= NULL;
+		$this->image		= NULL;
+		$this->header 		= NULL;
+		$this->main_description		= NULL;
 	}
 	
   public function setvalues($array)
@@ -32,7 +32,7 @@ class About
 	
    public function getlatestId()
 	{
-		$query = mysql_query("select id from about order by id desc limit 0,1");
+		$query = mysql_query("select id from team order by id desc limit 0,1");
 		$data = mysql_fetch_assoc($query);
        
         if(mysql_num_rows($query)>0)
@@ -51,15 +51,15 @@ class About
 
 	public function insert()
 	{
-		$header 	= mysql_real_escape_string($this->header);
-        $description	= mysql_real_escape_string($this->description);
-		$main_one 			= mysql_real_escape_string($this->main_one);
+		$name 	= mysql_real_escape_string($this->name);
 		$title			= mysql_real_escape_string($this->title);
-        $image			= mysql_real_escape_string($this->image);
-		$main_two			= mysql_real_escape_string($this->main_two);
+        $description	= mysql_real_escape_string($this->description);
+		$image			= mysql_real_escape_string($this->image);
+		$header 			= mysql_real_escape_string($this->header);
+		$main_description			= mysql_real_escape_string($this->main_description);
 
-        $insert = "Insert into about(header, description, main_one, title, image, main_two)
-			values('$header', '$description','$main_one', '$title','$image', '$main_two')";
+        $insert = "Insert into team(name, title, description, image, header,  main_description, )
+			values('$name', '$title', '$description','$image', '$header',  '$main_description')";
 		
 		//echo $insert; die();
 		$res = mysql_query($insert);
@@ -73,21 +73,19 @@ class About
 	{
 		
 		$id 			= mysql_real_escape_string($this->id);
-		$header 	= mysql_real_escape_string($this->header);
-        $description	= mysql_real_escape_string($this->description);
-		$main_one 			= mysql_real_escape_string($this->main_one);
+		$name 	= mysql_real_escape_string($this->name);
 		$title			= mysql_real_escape_string($this->title);
+        $description	= mysql_real_escape_string($this->description);
 		$image			= mysql_real_escape_string($this->image);
-		$main_two			= mysql_real_escape_string($this->main_two);
+		$header 			= mysql_real_escape_string($this->header);
+		$main_description			= mysql_real_escape_string($this->main_description);
 
-
-	   $query = "Update about set header='$header',
+	   $query = "Update team set header='$name',
+                                     title='$title',
                                      description='$description',
-									 main_one='$main_one',
-									 title='$title',
-									 image='$image',
-									 main_two='$main_two'
-									 
+                                     image='$image',
+									 header='$header',
+									 main_description='$main_description'
 	                                 where id='$id'"; 
 	  // echo $query; die();								 
 	   $res = mysql_query($query);	   
@@ -97,27 +95,26 @@ class About
 
 	public function SetById($id)
 	{
-	   $query = mysql_query("select * from about where id = $id");
+	   $query = mysql_query("select * from team where id = $id");
 	   $data = mysql_fetch_assoc($query);
 	   $this->id 				= stripslashes($data['id']);
-	   $this->header 		= stripslashes($data['header']);
+	   $this->name 		= stripslashes($data['name']);
+		$this->title				= stripslashes($data['title']);
         $this->description		= stripslashes($data['description']);
-	   $this->main_one 			= stripslashes($data['main_one']);
-	   $this->title				= stripslashes($data['title']);
-	   $this->image				= stripslashes($data['image']);
-	   $this->main_two				= stripslashes($data['main_two']);
+		$this->image				= stripslashes($data['image']);
+	   $this->header 			= stripslashes($data['header']);
+	   $this->main_description				= stripslashes($data['main_description']);
 	}
 		
 	public function Display()
 	{
 		$arr['id']           	=  $this->id;
-		$arr['header']    =  $this->header;
-        $arr['description']   	=  $this->description;
-		$arr['main_one']         	=  $this->main_one;
+		$arr['name']    =  $this->name;
 		$arr['title']   			=  $this->title;
+        $arr['description']   	=  $this->description;
 		$arr['image']   		=  $this->image;
-		$arr['main_two']   		=  $this->main_two;
-		
+		$arr['header']         	=  $this->header;
+		$arr['main_description']   		=  $this->main_description;
 		return $arr;
 	}
 	
@@ -135,12 +132,13 @@ class About
 		$dsdata=mysql_fetch_assoc($dsquery);
 	
 			  $arr[$i]['id']       		 =      stripslashes($dsdata['id']);
-			  $arr[$i]['header'] 	 =	    stripslashes($dsdata['header']);
-              $arr[$i]['description']  	 =      stripslashes($dsdata['description']);
-			  $arr[$i]['main_one']    		 =      stripslashes($dsdata['main_one']);
+			  $arr[$i]['name'] 	 =	    stripslashes($dsdata['name']);
 			  $arr[$i]['title']  	     =      stripslashes($dsdata['title']);
+              $arr[$i]['description']  	 =      stripslashes($dsdata['description']);
 			  $arr[$i]['image']			 =		stripslashes($dsdata['image']);
-			  $arr[$i]['main_two']  	     =      stripslashes($dsdata['main_two']);
+			  $arr[$i]['header']    		 =      stripslashes($dsdata['header']);
+			  $arr[$i]['main_description']  	     =      stripslashes($dsdata['main_description']);
+
 		}
 		return $arr;
 	}
@@ -149,9 +147,9 @@ class About
 	{
 	  $arr = array();
 	  if($statement1){
-		$select = ("select * from about $statement1");
+		$select = ("select * from team $statement1");
 	  }else{
-		$select = ("select * from about");
+		$select = ("select * from team");
 	  }
 	// echo $select;
 	  
@@ -162,12 +160,12 @@ class About
 		{
 		$dsdata=mysql_fetch_assoc($dsquery);
 			  $arr[$i]['id']       		 =      stripslashes($dsdata['id']);
-			  $arr[$i]['header'] 	 =	    stripslashes($dsdata['header']);
-              $arr[$i]['description']	 =		stripslashes($dsdata['description']);
-			  $arr[$i]['main_one']    		 =      stripslashes($dsdata['main_one']);
+			  $arr[$i]['name'] 	 =	    stripslashes($dsdata['name']);
 			  $arr[$i]['title']			 =		stripslashes($dsdata['title']);
+              $arr[$i]['description']	 =		stripslashes($dsdata['description']);
 			  $arr[$i]['image']			 =		stripslashes($dsdata['image']);
-			  $arr[$i]['main_two']			 =		stripslashes($dsdata['main_two']);
+			  $arr[$i]['header']    		 =      stripslashes($dsdata['header']);
+			  $arr[$i]['main_description']			 =		stripslashes($dsdata['main_description']);
  		}
 //		count($arr);
 		return $arr;
@@ -180,7 +178,7 @@ class About
 		$status = mysql_real_escape_string($this->status);
 		
 		$id = mysql_real_escape_string($sel_id);		
-		$query = "Update about set status='$status' where id in($id)";
+		$query = "Update team set status='$status' where id in($id)";
 		$res = mysql_query($query);
 		
 		return $res;
@@ -192,7 +190,7 @@ class About
 	{
 					 
 		$sel_id = mysql_real_escape_string($this->id); 
-		$query  = "delete from about where id in($sel_id);";
+		$query  = "delete from team where id in($sel_id);";
 		$deletequery = mysql_query($query); 
 		return $deletequery;
 	}

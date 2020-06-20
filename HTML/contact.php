@@ -20,7 +20,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="" name="description"/>
         <meta content="" name="author"/>
-        <meta http-equiv="Content-Security-Policy" content="script-src 'self' insert-contact.php">
+        <!--<meta http-equiv="Content-Security-Policy" content="script-src 'self' contact-us/contact-us.php">-->
 
 
         <!-- GLOBAL MANDATORY STYLES -->
@@ -211,9 +211,9 @@
                             </ul>
                             <!-- End List -->
                         </div>
-                        <form action="insert-contact.php" method="POST">
+                        <form action="contact-us/contact-us.php" method="POST">
                             <div class="col-sm-5 sm-margin-b-30">
-                                <h2 class="color-white">Supplier Database</h2>
+                                <h2 class="color-white">Contact Us</h2>
                                 <p>It is our passion to nurture and develop black business. Benefit from and service our community by signing up on our supplier database.</p>
                                 <input type="text" name="name" class="form-control footer-input margin-b-20" placeholder="Name" required>
                                 <input type="email" name="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
@@ -245,8 +245,8 @@
             <!-- End Copyright -->
         </footer>
         <!--========== END FOOTER ==========-->
-        <!--<script><?php header("Content-Security-Policy: script-src 'self' insert-contact.php");?></script>-->
-        <script src="insert-contact.php"></script>
+        <!--<script><?php /*header("Content-Security-Policy: script-src 'self' insert-contact.php");*/?></script>-->
+        <!--<script src="insert-contact.php"></script>-->
         <!-- Back To Top -->
         <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a>
 

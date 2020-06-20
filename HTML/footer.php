@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <footer class="footer">
     <!-- Links -->
     <div class="footer-seperator">
@@ -62,4 +60,4 @@
     </div>
     <!-- End Copyright -->
 </footer>
-</html>
+
