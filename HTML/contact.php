@@ -85,13 +85,13 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PARALLAX ==========-->
-        <?php /*$a= mysql_query("select * from contact where id=1");
+        <?php $a= mysql_query("select * from contact where id=1");
         $b = mysql_fetch_array($a);
-        */?>
+        ?>
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/19.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">Contact</h1>
-                <!--<h1 class="carousel-title"><?php /*echo $b['header']; */?></h1>-->
+                <!--<h1 class="carousel-title">Contact</h1>-->
+                <h1 class="carousel-title"><?php echo $b['header']; ?></h1>
                 <!--<p>Reach out to us using any of the below mediums, alternatively you can visit us at our Cape Town office</p>-->
             </div>
         </div>
@@ -105,15 +105,15 @@
                     <!-- Contact List -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                            <h3><a href="#">Cape Town</a> <span class="text-uppercase margin-l-20">Head Office</span></h3>
-                            <!--<h3><a href="#"><?php /*echo $b['location']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $b['office']; */?></span></h3>-->
-                            <p>Spaces Office Building, 1 Bridgeway Road, Bridgeways Precinct, Century City, Cape Town</p>
-                            <!--<p><?php /*echo $b['address']; */?></p>-->
+                            <!--<h3><a href="#">Cape Town</a> <span class="text-uppercase margin-l-20">Head Office</span></h3>-->
+                            <h3><a href="#"><?php echo $b['location']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $b['office']; ?></span></h3>
+                            <!--<p>Spaces Office Building, 1 Bridgeway Road, Bridgeways Precinct, Century City, Cape Town</p>-->
+                            <p><?php echo $b['address']; ?></p>
                             <ul class="list-unstyled contact-list">
-                                <li><i class="margin-r-10 color-base icon-call-out"></i> 021 830 5415</li>
-                                <!--<li><i class="margin-r-10 color-base icon-call-out"></i> <?php /*echo $b['telephone']; */?></li>-->
-                                <li><i class="margin-r-10 color-base icon-envelope"></i> info@goldours.co.za</li>
-                                <!--<li><i class="margin-r-10 color-base icon-envelope"></i> <?php /*echo $b['email']; */?></li>-->
+                                <!--<li><i class="margin-r-10 color-base icon-call-out"></i> 021 830 5415</li>-->
+                                <li><i class="margin-r-10 color-base icon-call-out"></i> <?php echo $b['telephone']; ?></li>
+                                <!--<li><i class="margin-r-10 color-base icon-envelope"></i> info@goldours.co.za</li>-->
+                                <li><i class="margin-r-10 color-base icon-envelope"></i> <?php echo $b['email']; ?></li>
                             </ul>
                         </div>
                     </div>

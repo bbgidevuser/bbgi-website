@@ -138,9 +138,9 @@
 
         <!--========== PAGE LAYOUT ==========-->
         <!-- Service -->
-        <?php /*$a= mysql_query("select * from headlines where id=1");
+        <?php $a= mysql_query("select * from headlines where id=1");
 	      $b = mysql_fetch_array($a);
-        */?>
+        ?>
         <div class="bg-color-sky-light" data-auto-height="true">
             <div class="content-lg container">
                 <div class="row row-space-1 margin-b-2">
@@ -151,18 +151,18 @@
                                     <i class="service-icon icon-chemistry"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Business Networking</h3>
-                                    <!--<h3><?php /*echo $b['headline']; */?></h3>-->
-                                    <p class="margin-b-5">A platform for business owners to present their businesses and interact with fellow business owners and potential customers</p>
-                                    <!--<p class="margin-b-5"><?php /*echo $b['description']; */?></p>-->
+                                    <!--<h3>Business Networking</h3>-->
+                                    <h3><?php echo $b['headline']; ?></h3>
+                                    <!--<p class="margin-b-5">A platform for business owners to present their businesses and interact with fellow business owners and potential customers</p>-->
+                                    <p class="margin-b-5"><?php echo $b['description']; ?></p>
                                 </div>
                                 <a href="#" class="content-wrapper-link"></a>    
                             </div>
                         </div>
                     </div>
-                    <?php /*$b= mysql_query("select * from headlines where id=2");
+                    <?php $b= mysql_query("select * from headlines where id=2");
                     $c = mysql_fetch_array($b);
-                    */?>
+                    ?>
                     <div class="col-sm-4 sm-margin-b-2">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
                             <div class="service" data-height="height">
@@ -170,18 +170,18 @@
                                     <i class="service-icon icon-screen-tablet"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Professional Networking</h3>
-                                    <!--<h3><?php /*echo $c['headline']; */?></h3>-->
-                                    <p class="margin-b-5">Black professionals also stand to benefit from professional career guidance</p>
-                                    <!--<p class="margin-b-5"><?php /*echo $c['description']; */?></p>-->
+                                    <!--<h3>Professional Networking</h3>-->
+                                    <h3><?php echo $c['headline']; ?></h3>
+                                    <!--<p class="margin-b-5">Black professionals also stand to benefit from professional career guidance</p>-->
+                                    <p class="margin-b-5"><?php echo $c['description']; ?></p>
                                 </div>
                                 <a href="#" class="content-wrapper-link"></a>    
                             </div>
                         </div>
                     </div>
-                    <?php /*$d= mysql_query("select * from headlines where id=3");
+                    <?php $d= mysql_query("select * from headlines where id=3");
                     $e = mysql_fetch_array($d);
-                    */?>
+                    ?>
                     <div class="col-sm-4">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <div class="service" data-height="height">
@@ -189,10 +189,10 @@
                                     <i class="service-icon icon-badge"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Monthly Events</h3>
-                                    <!--<h3><?php /*echo $e['headline']; */?></h3>-->
-                                    <p class="margin-b-5">Our events are held once a month on a Wednesday, tickets cost R100. Cash is accepted at the door</p>
-                                    <!--<p class="margin-b-5"><?php /*echo $e['description']; */?></p>-->
+                                    <!--<h3>Monthly Events</h3>-->
+                                    <h3><?php echo $e['headline']; ?></h3>
+                                    <!--<p class="margin-b-5">Our events are held once a month on a Wednesday, tickets cost R100. Cash is accepted at the door</p>-->
+                                    <p class="margin-b-5"><?php echo $e['description']; ?></p>
                                 </div>
                                 <a href="#" class="content-wrapper-link"></a>    
                             </div>
@@ -202,9 +202,9 @@
                 <!--// end row -->
 
                 <div class="row row-space-1">
-                   <!-- --><?php /*$f= mysql_query("select * from headlines where id=4");
+                    <?php $f= mysql_query("select * from headlines where id=4");
                     $g = mysql_fetch_array($f);
-                    */?>
+                    ?>
                     <div class="col-sm-4 sm-margin-b-2">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
                             <div class="service" data-height="height">
@@ -212,18 +212,18 @@
                                     <i class="service-icon icon-notebook"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Marketing Platform</h3>
-                                    <!--<h3><?php /*echo $g['headline']; */?></h3>-->
-                                    <p class="margin-b-5">Attendees of BBGI events get to market their businesses, with business presentations held at each event</p>
-                                    <!--<p class="margin-b-5"><?php /*echo $g['description']; */?></p>-->
+                                    <!--<h3>Marketing Platform</h3>-->
+                                    <h3><?php echo $g['headline']; ?></h3>
+                                    <!--<p class="margin-b-5">Attendees of BBGI events get to market their businesses, with business presentations held at each event</p>-->
+                                    <p class="margin-b-5"><?php echo $g['description']; ?></p>
                                 </div>
                                 <a href="#" class="content-wrapper-link"></a>    
                             </div>
                         </div>
                     </div>
-                    <?php /*$h= mysql_query("select * from headlines where id=5");
+                    <?php $h= mysql_query("select * from headlines where id=5");
                     $i = mysql_fetch_array($h);
-                    */?>
+                    ?>
                     <div class="col-sm-4 sm-margin-b-2">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".5s">
                             <div class="service" data-height="height">
@@ -231,18 +231,18 @@
                                     <i class="service-icon icon-speedometer"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Meeting of Minds</h3>
-                                    <!--<h3><?php /*echo $i['headline']; */?></h3>-->
-                                    <p class="margin-b-5">Meet and share ideas with like minded individuals</p>
-                                    <!--<p class="margin-b-5"><?php /*echo $i['description']; */?></p>-->
+                                    <!--<h3>Meeting of Minds</h3>-->
+                                    <h3><?php echo $i['headline']; ?></h3>
+                                    <!--<p class="margin-b-5">Meet and share ideas with like minded individuals</p>-->
+                                    <p class="margin-b-5"><?php echo $i['description']; ?></p>
                                 </div>
                                 <a href="#" class="content-wrapper-link"></a>    
                             </div>
                         </div>
                     </div>
-                   <!-- --><?php /*$j= mysql_query("select * from headlines where id=6");
+                    <?php $j= mysql_query("select * from headlines where id=6");
                     $k = mysql_fetch_array($j);
-                    */?>
+                    ?>
                     <div class="col-sm-4">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".6s">
                             <div class="service" data-height="height">
@@ -250,10 +250,10 @@
                                     <i class="service-icon icon-badge"></i>
                                 </div>
                                 <div class="service-info">
-                                    <h3>Great Talks</h3>
-                                    <!--<h3><?php /*echo $k['headline']; */?></h3>-->
-                                    <p class="margin-b-5">Hear inspirational stories from some of our great guests to elevate your game and take your business to the next level</p>
-                                    <!--<p class="margin-b-5"><?php /*echo $k['description']; */?></p>-->
+                                    <!--<h3>Great Talks</h3>-->
+                                    <h3><?php echo $k['headline']; ?></h3>
+                                    <!--<p class="margin-b-5">Hear inspirational stories from some of our great guests to elevate your game and take your business to the next level</p>-->
+                                    <p class="margin-b-5"><?php echo $k['description']; ?></p>
                                 </div>
                                 <a href="#" class="content-wrapper-link"></a>    
                             </div>
@@ -359,9 +359,9 @@
             <div class="row">
                 <div class="col-sm-9">
                     <h2>Testimonials</h2>
-                    <?php /*$k= mysql_query("select * from testimonials where id=1");
+                    <?php $k= mysql_query("select * from testimonials where id=1");
                     $l = mysql_fetch_array($k);
-                    */?>
+                    ?>
                     <!-- Swiper Testimonials -->
                     <div class="swiper-slider swiper-testimonials">
                         <!-- Swiper Wrapper -->
@@ -369,32 +369,31 @@
                             <div class="swiper-slide">
                                 <blockquote class="blockquote">
                                     <div class="margin-b-20">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
-                                        <?php /*echo $l['testim-quote-one']; */?>
+                                        <!--Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.-->
+                                        <?php echo $l['testim-quote-one']; ?>
                                     </div>
                                     <div class="margin-b-20">
-                                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                        <?php /*echo $l['testim-quote-two']; */?>
+                                        <!--Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.-->
+                                        <?php echo $l['testim-quote-two']; ?>
                                     </div>
                                     <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
                                     <!--<p><span class="fweight-700 color-link"><?php /*echo $l['testim-author']; */?></span>, <?php /*echo $l['testim-company']; */?></p>-->
                                 </blockquote>
                             </div>
-                            <?php /*$m= mysql_query("select * from testimonials where id=2");
+                            <?php $m= mysql_query("select * from testimonials where id=2");
                             $n = mysql_fetch_array($m);
-                            */?>
+                            ?>
                             <div class="swiper-slide">
                                 <blockquote class="blockquote">
                                     <div class="margin-b-20">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        <?php /*echo $n['testim-quote-one']; */?>
+                                        <!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
+                                        <?php echo $n['testim-quote-one']; ?>
                                     </div>
                                     <div class="margin-b-20">
-                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        <?php /*echo $n['testim-quote-two']; */?>
+                                        <!--Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+                                        <?php echo $n['testim-quote-two']; ?>
                                     </div>
-                                    <!--<p><span class="fweight-700 color-link"><?php /*echo $n['testim-author']; */?></span>, <?php /*echo $n['testim-company']; */?></p>-->
-                                    <p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>
+                                    <p><span class="fweight-700 color-link"><?php echo $n['testim-author']; ?></span>, <?php echo $n['testim-company']; ?></p>
                                 </blockquote>
                             </div>
                         </div>
@@ -416,24 +415,24 @@
                 <div class="row row-space-1">
                     <div class="col-sm-4 sm-margin-b-2">
                         <!-- Pricing -->
-                        <?php /*$o= mysql_query("select * from pricing where id=1");
+                        <?php $o= mysql_query("select * from pricing where id=1");
                         $p = mysql_fetch_array($o);
-                        */?>
+                        ?>
                         <div class="pricing">
                             <div class="margin-b-30">
                                 <i class="pricing-icon icon-chemistry"></i>
-                                <h3>Student Special <span> - R</span> 50</h3>
-                                <!--<h3><?php /*echo $p['type']; */?> <span> - R</span> <?php /*echo $p['price']; */?></h3>-->
-                                <p>Take advantage of our student special and pay half the price of a normal ticket</p>
-                                <!--<p><?php /*echo $p['description']; */?></p>-->
+                                <!--<h3>Student Special <span> - R</span> 50</h3>-->
+                                <h3><?php echo $p['type']; ?> <span> - R</span> <?php echo $p['price']; ?></h3>
+                                <!--<p>Take advantage of our student special and pay half the price of a normal ticket</p>-->
+                                <p><?php echo $p['description']; ?></p>
                             </div>
                             <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Discounted price</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $p['option-one']; */?></li>-->
-                                <li class="pricing-list-item">Networking opportunity</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $p['option-two']; */?></li>-->
-                                <li class="pricing-list-item">Business opportunity</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $p['option-three']; */?></li>-->
+                                <!--<li class="pricing-list-item">Discounted price</li>-->
+                                <li class="pricing-list-item"><?php echo $p['option-one']; ?></li>
+                                <!--<li class="pricing-list-item">Networking opportunity</li>-->
+                                <li class="pricing-list-item"><?php echo $p['option-two']; ?></li>
+                                <!--<li class="pricing-list-item">Business opportunity</li>-->
+                                <li class="pricing-list-item"><?php echo $p['option-three']; ?></li>
                             </ul>
                             <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
                         </div>
@@ -441,24 +440,24 @@
                     </div>
                     <div class="col-sm-4 sm-margin-b-2">
                         <!-- Pricing -->
-                        <?php /*$q= mysql_query("select * from pricing where id=2");
+                        <?php $q= mysql_query("select * from pricing where id=2");
                         $r = mysql_fetch_array($q);
-                        */?>
+                        ?>
                         <div class="pricing pricing-active">
                             <div class="margin-b-30">
                                 <i class="pricing-icon icon-badge"></i>
-                                <h3>Social Media <span> - R</span> 100</h3>
-                                <!--<h3><?php /*echo $r['type']; */?> <span> - R</span> <?php /*echo $r['price']; */?></h3>-->
-                                <p>Purchase tickets on our social media platforms</p>
-                                <!--<p><?php /*echo $r['description']; */?></p>-->
+                                <!--<h3>Social Media <span> - R</span> 100</h3>-->
+                                <h3><?php echo $r['type']; ?> <span> - R</span> <?php echo $r['price']; ?></h3>
+                                <!--<p>Purchase tickets on our social media platforms</p>-->
+                                <p><?php echo $r['description']; ?></p>
                             </div>
                             <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Facebook</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $r['option-one']; */?></li>-->
-                                <li class="pricing-list-item">Webtickets</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $r['option-two']; */?></li>-->
-                                <li class="pricing-list-item">Instagram</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $r['option-three']; */?></li>-->
+                                <!--<li class="pricing-list-item">Facebook</li>-->
+                                <li class="pricing-list-item"><?php echo $r['option-one']; ?></li>
+                                <!--<li class="pricing-list-item">Webtickets</li>-->
+                                <li class="pricing-list-item"><?php echo $r['option-two']; ?></li>
+                                <!--<li class="pricing-list-item">Instagram</li>-->
+                                <li class="pricing-list-item"><?php echo $r['option-three']; ?></li>
                             </ul>
                             <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
                         </div>
@@ -466,24 +465,24 @@
                     </div>
                     <div class="col-sm-4">
                         <!-- Pricing -->
-                        <?php /*$s= mysql_query("select * from pricing where id=3");
+                        <?php $s= mysql_query("select * from pricing where id=3");
                         $t = mysql_fetch_array($s);
-                        */?>
+                        ?>
                         <div class="pricing">
                             <div class="margin-b-30">
                                 <i class="pricing-icon icon-shield"></i>
-                                <h3>Website Platform <span> - R</span> 100</h3>
-                                <!--<h3><?php /*echo $t['type']; */?> <span> - R</span> <?php /*echo $t['price']; */?></h3>-->
-                                <p>Use your credit or debit card to purchase tickets directly on our website</p>
-                                <!--<p><?php /*echo $t['description']; */?></p>-->
+                                <!--<h3>Website Platform <span> - R</span> 100</h3>-->
+                                <h3><?php echo $t['type']; ?> <span> - R</span> <?php echo $t['price']; ?></h3>
+                                <!--<p>Use your credit or debit card to purchase tickets directly on our website</p>-->
+                                <p><?php echo $t['description']; ?></p>
                             </div>
                             <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">Credit Card</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $t['option-one']; */?></li>-->
-                                <li class="pricing-list-item">Debit Card</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $t['option-two']; */?></li>-->
-                                <li class="pricing-list-item">PayU</li>
-                                <!--<li class="pricing-list-item"><?php /*echo $t['option-three']; */?></li>-->
+                                <!--<li class="pricing-list-item">Credit Card</li>-->
+                                <li class="pricing-list-item"><?php echo $t['option-one']; ?></li>
+                                <!--<li class="pricing-list-item">Debit Card</li>-->
+                                <li class="pricing-list-item"><?php echo $t['option-two']; ?></li>
+                                <!--<li class="pricing-list-item">PayU</li>-->
+                                <li class="pricing-list-item"><?php echo $t['option-three']; ?></li>
                             </ul>
                             <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
                         </div>

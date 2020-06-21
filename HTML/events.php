@@ -97,14 +97,14 @@
         <div class="content-lg container">
 
             <div class="row margin-b-40">
-                <?php /*$a= mysql_query("select * from upcoming_events where id=1");
+                <?php $a= mysql_query("select * from upcoming_events where id=1");
                 $b = mysql_fetch_array($a);
-                */?>
+                ?>
                 <div class="col-sm-6">
-                    <h2>Upcoming Events</h2>
-                    <!--<h2><?php /*echo $b['header']; */?></h2>-->
-                    <p>Please see below for an outline of all the events we have in the next couple of months</p>
-                    <!--<p><?php /*echo $b['description']; */?></p>-->
+                    <!--<h2>Upcoming Events</h2>-->
+                    <h2><?php echo $b['header']; ?></h2>
+                    <!--<p>Please see below for an outline of all the events we have in the next couple of months</p>-->
+                    <p><?php echo $b['description']; ?></p>
                 </div>
             </div>
 
@@ -114,52 +114,52 @@
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/05.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $b['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/05.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $b['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h3><a href="#">06 May 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>
-                    <!--<h3><a href="#"><?php /*echo $b['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $b['venue']; */?></span></h3>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $b['event_description']; */?></p>-->
+                    <!--<h3><a href="#">06 May 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>-->
+                    <h3><a href="#"><?php echo $b['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $b['venue']; ?></span></h3>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $b['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
                 <!-- Our Exceptional Solutions -->
-                <?php /*$c= mysql_query("select * from upcoming_events where id=2");
+                <?php $c= mysql_query("select * from upcoming_events where id=2");
                 $d = mysql_fetch_array($c);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/06.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $d['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/06.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $d['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h3><a href="#">10 June 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>
-                    <!--<h3><a href="#"><?php /*echo $d['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $d['venue']; */?></span></h3>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $d['event_description']; */?></p>-->
+                    <!--<h3><a href="#">10 June 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>-->
+                    <h3><a href="#"><?php echo $d['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $d['venue']; ?></span></h3>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $d['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
                 <!-- Our Exceptional Solutions -->
-               <!-- --><?php /*$e= mysql_query("select * from upcoming_events where id=3");
+                <?php $e= mysql_query("select * from upcoming_events where id=3");
                 $f = mysql_fetch_array($e);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/07.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $f['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/07.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $f['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h4><a href="#">01 July 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>
-                    <!--<h4><a href="#"><?php /*echo $f['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $f['venue']; */?></span></h4>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $f['event_description']; */?></p>-->
+                    <!--<h4><a href="#">01 July 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
+                    <h4><a href="#"><?php echo $f['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $f['venue']; ?></span></h4>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $f['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
@@ -170,20 +170,20 @@
             <div class="row">
 
                 <!-- Our Exceptional Solutions -->
-                <?php /*$g= mysql_query("select * from upcoming_events where id=4");
+                <?php $g= mysql_query("select * from upcoming_events where id=4");
                 $h = mysql_fetch_array($g);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/08.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $h['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/08.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $h['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h4><a href="#">05 August 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>
-                    <!--<h4><a href="#"><?php /*echo $h['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $h['venue']; */?></span></h4>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $h['event_description']; */?></p>-->
+                    <!--<h4><a href="#">05 August 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
+                    <h4><a href="#"><?php echo $h['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $h['venue']; ?></span></h4>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $h['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
@@ -192,15 +192,15 @@
         </div>
 
         <div class="content-lg container">
-           <!-- --><?php /*$i= mysql_query("select * from past_events where id=1");
+            <?php $i= mysql_query("select * from past_events where id=1");
             $j = mysql_fetch_array($i);
-            */?>
+            ?>
             <div class="row margin-b-40">
                 <div class="col-sm-6">
-                    <h2>Past Events</h2>
-                    <!--<h2><?php /*echo $j['header']; */?></h2>-->
-                    <p>These are some of the events that we as a community have held in the last couple of months</p>
-                    <!--<p><?php /*echo $j['description']; */?></p>-->
+                    <!--<h2>Past Events</h2>-->
+                    <h2><?php echo $j['header']; ?></h2>
+                    <!--<p>These are some of the events that we as a community have held in the last couple of months</p>-->
+                    <p><?php echo $j['description']; ?></p>
                 </div>
             </div>
             <!--// end row -->
@@ -211,52 +211,52 @@
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/04.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $j['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/04.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $j['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h3><a href="#">01 April 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>
-                    <!--<h3><a href="#"><?php /*echo $j['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $j['venue']; */?></span></h3>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $j['event_description']; */?></p>-->
+                    <!--<h3><a href="#">01 April 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>-->
+                    <h3><a href="#"><?php echo $j['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $j['venue']; ?></span></h3>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $j['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
                 <!-- Our Exceptional Solutions -->
-                <?php /*$k= mysql_query("select * from past_events where id=2");
+                <?php $k= mysql_query("select * from past_events where id=2");
                 $l = mysql_fetch_array($k);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/09.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $l['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/09.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $l['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h4><a href="#">04 March 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>
-                    <!--<h4><a href="#"><?php /*echo $l['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $l['venue']; */?></span></h4>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $l['event_description']; */?></p>-->
+                    <!--<h4><a href="#">04 March 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
+                    <h4><a href="#"><?php echo $l['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $l['venue']; ?></span></h4>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $l['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
                 <!-- Our Exceptional Solutions -->
-                <?php /*$m= mysql_query("select * from past_events where id=3");
+                <?php $m= mysql_query("select * from past_events where id=3");
                 $n = mysql_fetch_array($m);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/10.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $n['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/10.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $n['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h4><a href="#">12 February 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>
-                    <!--<h4><a href="#"><?php /*echo $n['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $n['venue']; */?></span></h4>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $n['event_description']; */?></p>-->
+                    <!--<h4><a href="#">12 February 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
+                    <h4><a href="#"><?php echo $n['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $n['venue']; ?></span></h4>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $n['event_description']; ?></p>
                     <!-- <a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
@@ -268,9 +268,9 @@
             <div class="row">
 
                 <!-- Our Exceptional Solutions -->
-                <?php /*$o= mysql_query("select * from past_events where id=4");
+                <?php $o= mysql_query("select * from past_events where id=4");
                 $p = mysql_fetch_array($o);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
@@ -278,48 +278,48 @@
                             <!--<img class="img-responsive" src="img/970x647/<?php /*echo $p['image']; */?>" alt="Our Exceptional Solutions Image">-->
                         </div>
                     </div>
-                    <h4><a href="#">13 November 2019</a> <span class="text-uppercase margin-l-20">Nia on 131</span></h4>
-                    <!--<h4><a href="#"><?php /*echo $p['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $p['venue']; */?></span></h4>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $p['event_description']; */?></p>-->
+                    <!--<h4><a href="#">13 November 2019</a> <span class="text-uppercase margin-l-20">Nia on 131</span></h4>-->
+                    <h4><a href="#"><?php echo $p['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $p['venue']; ?></span></h4>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $p['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
                 <!-- Our Exceptional Solutions -->
-               <!-- --><?php /*$q= mysql_query("select * from past_events where id=5");
+                <?php $q= mysql_query("select * from past_events where id=5");
                 $r = mysql_fetch_array($q);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/12.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $r['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/12.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $r['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h4><a href="#">02 October 2019</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>
-                    <!--<h4><a href="#"><?php /*echo $r['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $r['venue']; */?></span></h4>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $r['event_description']; */?></p>-->
+                    <!--<h4><a href="#">02 October 2019</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
+                    <h4><a href="#"><?php echo $r['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $r['venue']; ?></span></h4>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $r['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
                 <!-- Our Exceptional Solutions -->
-               <!-- --><?php /*$s= mysql_query("select * from past_events where id=6");
+                <?php $s= mysql_query("select * from past_events where id=6");
                 $t = mysql_fetch_array($s);
-                */?>
+                ?>
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/13.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $t['image']; */?>" alt="Our Exceptional Solutions Image">-->
+                            <!--<img class="img-responsive" src="img/970x647/13.jpg" alt="Our Exceptional Solutions Image">-->
+                            <img class="img-responsive" src="img/970x647/<?php echo $t['image']; ?>" alt="Our Exceptional Solutions Image">
                         </div>
                     </div>
-                    <h4><a href="#">21 August 2019</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>
-                    <!--<h4><a href="#"><?php /*echo $t['event_date']; */?></a> <span class="text-uppercase margin-l-20"><?php /*echo $t['venue']; */?></span></h4>-->
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                    <!--<p><?php /*echo $t['event_description']; */?></p>-->
+                    <!--<h4><a href="#">21 August 2019</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
+                    <h4><a href="#"><?php echo $t['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $t['venue']; ?></span></h4>
+                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
+                    <p><?php echo $t['event_description']; ?></p>
                     <!--<a class="link" href="#">Read More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
