@@ -30,6 +30,16 @@
                                 <img src="../img/640x380/<?php echo $arr['image'];?>" style="width:250px; height:150px">
                             </div>
 
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <p class="title">Useful Documentation - Header</p>
+                                <p><textarea class="form-control" name="header"><?php echo $arr['header'];?></textarea></p>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <p class="title">Useful Documentation - Description</p>
+                                <p><textarea class="form-control" name="description"><?php echo $arr['description'];?></textarea></p>
+                            </div>
+
                             <!--</div>-->
                             <div class="col-md-8 col-sm-12 col-xs-12">
                                 <div class="mtop20">

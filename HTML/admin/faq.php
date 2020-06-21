@@ -15,6 +15,8 @@ if(isset($_POST['submit'])){
 
     //var_dump($_POST); die();
     $id = trim($_POST['id']);
+    $header = trim($_POST['header']);
+    $description = trim($_POST['description']);
     $image = trim($_FILES['image']['name']);
 
     if($image=="")
@@ -23,7 +25,7 @@ if(isset($_POST['submit'])){
         //echo $old_logo; die();
         $m= new Faq();
         $m->SetById($id);
-        $m->setvalues(array('image'=>$old_image));
+        $m->setvalues(array('image'=>$old_image, 'header'=>$header, 'description'=>$description));
 
         $res = $m->update();
         if($res)
@@ -57,7 +59,7 @@ if(isset($_POST['submit'])){
 
         $m= new Faq();
         $m->SetById($id);
-        $m->setvalues(array('image'=>$image));
+        $m->setvalues(array('image'=>$image, 'header'=>$header, 'description'=>$description));
 
         $res = $m->update();
         if($res)
