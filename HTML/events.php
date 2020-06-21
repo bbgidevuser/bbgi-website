@@ -238,7 +238,7 @@
                     <h4><a href="#"><?php echo $l['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $l['venue']; ?></span></h4>
                     <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
                     <p><?php echo $l['event_description']; ?></p>
-                    <!--<a class="link" href="#">Read More</a>-->
+                    <a class="link" href="https://www.facebook.com/events/197147864704264/">View More</a>
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
@@ -254,10 +254,10 @@
                         </div>
                     </div>
                     <!--<h4><a href="#">12 February 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
-                    <h4><a href="#"><?php echo $n['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $n['venue']; ?></span></h4>
+                    <h4><a href="https://www.facebook.com/events/714040099082985/"><?php echo $n['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $n['venue']; ?></span></h4>
                     <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
                     <p><?php echo $n['event_description']; ?></p>
-                    <!-- <a class="link" href="#">Read More</a>-->
+                    <a class="link" href="https://www.facebook.com/events/714040099082985/">View More</a>
                 </div>
                 <!-- End Our Exceptional Solutions -->
 

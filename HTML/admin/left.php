@@ -36,7 +36,7 @@
 					<ul class="nav child_menu">
                       <li><a href="about.php?id=1">About Us</a></li>
                         <li><a href="tickets.php?id=2">Tickets</a></li>
-                        <li><a href="events.php?id=3">Events</a></li>
+                        <li><a href="pastevents.php?id=3">Past Events</a></li>
                         <li><a href="faq.php?id=4">Faq</a></li>
 					  <li><a href="contact.php?id=5">Contact Us</a></li>
                      </ul>

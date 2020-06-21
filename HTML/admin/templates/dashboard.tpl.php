@@ -105,7 +105,7 @@ document.getElementById("example").innerHTML=time;
                       </article>
                       <article class="media event">
                           <div class="media-body">
-                              <a class="title" href="events.php?id=3"><i class="fa fa-angle-double-right"></i>  Events</a>
+                              <a class="title" href="pastevents.php?id=3"><i class="fa fa-angle-double-right"></i>  Past Events</a>
                           </div>
                       </article>
                       <article class="media event">
