@@ -39,6 +39,8 @@
         <!--===============================================================================================-->
         <link rel="icon" type="image/png" href="suppliers/images/icons/favicon.ico"/>
         <!--===============================================================================================-->
+        <!--<link rel="stylesheet" type="text/css" href="suppliers/vendor/bootstrap/css/bootstrap.min.css">-->
+        <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="suppliers/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="suppliers/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
@@ -55,8 +57,8 @@
         <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="suppliers/css/util.css">
         <link rel="stylesheet" type="text/css" href="suppliers/css/main.css">
-        <link rel="stylesheet" type="text/css" href="supplier-search/css/main.css">
         <!--===============================================================================================-->
+
     </head>
     <!-- END HEAD -->
 
@@ -89,21 +91,10 @@
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <ul class="navbar-nav navbar-nav-right">
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.php">Home</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="index.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-item-child nav-item-hover" href="membership.php">Membership</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Business</a>
-                                        <a class="dropdown-item" href="#">Individuals</a>
-                                        <a class="dropdown-item" href="#">Students</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="suppliers.php">Suppliers</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>
@@ -116,14 +107,58 @@
         </header>
         <!--========== END HEADER ==========-->
 
-        <!--========== PARALLAX ==========-->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/20.jpg">
-            <div class="parallax-content container">
-                <h1 class="carousel-title">Suppliers</h1>
-                <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
+        <!--========== SLIDER ==========-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+            </div>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="img/1920x1080/17.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <!--<h1 class="carousel-title">Black Business Growth Initiative</h1>-->
+                                <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
+                            </div>
+                            <!--<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/12.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <!--<h2 class="carousel-title">Black Business Growth Initiative</h2>-->
+                                <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
+                            </div>
+                            <!--<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-responsive" src="img/1920x1080/16.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <!--<h2 class="carousel-title">Black Business Growth Initiative</h2>-->
+                                <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
+                            </div>
+                            <!--<a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Explore</a>-->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!--========== PARALLAX ==========-->
+        <!--========== SLIDER ==========-->
 
         <!--========== PAGE LAYOUT ==========-->
         <div class="bg-color-sky-light" data-auto-height="true">
@@ -132,16 +167,13 @@
             </div>
         </div>
         <?php include('suppliers/suppliers.php'); ?>
-
+        <!-- Masonry Grid -->
+        <!--========== END PAGE LAYOUT ==========-->
         <div class="bg-color-sky-light" data-auto-height="true">
             <div class="content-lg container">
 
             </div>
         </div>
-        <?php include('supplier-search/supplier-search.php'); ?>
-        <!--========== END PAGE LAYOUT ==========-->
-
-
         <!--========== FOOTER ==========-->
         <footer class="footer">
             <!-- Links -->
@@ -154,7 +186,6 @@
                                 <li class="footer-list-item"><a class="footer-list-link" href="index.php">Home</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="about.php">About</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="events.php">Events</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="suppliers.php">Suppliers</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="tickets.php">Tickets</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
@@ -174,6 +205,19 @@
                             </ul>
                             <!-- End List -->
                         </div>
+                        <form action="insert-home.php" method="POST">
+                        <div class="col-sm-5 sm-margin-b-30">
+                            <h2 class="color-white">Supplier Database</h2>
+                            <p>It is our passion to nurture and develop black business. Benefit from and service our community by signing up on our supplier database.</p>
+                            <input type="text" name="name" class="form-control footer-input margin-b-20" placeholder="Name" required>
+                            <input type="email" name="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
+                            <input type="text" name="phone" class="form-control footer-input margin-b-20" placeholder="Phone" required>
+                            <input type="text" name="company" class="form-control footer-input margin-b-20" placeholder="Company" required>
+                            <input type="text" name="industry" class="form-control footer-input margin-b-20" placeholder="Industry" required>
+                            <textarea name="message" class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
+                            <button id="submit" name="submit" type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
+                        </div>
+                        </form>
                     </div>
                     <!--// end row -->
                 </div>
@@ -201,22 +245,38 @@
 
         <!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
         <!-- CORE PLUGINS -->
-        <script src="vendor/jquery.min.js" type="text/javascript"></script>
         <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
         <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="suppliers/vendor/jquery/jquery-3.2.1.min.js"></script>
+
+        <script src="suppliers/vendor/daterangepicker/moment.min.js"></script>
+        <script src="suppliers/vendor/daterangepicker/daterangepicker.js"></script>
+
+        <script src="suppliers/vendor/countdowntime/countdowntime.js"></script>
+
+        <script src="suppliers/vendor/animsition/js/animsition.min.js"></script>
+
+        <script src="suppliers/vendor/bootstrap/js/popper.js"></script>
+
+        <script src="suppliers/vendor/select2/select2.min.js"></script>
 
         <!-- PAGE LEVEL PLUGINS -->
         <script src="vendor/jquery.easing.js" type="text/javascript"></script>
         <script src="vendor/jquery.back-to-top.js" type="text/javascript"></script>
         <script src="vendor/jquery.smooth-scroll.js" type="text/javascript"></script>
         <script src="vendor/jquery.wow.min.js" type="text/javascript"></script>
-        <script src="vendor/jquery.parallax.min.js" type="text/javascript"></script>
         <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/jquery.masonry.pkgd.min.js" type="text/javascript"></script>
+        <script src="vendor/masonry/imagesloaded.pkgd.min.js" type="text/javascript"></script>
 
         <!-- PAGE LEVEL SCRIPTS -->
         <script src="js/layout.min.js" type="text/javascript"></script>
         <script src="js/components/wow.min.js" type="text/javascript"></script>
         <script src="js/components/swiper.min.js" type="text/javascript"></script>
+        <script src="js/components/masonry.min.js" type="text/javascript"></script>
+
+        <script src="suppliers/js/main.js"></script>
 
     </body>
     <!-- END BODY -->

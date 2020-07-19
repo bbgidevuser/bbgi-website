@@ -36,27 +36,6 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
 
-        <!--===============================================================================================-->
-        <link rel="icon" type="image/png" href="suppliers/images/icons/favicon.ico"/>
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/animate/animate.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/css-hamburgers/hamburgers.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/animsition/css/animsition.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/select2/select2.min.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/daterangepicker/daterangepicker.css">
-        <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/css/util.css">
-        <link rel="stylesheet" type="text/css" href="suppliers/css/main.css">
-        <link rel="stylesheet" type="text/css" href="supplier-search/css/main.css">
-        <!--===============================================================================================-->
     </head>
     <!-- END HEAD -->
 
@@ -93,17 +72,8 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-item-child nav-item-hover" href="membership.php">Membership</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Business</a>
-                                        <a class="dropdown-item" href="#">Individuals</a>
-                                        <a class="dropdown-item" href="#">Students</a>
-                                    </div>
-                                </li>
-
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="suppliers.php">Suppliers</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="membership.php">Membership</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>
@@ -119,7 +89,7 @@
         <!--========== PARALLAX ==========-->
         <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/20.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">Suppliers</h1>
+                <h1 class="carousel-title">Membership</h1>
                 <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
             </div>
         </div>
@@ -128,17 +98,40 @@
         <!--========== PAGE LAYOUT ==========-->
         <div class="bg-color-sky-light" data-auto-height="true">
             <div class="content-lg container">
-
+                <h2>Business Membership</h2>
+                <!-- Masonry Grid -->
+                <div class="masonry-grid">
+                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
+                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="img/800x400/03.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Supporting black business</h3>
+                                <p class="color-white margin-b-0">A great platform for the exchange of ideas and trade between black business owners</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                </div>
+                <!-- End Masonry Grid -->
             </div>
         </div>
-        <?php include('suppliers/suppliers.php'); ?>
 
         <div class="bg-color-sky-light" data-auto-height="true">
             <div class="content-lg container">
-
+                <h2>Individual Membership</h2>
             </div>
         </div>
-        <?php include('supplier-search/supplier-search.php'); ?>
+
+        <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="content-lg container">
+                <h2>Student Membership</h2>
+            </div>
+        </div>
         <!--========== END PAGE LAYOUT ==========-->
 
 
@@ -154,6 +147,7 @@
                                 <li class="footer-list-item"><a class="footer-list-link" href="index.php">Home</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="about.php">About</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="events.php">Events</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="membership.php">Membership</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="suppliers.php">Suppliers</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="tickets.php">Tickets</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
