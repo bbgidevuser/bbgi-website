@@ -6,10 +6,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
+      <style>
+          table, th, td
+          {
+              font: 17px Calibri;
+              border: solid 1px #DDD;
+              border-collapse: collapse;
+              padding: 2px 3px;
+              text-align: center;
+              margin: 10px 0;
+              width: 67%;
+          }
+          th {
+              font-weight:bold;
+          }
+      </style>
+      <script>
+          function buildTable(data) {
+              var table = document.createElement("table");
+              table.className="gridtable";
+              var thead = document.createElement("thead");
+              var tbody = document.createElement("tbody");
+              var headRow = document.createElement("tr");
+              ["Name","Surname","Phone","Company","Service","Industry"].forEach(function(el) {
+                  var th=document.createElement("th");
+                  th.appendChild(document.createTextNode(el));
+                  headRow.appendChild(th);
+              });
+              thead.appendChild(headRow);
+              table.appendChild(thead);
+              data.forEach(function(el) {
+                  var tr = document.createElement("tr");
+                  for (var o in el) {
+
+                      var td = document.createElement("td");
+
+                      td.appendChild(document.createTextNode(el[o]));
+
+                      tr.appendChild(td);
+                  }
+                  tbody.appendChild(tr);
+              });
+              table.appendChild(tbody);
+              return table;
+          }
+
+          function fetch() {
+              // GET SEARCH TERM
+              var data = new FormData();
+              data.append('search', document.getElementById("search").value);
+              data.append('service', document.getElementById("service").value);
+              data.append('industry', document.getElementById("industry").value);
+              data.append('company', document.getElementById("company").value);
+              data.append('name', document.getElementById("name").value);
+              data.append('ajax', 1);
+
+              // AJAX SEARCH REQUEST
+              var xhr = new XMLHttpRequest();
+              xhr.open('POST', "supplier-search/2-search.php", true);
+              xhr.onload = function () {
+                  if (this.status==200) {
+                      var results = JSON.parse(this.response),
+                          wrapper = document.getElementById("results");
+                      wrapper.innerHTML = "";
+                      if (results.length > 0) {
+                          for(var res of results) {
+                              var line =  buildTable(results);
+                              wrapper.appendChild(line);
+                          }
+                      } else {
+                          wrapper.innerHTML = "No results found";
+                      }
+                  } else {
+                      alert("ERROR LOADING FILE!");
+                  }
+              };
+              xhr.send(data);
+              return false;
+          }
+      </script>
   </head>
   <body>
     <div class="s009">
-      <form>
+      <form onsubmit="return fetch();">
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
@@ -26,28 +105,28 @@
             <div class="row">
               <div class="input-field">
                 <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
+                  <select id="service" data-trigger="" name="service">
                     <option placeholder="" value="">Service</option>
-                    <option>Subject b</option>
-                    <option>Subject c</option>
+                    <option value="Interior Design">Interior Design</option>
+                    <option value="Software Development">Software Development</option>
                   </select>
                 </div>
               </div>
               <div class="input-field">
                 <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="" value="">Product</option>
-                    <option>Subject b</option>
-                    <option>Subject c</option>
-                  </select>
-                </div>
-              </div>
-              <div class="input-field">
-                <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
+                  <select id="industry" data-trigger="" name="industry">
                     <option placeholder="" value="">Industry</option>
-                    <option>Subject b</option>
-                    <option>Subject c</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Subject c">Subject c</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-field">
+                <div class="input-select">
+                  <select id="company" data-trigger="" name="company">
+                    <option placeholder="" value="">Company</option>
+                    <option value="Go">Go</option>
+                    <option value="Subject c">Subject c</option>
                   </select>
                 </div>
               </div>
@@ -55,10 +134,10 @@
             <div class="row second">
               <div class="input-field">
                 <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="" value="">Sale</option>
-                    <option>Subject b</option>
-                    <option>Subject c</option>
+                  <select id="name" data-trigger=""">
+                    <option placeholder="" value="0" selected="selected">Name</option>
+                    <option value="Sazi Mtandabuzo">Sazi Mtandabuzo</option>
+                    <option value="Subject c">Subject c</option>
                   </select>
                 </div>
               </div>
@@ -67,10 +146,10 @@
                   <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">Time</option>
                     <option>Last time</option>
-                    <option>Today</option>
-                    <option>This week</option>
-                    <option>This month</option>
-                    <option>This year</option>
+                    <option value="Today">Today</option>
+                    <option value="This week">This week</option>
+                    <option value="This month">This month</option>
+                    <option value="This year">This year</option>
                   </select>
                 </div>
               </div>
@@ -78,8 +157,8 @@
                 <div class="input-select">
                   <select data-trigger="" name="choices-single-defaul">
                     <option placeholder="" value="">Type</option>
-                    <option>Subject b</option>
-                    <option>Subject c</option>
+                    <option value="Subject b">Subject b</option>
+                    <option value="Subject c">Subject c</option>
                   </select>
                 </div>
               </div>
@@ -90,14 +169,34 @@
                   <span>108 </span>results</div>
                 <div class="group-btn">
                   <button class="btn-delete" id="delete">RESET</button>
-                  <button class="btn-search">SEARCH</button>
+                  <button class="btn-search submit">SEARCH</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+          <div class="bg-color-sky-light">
+              <div class="content-lg container">
+                  <div class="row row-space-1">
+                      <form action="">
+                          <!-- [SEARCH RESULTS] -->
+                          <div class="inner-form">
+                              <div class="advanced-search">
+                                  <h3>SEARCH RESULTS</h3>
+                                  <div class="row">
+                                      <div id="results"></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+
       </form>
     </div>
+
     <script src="js/extention/choices.js"></script>
     <script>
       const customSelects = document.querySelectorAll("select");
@@ -119,5 +218,6 @@
       });
 
     </script>
+
   </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>

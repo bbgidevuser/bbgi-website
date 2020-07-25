@@ -87,9 +87,9 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PARALLAX ==========-->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/20.jpg">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/23.jpg">
             <div class="parallax-content container">
-                <h1 class="carousel-title">Membership</h1>
+                <!--<h1 class="carousel-title">Membership</h1>-->
                 <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
             </div>
         </div>
@@ -98,42 +98,195 @@
         <!--========== PAGE LAYOUT ==========-->
         <div class="bg-color-sky-light" data-auto-height="true">
             <div class="content-lg container">
-                <h2>Business Membership</h2>
+                <h2>Individual Membership</h2>
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="margin-b-30">
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.</p>
+                        </div>
+                    </div>
+                </div>
                 <!-- Masonry Grid -->
                 <div class="masonry-grid">
-                    <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-                    <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8">
+                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
                         <!-- Work -->
-                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
                             <div class="work-overlay">
-                                <img class="full-width img-responsive" src="img/800x400/03.jpg" alt="Portfolio Image">
+                                <img class="full-width img-responsive" src="img/397x400/02.jpg" alt="Portfolio Image">
                             </div>
                             <div class="work-content">
-                                <h3 class="color-white margin-b-5">Supporting black business</h3>
-                                <p class="color-white margin-b-0">A great platform for the exchange of ideas and trade between black business owners</p>
+                                <h3 class="color-white margin-b-5">Great speakers</h3>
+                                <p class="color-white margin-b-0">Get business insights from top business and career professionals</p>
                             </div>
                             <a class="content-wrapper-link" href="#"></a>
                         </div>
                         <!-- End Work -->
                     </div>
+                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="img/397x300/11.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Entertainment</h3>
+                                <p class="color-white margin-b-0">Loads of entertainment in-between networking and listening to business talks</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                    <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                        <!-- Work -->
+                        <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
+                            <div class="work-overlay">
+                                <img class="full-width img-responsive" src="img/397x300/15.jpg" alt="Portfolio Image">
+                            </div>
+                            <div class="work-content">
+                                <h3 class="color-white margin-b-5">Networking</h3>
+                                <p class="color-white margin-b-0">Network with business owners and career professionals</p>
+                            </div>
+                            <a class="content-wrapper-link" href="#"></a>
+                        </div>
+                        <!-- End Work -->
+                    </div>
+                    <!-- End Masonry Grid -->
+            </div>
+                <form action="member-signup.php" method="get">
+                    <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
+                </form>
+
+
+                <div class="content-lg container">
+                    <h2>Student Membership</h2>
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="margin-b-30">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Masonry Grid -->
+                    <div class="masonry-grid">
+                        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                            <!-- Work -->
+                            <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                                <div class="work-overlay">
+                                    <img class="full-width img-responsive" src="img/397x400/05.jpg" alt="Portfolio Image">
+                                </div>
+                                <div class="work-content">
+                                    <h3 class="color-white margin-b-5">Great speakers</h3>
+                                    <p class="color-white margin-b-0">Get business insights from top business and career professionals</p>
+                                </div>
+                                <a class="content-wrapper-link" href="#"></a>
+                            </div>
+                            <!-- End Work -->
+                        </div>
+                        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                            <!-- Work -->
+                            <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
+                                <div class="work-overlay">
+                                    <img class="full-width img-responsive" src="img/397x300/10.jpg" alt="Portfolio Image">
+                                </div>
+                                <div class="work-content">
+                                    <h3 class="color-white margin-b-5">Entertainment</h3>
+                                    <p class="color-white margin-b-0">Loads of entertainment in-between networking and listening to business talks</p>
+                                </div>
+                                <a class="content-wrapper-link" href="#"></a>
+                            </div>
+                            <!-- End Work -->
+                        </div>
+                        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                            <!-- Work -->
+                            <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
+                                <div class="work-overlay">
+                                    <img class="full-width img-responsive" src="img/397x300/14.jpg" alt="Portfolio Image">
+                                </div>
+                                <div class="work-content">
+                                    <h3 class="color-white margin-b-5">Networking</h3>
+                                    <p class="color-white margin-b-0">Network with business owners and career professionals</p>
+                                </div>
+                                <a class="content-wrapper-link" href="#"></a>
+                            </div>
+                            <!-- End Work -->
+                        </div>
+                        <!-- End Masonry Grid -->
                 </div>
-                <!-- End Masonry Grid -->
-            </div>
-        </div>
 
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="content-lg container">
-                <h2>Individual Membership</h2>
-            </div>
-        </div>
+                    <form action="member-signup.php" method="get">
+                        <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
+                    </form>
 
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="content-lg container">
-                <h2>Student Membership</h2>
+                <div class="content-lg container">
+                    <h2>Business Membership</h2>
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="margin-b-30">
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
+                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Masonry Grid -->
+                    <div class="masonry-grid">
+                        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                            <!-- Work -->
+                            <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                                <div class="work-overlay">
+                                    <img class="full-width img-responsive" src="img/397x400/04.jpg" alt="Portfolio Image">
+                                </div>
+                                <div class="work-content">
+                                    <h3 class="color-white margin-b-5">Great speakers</h3>
+                                    <p class="color-white margin-b-0">Get business insights from top business and career professionals</p>
+                                </div>
+                                <a class="content-wrapper-link" href="#"></a>
+                            </div>
+                            <!-- End Work -->
+                        </div>
+                        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                            <!-- Work -->
+                            <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".3s">
+                                <div class="work-overlay">
+                                    <img class="full-width img-responsive" src="img/397x300/16.jpg" alt="Portfolio Image">
+                                </div>
+                                <div class="work-content">
+                                    <h3 class="color-white margin-b-5">Entertainment</h3>
+                                    <p class="color-white margin-b-0">Loads of entertainment in-between networking and listening to business talks</p>
+                                </div>
+                                <a class="content-wrapper-link" href="#"></a>
+                            </div>
+                            <!-- End Work -->
+                        </div>
+                        <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
+                            <!-- Work -->
+                            <div class="work wow fadeInUp" data-wow-duration=".3" data-wow-delay=".4s">
+                                <div class="work-overlay">
+                                    <img class="full-width img-responsive" src="img/397x300/13.jpg" alt="Portfolio Image">
+                                </div>
+                                <div class="work-content">
+                                    <h3 class="color-white margin-b-5">Networking</h3>
+                                    <p class="color-white margin-b-0">Network with business owners and career professionals</p>
+                                </div>
+                                <a class="content-wrapper-link" href="#"></a>
+                            </div>
+                            <!-- End Work -->
+                        </div>
+                        <!-- End Masonry Grid -->
+                </div>
+                    <form action="member-signup.php" method="get">
+                        <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
+                    </form>
+
+            </div>
+                </div>
             </div>
         </div>
         <!--========== END PAGE LAYOUT ==========-->
-
 
         <!--========== FOOTER ==========-->
         <footer class="footer">

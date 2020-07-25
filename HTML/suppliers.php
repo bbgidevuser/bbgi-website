@@ -117,7 +117,7 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PARALLAX ==========-->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/20.jpg">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/1920x1080/24.jpg">
             <div class="parallax-content container">
                 <h1 class="carousel-title">Suppliers</h1>
                 <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
@@ -134,8 +134,8 @@
         <?php include('suppliers/suppliers.php'); ?>
 
         <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="content-lg container">
-
+            <div class="padding-t-sm container">
+                <h2 class="text-c-align">Supplier Search</h2>
             </div>
         </div>
         <?php include('supplier-search/supplier-search.php'); ?>

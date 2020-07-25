@@ -72,6 +72,8 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>

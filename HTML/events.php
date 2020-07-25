@@ -71,6 +71,8 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="events.php">Events</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>
@@ -122,7 +124,10 @@
                     <h3><a href="#"><?php echo $b['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $b['venue']; ?></span></h3>
                     <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
                     <p><?php echo $b['event_description']; ?></p>
-                    <!--<a class="link" href="#">Read More</a>-->
+                    <a class="link" href="#" target="myFrame">View More</a>
+
+                    <!--<iframe src="https://www.facebook.com/events/583714235883856/" frameborder="0" name="myFrame"></iframe>-->
+
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
@@ -397,6 +402,8 @@
                                 <li class="footer-list-item"><a class="footer-list-link" href="index.php">Home</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="about.php">About</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="events.php">Events</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="membership.php">Membership</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="suppliers.php">Suppliers</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="tickets.php">Tickets</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>

@@ -71,6 +71,15 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-item-child nav-item-hover" href="membership.php">Membership</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Business</a>
+                                        <a class="dropdown-item" href="#">Individuals</a>
+                                        <a class="dropdown-item" href="#">Students</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>
@@ -618,6 +627,8 @@
                                 <li class="footer-list-item"><a class="footer-list-link" href="index.php">Home</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="about.php">About</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="events.php">Events</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="membership.php">Membership</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="suppliers.php">Suppliers</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="tickets.php">Tickets</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
                                 <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>

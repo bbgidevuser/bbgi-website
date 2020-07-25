@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V18</title>
+	<title>Suppliers</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -14,7 +14,7 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">
 				<span class="contact100-form-title">
 					Sign up as a supplier
 				</span>
@@ -71,15 +71,21 @@
 					<span class="focus-input100"></span>
 				</div>
 
+                <div class="wrap-input100 validate-input" data-validate = "Contact number is required">
+                    <label class="label-input100" for="email">Contact Number</label>
+                    <input id="email" class="input100" type="text" name="phone" placeholder="Enter your contact number...">
+                    <span class="focus-input100"></span>
+                </div>
+
                 <div class="wrap-input100">
                     <div class="label-input100">Services / Products</div>
                     <div>
                         <select class="js-select2" name="service">
                             <option>Please chooses</option>
-                            <option>Software Development</option>
-                            <option>Interior Design</option>
-                            <option>Property Development</option>
-                            <option>Business Coaching</option>
+                            <option value="Software Development">Software Development</option>
+                            <option value="Interior Design">Interior Design</option>
+                            <option value="Property Development">Property Development</option>
+                            <option value="Business Coaching">Business Coaching</option>
                         </select>
                         <div class="dropDownSelect2"></div>
                     </div>
@@ -95,12 +101,12 @@
                 <div class="wrap-input100">
                     <div class="label-input100">Industry</div>
                     <div>
-                        <select class="js-select2" name="service">
-                            <option>Please chooses</option>
-                            <option>Information Technology</option>
-                            <option>Engineering</option>
-                            <option>Accounting</option>
-                            <option>Internal Auditing</option>
+                        <select class="js-select2" name="industry">
+                            <option >Please chooses</option>
+                            <option value="Information Technology">Information Technology</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Accounting">Accounting</option>
+                            <option value="Internal Auditing">Internal Auditing</option>
                         </select>
                         <div class="dropDownSelect2"></div>
                     </div>
@@ -110,12 +116,12 @@
                 <div class="wrap-input100">
                     <div class="label-input100">Legal Structure</div>
                     <div>
-                        <select class="js-select2" name="service">
+                        <select class="js-select2" name="legal">
                             <option>Please chooses</option>
-                            <option>Sole Proprietor</option>
-                            <option>Trust</option>
-                            <option>Private Company</option>
-                            <option>Close Corporation</option>
+                            <option value="Sole Proprietor">Sole Proprietor</option>
+                            <option value="Trust">Trust</option>
+                            <option value="Private Company">Private Company</option>
+                            <option value="Close Corporation">Close Corporation</option>
                         </select>
                         <div class="dropDownSelect2"></div>
                     </div>
@@ -127,7 +133,8 @@
                         <label class="label-input100" for="terms">Agree to terms</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="terms" class="input100" type="checkbox" name="terms" placeholder="Terms and conditions...">
+                        <!--<input id="terms" class="input100" type="checkbox" name="terms" placeholder="Terms and conditions...">-->
+                        <input type="checkbox" name="terms" value="0">
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -137,7 +144,7 @@
                         <label class="label-input100" for="bbbee">BBBEE</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="bbbee" class="input100" type="checkbox" name="bbbee" placeholder="BBBEE...">
+                        <input id="bbbee" class="input100" type="checkbox" name="bbbee" checked="checked" value="0" placeholder="BBBEE...">
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -147,7 +154,7 @@
                         <label class="label-input100" for="commission">Commission</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="commission" class="input100" type="checkbox" name="commission" placeholder="Commission...">
+                        <input id="commission" class="input100" type="checkbox" name="commission" checked="checked" value="1" placeholder="Commission...">
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -157,7 +164,7 @@
                         <label class="label-input100" for="subscription">Subscription</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="subscription" class="input100" type="checkbox" name="subscription" placeholder="Subscription...">
+                        <input id="subscription" class="input100" type="checkbox" name="subscription" checked="checked" value="1" placeholder="Subscription...">
                     </div>
                     <span class="focus-input100"></span>
                 </div>
