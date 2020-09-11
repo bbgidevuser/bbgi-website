@@ -52,8 +52,8 @@ if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) ||
    if(mysqli_connect_error()){
      die('Connect Error('. mysqli_connect_errorno().')'.mysqli_connect());
    } else {
-    $SELECT = "SELECT name From suppliers Where email = ? Limit 1";
-    $INSERT = "INSERT Into suppliers (name, surname, profession, company, email, phone, service, description, industry, legal, terms, bbbee, commission, subscription) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $SELECT = "SELECT name From members Where email = ? Limit 1";
+    $INSERT = "INSERT Into members (name, surname, profession, company, email, phone, service, description, industry, legal, terms, bbbee, commission, subscription) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     //Prepare statement
     $stmt = $conn->prepare($SELECT);
@@ -69,12 +69,12 @@ if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) ||
      $stmt = $conn->prepare($INSERT);
      $stmt->bind_param("ssssssssssssss", $name, $surname, $profession, $company, $email, $phone, $service, $description, $industry, $legal, $terms, $bbbee, $commission, $subscription );
      $stmt->execute();
-        echo "<script type='text/javascript'>alert(' New supplier inserted successfully');
-                                             window.location.href='http://bbgi.co.za/suppliers.php';</script>";
+        echo "<script type='text/javascript'>alert(' New member inserted successfully');
+                                             window.location.href='http://bbgi.co.za/members.php';</script>";
     } else {
      //echo " Supplier already registered in our database";
-       echo "<script type='text/javascript'>alert(' Supplier already registered in our database');
-                                             window.location.href='http://bbgi.co.za/suppliers.php';</script>";
+       echo "<script type='text/javascript'>alert(' Member already registered in our database');
+                                             window.location.href='http://bbgi.co.za/members.php';</script>";
     }
     $stmt->close();
     $conn->close();

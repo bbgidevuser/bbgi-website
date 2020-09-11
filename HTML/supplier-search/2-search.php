@@ -35,14 +35,14 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     }
 
     if(!empty($industry)){
-        $stmt = $pdo->prepare("SELECT * FROM `suppliers` WHERE `industry` LIKE :industry");
+        $stmt = $pdo->prepare("SELECT name, surname, phone, company, service, industry FROM `suppliers` WHERE `industry` LIKE :industry");
         $stmt->bindParam(':industry', $industry);
         $stmt->execute();
         $results = $stmt->fetchAll();
     }
 
     if(!empty($company)){
-        $stmt = $pdo->prepare("SELECT * FROM `suppliers` WHERE `company` LIKE :company");
+        $stmt = $pdo->prepare("SELECT name, surname, phone, company, service, industry FROM `suppliers` WHERE `company` LIKE :company");
         $stmt->bindParam(':company', $company);
         $stmt->execute();
         $results = $stmt->fetchAll();

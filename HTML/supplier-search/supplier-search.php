@@ -51,6 +51,45 @@
               return table;
           }
 
+          function clearTable(){
+              var table = document.getElementById("table");
+              table = "";
+              var thead = document.getElementById("thead");
+              thead = "";
+              var tbody = document.getElementById("tbody");
+              var tbody = "";
+              var headRow = document.getElementById("tr");
+              var headRow = "";
+              var tableRow = document.getElementById("tr");
+              var tableRow = "";
+              var tableDef = document.getElementById("td");
+              var tableDef = "";
+              //thead.appendChild(headRow);
+              //tableRow.appendChild(tableDef);
+              //tbody.appendChild(tableRow);
+              //table.appendChild(thead);
+              //table.appendChild(tbody);
+              return table;
+          }
+
+          function buildNoResults() {
+              clearTable();
+              var table = document.createElement("table");
+              table.className="gridtable";
+              var thead = document.createElement("thead");
+              var tbody = document.createElement("tbody");
+              var headRow = document.createElement("tr");
+              ["No Results Found"].forEach(function(el) {
+                  var th=document.createElement("th");
+                  th.appendChild(document.createTextNode(el));
+                  headRow.appendChild(th);
+              });
+              thead.appendChild(headRow);
+              table.appendChild(thead);
+              table.appendChild(tbody);
+              return table;
+          }
+
           function fetch() {
               // GET SEARCH TERM
               var data = new FormData();
@@ -66,18 +105,28 @@
               xhr.open('POST', "supplier-search/2-search.php", true);
               xhr.onload = function () {
                   if (this.status==200) {
-                      var results = JSON.parse(this.response),
-                          wrapper = document.getElementById("results");
-                      wrapper.innerHTML = "";
-                      if (results.length > 0) {
-                          for(var res of results) {
-                              var line =  buildTable(results);
+                      if(this.response) {
+                          var results = JSON.parse(this.response),
+                              wrapper = document.getElementById("results");
+                          wrapper.innerHTML = "";
+                          if (results.length > 0) {
+                              for (var res of results) {
+                                  var line = buildTable(results);
+                                  wrapper.appendChild(line);
+                              }
+                          } else {
+                              console.log('Inside no results section');
+                              var line = buildNoResults();
                               wrapper.appendChild(line);
+                              //wrapper.innerHTML = "No results found";
                           }
                       } else {
-                          wrapper.innerHTML = "No results found";
+                          console.log('Inside alternative no results section');
+                          wrapper = document.getElementById("results");
+                          var line = buildNoResults();
+                          wrapper.appendChild(line);
                       }
-                  } else {
+                      } else {
                       alert("ERROR LOADING FILE!");
                   }
               };
@@ -109,6 +158,7 @@
                     <option placeholder="" value="">Service</option>
                     <option value="Interior Design">Interior Design</option>
                     <option value="Software Development">Software Development</option>
+                      <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
@@ -121,20 +171,20 @@
                   </select>
                 </div>
               </div>
-              <div class="input-field">
-                <div class="input-select">
-                  <select id="company" data-trigger="" name="company">
-                    <option placeholder="" value="">Company</option>
-                    <option value="Go">Go</option>
-                    <option value="Subject c">Subject c</option>
-                  </select>
+                <div class="input-field">
+                    <div class="input-select">
+                        <select id="company" data-trigger="" name="company">
+                            <option placeholder="" value="">Company</option>
+                            <option value="Go">Go</option>
+                            <option value="Subject c">Subject c</option>
+                        </select>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="row second">
               <div class="input-field">
                 <div class="input-select">
-                  <select id="name" data-trigger=""">
+                  <select id="name" data-trigger="" name="name">
                     <option placeholder="" value="0" selected="selected">Name</option>
                     <option value="Sazi Mtandabuzo">Sazi Mtandabuzo</option>
                     <option value="Subject c">Subject c</option>

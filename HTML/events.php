@@ -265,6 +265,25 @@
                     <a class="link" href="https://www.facebook.com/events/714040099082985/">View More</a>
                 </div>
                 <!-- End Our Exceptional Solutions -->
+                <!--<form action="payment-processing/PayWeb3/index.php" method="GET">
+                    <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="PURCHASE TICKETS">
+                </form>-->
+
+                <form action="payment.php" method="GET">
+                    <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="PURCHASE TICKETS">
+                </form>
+
+                <form action="https://secure.paygate.co.za/payweb3/process.trans" method="POST" >
+                    <input type="hidden" name="PAY_REQUEST_ID" value="23B785AE-C96C-32AF-4879-D2C9363DB6E8">
+                    <input type="hidden" name="CHECKSUM" value="b41a77f83a275a849f23e30b4666e837">
+                </form>
+
+                <!--<form action="https://secure.paygate.co.za/payweb3/process.trans" method="POST" >
+                    <input type="hidden" name="PAY_REQUEST_ID" value="A2AB16AB-D24B-25FD-510A-B2E63686D62C">
+                    <input type="hidden" name="CHECKSUM" value="95f0248893367b8fe3a8983e398d5fc0">
+                </form>-->
+
+               <!-- --><?php /*include('payment-processing/PayWeb3/index.php'); */?>
 
             </div>
 

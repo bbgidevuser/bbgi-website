@@ -117,6 +117,21 @@
                                 <!--<li><i class="margin-r-10 color-base icon-envelope"></i> info@goldours.co.za</li>-->
                                 <li><i class="margin-r-10 color-base icon-envelope"></i> <?php echo $b['email']; ?></li>
                             </ul>
+
+                            <div class="contact100-form-social flex-c-m">
+                                <a href="#" class="contact100-form-social-item flex-c-m bg1 m-r-5">
+                                    <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="#" class="contact100-form-social-item flex-c-m bg2 m-r-5">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+
+                                <a href="#" class="contact100-form-social-item flex-c-m bg3">
+                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                     <!-- End Contact List -->

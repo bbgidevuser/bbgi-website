@@ -133,8 +133,7 @@
                         <label class="label-input100" for="terms">Agree to terms</label>
                     </div>
                     <div class="col-sm-6">
-                        <!--<input id="terms" class="input100" type="checkbox" name="terms" placeholder="Terms and conditions...">-->
-                        <input type="checkbox" name="terms" value="0">
+                        <input id="terms" class="input100" type="checkbox" name="terms" checked="checked" value="0" placeholder="Terms and conditions...">
                     </div>
                     <span class="focus-input100"></span>
                 </div>

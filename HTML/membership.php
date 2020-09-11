@@ -102,9 +102,9 @@
                 <div class="row">
                     <div class="col-sm-9">
                         <div class="margin-b-30">
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.</p>
+                            <p>Black Business Growth Initiative is a pro black organisation but does not discriminate against and welcomes members of any race or creed.
+                                The main focus of individual membership is in equipping members with strategies to navigate workplace challenges and meet their career objectives and goals.
+                                Added to individual membership are opportunities to attend networking events with like minded individuals and business owners to further enhance opportunities for individual development.</p>
                         </div>
                     </div>
                 </div>
@@ -131,8 +131,8 @@
                                 <img class="full-width img-responsive" src="img/397x300/11.jpg" alt="Portfolio Image">
                             </div>
                             <div class="work-content">
-                                <h3 class="color-white margin-b-5">Entertainment</h3>
-                                <p class="color-white margin-b-0">Loads of entertainment in-between networking and listening to business talks</p>
+                                <h3 class="color-white margin-b-5">Networking</h3>
+                                <p class="color-white margin-b-0">Network with business owners and career professionals</p>
                             </div>
                             <a class="content-wrapper-link" href="#"></a>
                         </div>
@@ -145,8 +145,8 @@
                                 <img class="full-width img-responsive" src="img/397x300/15.jpg" alt="Portfolio Image">
                             </div>
                             <div class="work-content">
-                                <h3 class="color-white margin-b-5">Networking</h3>
-                                <p class="color-white margin-b-0">Network with business owners and career professionals</p>
+                                <h3 class="color-white margin-b-5">Skills</h3>
+                                <p class="color-white margin-b-0">Access to developmental and training programmes</p>
                             </div>
                             <a class="content-wrapper-link" href="#"></a>
                         </div>
@@ -154,6 +154,21 @@
                     </div>
                     <!-- End Masonry Grid -->
             </div>
+                <div class="content-lg container">
+                    <h3>Membership Requirements</h3>
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="margin-b-30">
+                                <ul>
+                                    <li>Alignment with BBGI values</li>
+                                    <li>Minimum 2 years working experience</li>
+                                    <li>Annual membership fee of R650 ( Including VAT )</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <form action="member-signup.php" method="get">
                     <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
                 </form>
@@ -164,9 +179,12 @@
                     <div class="row">
                         <div class="col-sm-9">
                             <div class="margin-b-30">
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.</p>
+                                <p>
+                                    To qualify as a student member, an individual must be currently furthering their education at a registered institution of higher learning.
+                                    Support is provided for students who aspire to be business managers and leaders, supplying them with tools required to develop managerial skills and overcome challenges in business.
+                                    <!--Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.-->
+
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -179,8 +197,8 @@
                                     <img class="full-width img-responsive" src="img/397x400/05.jpg" alt="Portfolio Image">
                                 </div>
                                 <div class="work-content">
-                                    <h3 class="color-white margin-b-5">Great speakers</h3>
-                                    <p class="color-white margin-b-0">Get business insights from top business and career professionals</p>
+                                    <h3 class="color-white margin-b-5">Future leaders</h3>
+                                    <p class="color-white margin-b-0">Support provided for both current and aspirant student business owners achieve their goals</p>
                                 </div>
                                 <a class="content-wrapper-link" href="#"></a>
                             </div>
@@ -193,8 +211,8 @@
                                     <img class="full-width img-responsive" src="img/397x300/10.jpg" alt="Portfolio Image">
                                 </div>
                                 <div class="work-content">
-                                    <h3 class="color-white margin-b-5">Entertainment</h3>
-                                    <p class="color-white margin-b-0">Loads of entertainment in-between networking and listening to business talks</p>
+                                    <h3 class="color-white margin-b-5">Skills</h3>
+                                    <p class="color-white margin-b-0">Be equipped with the necessary tools to develop managerial skills</p>
                                 </div>
                                 <a class="content-wrapper-link" href="#"></a>
                             </div>
@@ -217,6 +235,21 @@
                         <!-- End Masonry Grid -->
                 </div>
 
+                    <div class="content-lg container">
+                        <h3>Membership Requirements</h3>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div class="margin-b-30">
+                                    <ul>
+                                        <li>Must be a registered student</li>
+                                        <li>Under the age of 36</li>
+                                        <li>Alignment with BBGI values</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <form action="member-signup.php" method="get">
                         <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
                     </form>
@@ -226,9 +259,11 @@
                     <div class="row">
                         <div class="col-sm-9">
                             <div class="margin-b-30">
-                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.
-                                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.</p>
+                                <p>
+                                    Business membership prioritises engagement and assistance to businesses and entails the evaluation of the business structure to ensure that the business follows optimal business processes.
+                                    Black Business Growth Initiative is dedicated to the development of managerial leadership and advancing socio-economic transformation.
+                                    Business members are afforded the opportunity to employ best suited candidates from our network of qualified professionals as well as engaging with corporate members on issues of leadership, transformation and empowerment.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -241,8 +276,8 @@
                                     <img class="full-width img-responsive" src="img/397x400/04.jpg" alt="Portfolio Image">
                                 </div>
                                 <div class="work-content">
-                                    <h3 class="color-white margin-b-5">Great speakers</h3>
-                                    <p class="color-white margin-b-0">Get business insights from top business and career professionals</p>
+                                    <h3 class="color-white margin-b-5">Events</h3>
+                                    <p class="color-white margin-b-0">Participate in a variety of events to create strategic and effective networks</p>
                                 </div>
                                 <a class="content-wrapper-link" href="#"></a>
                             </div>
@@ -255,8 +290,8 @@
                                     <img class="full-width img-responsive" src="img/397x300/16.jpg" alt="Portfolio Image">
                                 </div>
                                 <div class="work-content">
-                                    <h3 class="color-white margin-b-5">Entertainment</h3>
-                                    <p class="color-white margin-b-0">Loads of entertainment in-between networking and listening to business talks</p>
+                                    <h3 class="color-white margin-b-5">Company Profiling</h3>
+                                    <p class="color-white margin-b-0">An opportunity to present your company profile at one of our events</p>
                                 </div>
                                 <a class="content-wrapper-link" href="#"></a>
                             </div>
@@ -278,6 +313,22 @@
                         </div>
                         <!-- End Masonry Grid -->
                 </div>
+
+                    <div class="content-lg container">
+                        <h3>Membership Requirements</h3>
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div class="margin-b-30">
+                                    <ul>
+                                        <li>Must be a registered company or organisation</li>
+                                        <li>Annual membership fee of R90 000 ( Including VAT )</li>
+                                        <li>Alignment with BBGI values</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <form action="member-signup.php" method="get">
                         <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
                     </form>

@@ -1581,3 +1581,39 @@ text-c-align {
 padding-t-sm {
   padding-top: 60px;
 }
+
+/*==================================================================
+[ Social ]*/
+.contact100-form-social {
+  padding-top: 100px;
+}
+
+.contact100-form-social-item {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.contact100-form-social-item:hover {
+  background: #404b46;
+  color: #fff;
+}
+
+.flex-c-m {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.bg1 {background: #3b5998;}
+.bg2 {background: #1da1f2;}
+.bg3 {background: #cd201f;}
+
+.m-r-5 {margin-right: 5px;}
