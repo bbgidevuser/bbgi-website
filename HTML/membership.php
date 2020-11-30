@@ -1,4 +1,9 @@
-<?php include('config.php'); ?>
+<?php include('config.php');
+session_name('membership');
+session_start();
+session_destroy();
+include('global.php');
+?>
 <!DOCTYPE html>
 <!-- ==============================
     Project:        Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
@@ -41,7 +46,18 @@
 
     <!-- BODY -->
     <body>
-
+    <script>
+        $('#individualButton').on('click', function(e){
+            var individual = $(this).attr('individual');
+            $.ajax({
+                type: 'POST',
+                url: 'member-signup.php',
+                data: {
+                    membership: individual
+                }
+            });
+        });
+    </script>
         <!--========== HEADER ==========-->
         <header class="header navbar-fixed-top">
             <!-- Navbar -->
@@ -169,8 +185,10 @@
                     </div>
                 </div>
 
-                <form action="member-signup.php" method="get">
-                    <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
+                <form action="member-signup.php" method="post">
+                    <!--<input type="submit" onclick="<?php /*generateMembershipOptions('Individual')*/?>" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">-->
+                    <input type="hidden" Name="membership" Value="individual" >
+                    <input type="submit" id="individualButton" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
                 </form>
 
 
@@ -250,7 +268,8 @@
                         </div>
                     </div>
 
-                    <form action="member-signup.php" method="get">
+                    <form action="member-signup.php" method="post">
+                        <input type="hidden" Name="membership" Value="student" >
                         <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
                     </form>
 
@@ -329,7 +348,8 @@
                         </div>
                     </div>
 
-                    <form action="member-signup.php" method="get">
+                    <form action="member-signup.php" method="post">
+                        <input type="hidden" Name="membership" Value="business" >
                         <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="MEMBER SIGN UP">
                     </form>
 

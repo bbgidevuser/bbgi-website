@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Company is required">
-                    <label class="label-input100" for="profession">Company</label>
+                    <label class="label-input100" for="company">Company</label>
                     <input id="company" class="input100" type="text" name="company" placeholder="Enter your company...">
                     <span class="focus-input100"></span>
                 </div>
@@ -163,7 +163,8 @@
                         <label class="label-input100" for="subscription">Subscription</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="subscription" class="input100" type="checkbox" name="subscription" checked="checked" value="1" placeholder="Subscription...">
+                        <!--<input id="subscription" class="input100" type="checkbox" name="subscription" checked="checked" value="1" placeholder="Subscription...">-->
+                        <input id="subscription" class="input100" type="checkbox" name="subscription" placeholder="Subscription...">
                     </div>
                     <span class="focus-input100"></span>
                 </div>

@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $service = $_REQUEST['service'];
     $industry = $_REQUEST['industry'];
     $company = $_REQUEST['company'];
-    $name = $_REQUEST['name'];
+    //$name = $_REQUEST['name'];
 
     if(!empty($service)){
         $stmt = $pdo->prepare("SELECT name, surname, phone, company, service, industry FROM `suppliers` WHERE `service` LIKE :service");
@@ -48,12 +48,12 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $results = $stmt->fetchAll();
     }
 
-    if(!empty($name)){
+    /*if(!empty($name)){
         $stmt = $pdo->prepare("SELECT * FROM `suppliers` WHERE `name` LIKE :name");
         $stmt->bindParam(':name', $name);
         $stmt->execute();
         $results = $stmt->fetchAll();
-    }
+    }*/
 }
 if($results){
     if (isset($_POST['ajax'])) { echo json_encode($results); }

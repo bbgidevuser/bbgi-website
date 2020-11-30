@@ -22,11 +22,11 @@
 
           var tZ = options.timeZone; console.log(tZ);
           //var endYear = options.endtimeYear;
-          var endYear = 2020;
+          var endYear = 2021;
           //var endMonth = options.endtimeMonth;
-          var endMonth = 9;
+          var endMonth = 1;
           //var endDate = options.endtimeDate;
-          var endDate = 30;
+          var endDate = 29;
           //var endHours = options.endtimeHours;
           var endHours = 9;
           //var endMinutes = options.endtimeMinutes;

@@ -93,11 +93,11 @@
           function fetch() {
               // GET SEARCH TERM
               var data = new FormData();
-              data.append('search', document.getElementById("search").value);
+              /*data.append('search', document.getElementById("search").value);*/
               data.append('service', document.getElementById("service").value);
               data.append('industry', document.getElementById("industry").value);
               data.append('company', document.getElementById("company").value);
-              data.append('name', document.getElementById("name").value);
+              //data.append('name', document.getElementById("name").value);
               data.append('ajax', 1);
 
               // AJAX SEARCH REQUEST
@@ -141,12 +141,12 @@
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
-              <input id="search" type="text" placeholder="Type Keywords" />
-              <div class="icon-wrap">
-                <svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <!--<input id="search" type="text" placeholder="Type Keywords" />-->
+              <!--<div class="icon-wrap">-->
+                <!--<svg class="svg-inline--fa fa-search fa-w-16" fill="#ccc" aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                </svg>
-              </div>
+                </svg>-->
+              <!--</div>-->
             </div>
           </div>
           <div class="advance-search">
@@ -162,6 +162,16 @@
                   </select>
                 </div>
               </div>
+                <div class="input-field">
+                    <div class="input-select">
+                        <select id="company" data-trigger="" name="company">
+                            <option placeholder="" value="">Company</option>
+                            <option value="Go">Go</option>
+                            <option value="Subject c">Subject c</option>
+                            <option value="New">New</option>
+                        </select>
+                    </div>
+                </div>
               <div class="input-field">
                 <div class="input-select">
                   <select id="industry" data-trigger="" name="industry">
@@ -171,54 +181,16 @@
                   </select>
                 </div>
               </div>
-                <div class="input-field">
-                    <div class="input-select">
-                        <select id="company" data-trigger="" name="company">
-                            <option placeholder="" value="">Company</option>
-                            <option value="Go">Go</option>
-                            <option value="Subject c">Subject c</option>
-                        </select>
-                    </div>
-                </div>
+
             </div>
-            <div class="row second">
-              <div class="input-field">
-                <div class="input-select">
-                  <select id="name" data-trigger="" name="name">
-                    <option placeholder="" value="0" selected="selected">Name</option>
-                    <option value="Sazi Mtandabuzo">Sazi Mtandabuzo</option>
-                    <option value="Subject c">Subject c</option>
-                  </select>
-                </div>
-              </div>
-              <div class="input-field">
-                <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="" value="">Time</option>
-                    <option>Last time</option>
-                    <option value="Today">Today</option>
-                    <option value="This week">This week</option>
-                    <option value="This month">This month</option>
-                    <option value="This year">This year</option>
-                  </select>
-                </div>
-              </div>
-              <div class="input-field">
-                <div class="input-select">
-                  <select data-trigger="" name="choices-single-defaul">
-                    <option placeholder="" value="">Type</option>
-                    <option value="Subject b">Subject b</option>
-                    <option value="Subject c">Subject c</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+
             <div class="row third">
               <div class="input-field">
                 <div class="result-count">
                   <span>108 </span>results</div>
                 <div class="group-btn">
-                  <button class="btn-delete" id="delete">RESET</button>
+                  <!--<button class="btn-delete" id="delete">RESET</button>-->
+                    <button class="btn-delete" type="reset" id="delete">RESET</button>
                   <button class="btn-search submit">SEARCH</button>
                 </div>
               </div>

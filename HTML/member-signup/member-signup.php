@@ -1,4 +1,13 @@
-<?php?>
+<?php
+session_start();
+echo 'Welcome to member-signup<br />';
+echo 'Individual<br />';
+echo $_SESSION['membership']; // Individual
+echo '<pre>';
+var_dump($_SESSION);
+echo '</pre>';
+echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; // Individual
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +23,7 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
+            <form id="individualPaymentForm" action="payment.php" method="get"></form>
 			<form class="contact100-form validate-form" action="insert-members.php" method="POST">
 				<span class="contact100-form-title">
 					Sign up as a member
@@ -81,7 +91,7 @@
                     <div class="label-input100">Services / Products</div>
                     <div>
                         <select class="js-select2" name="service">
-                            <option>Please chooses</option>
+                            <option>Please choose</option>
                             <option value="Software Development">Software Development</option>
                             <option value="Interior Design">Interior Design</option>
                             <option value="Property Development">Property Development</option>
@@ -102,7 +112,7 @@
                     <div class="label-input100">Industry</div>
                     <div>
                         <select class="js-select2" name="industry">
-                            <option>Please chooses</option>
+                            <option>Please choose</option>
                             <option value="Information Technology">Information Technology</option>
                             <option value="Engineering">Engineering</option>
                             <option value="Accounting">Accounting</option>
@@ -117,7 +127,7 @@
                     <div class="label-input100">Legal Structure</div>
                     <div>
                         <select class="js-select2" name="legal">
-                            <option>Please chooses</option>
+                            <option>Please choose</option>
                             <option value="Sole Proprietor">Sole Proprietor</option>
                             <option value="Trust">Trust</option>
                             <option value="Private Company">Private Company</option>
@@ -171,6 +181,13 @@
                 <div class="wrap-checkbox100 validate-input" data-validate = "Rules">
                     <a href="">View rules & constitution</a>
                     <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                        <input type="hidden" Name="membership" Value="$_SESSION['membership']" >
+                        <button form="individualPaymentForm" class="contact100-form-btn">
+                            Member Payment
+                        </button>
                 </div>
 
 				<div class="container-contact100-form-btn">

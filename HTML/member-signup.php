@@ -1,4 +1,8 @@
-<?php include('config.php'); ?>
+<?php include('config.php');
+session_start();
+$_SESSION['membership'] = $_POST['membership'];
+echo $_SESSION['membership']; // Individual
+?>
 <!DOCTYPE html>
 <!-- ==============================
     Project:        Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4

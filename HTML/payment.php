@@ -1,4 +1,7 @@
-<?php ?>
+<?php
+session_start();
+echo $_SESSION['membership']; // individual
+?>
 <!DOCTYPE html>
 <!-- ==============================
     Project:        Metronic "Asentus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
