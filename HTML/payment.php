@@ -1,6 +1,6 @@
 <?php
 session_start();
-echo $_SESSION['membership']; // individual
+#echo $_SESSION['membership']; // individual
 ?>
 <!DOCTYPE html>
 <!-- ==============================

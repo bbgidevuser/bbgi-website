@@ -1,12 +1,12 @@
 <?php
 session_start();
-echo 'Welcome to member-signup<br />';
-echo 'Individual<br />';
-echo $_SESSION['membership']; // Individual
-echo '<pre>';
-var_dump($_SESSION);
-echo '</pre>';
-echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; // Individual
+#echo 'Welcome to member-signup<br />';
+#echo 'Individual<br />';
+#echo $_SESSION['membership']; // Individual
+#echo '<pre>';
+#var_dump($_SESSION);
+#echo '</pre>';
+#echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>'; // Individual
 ?>
 <!DOCTYPE html>
 <html lang="en">

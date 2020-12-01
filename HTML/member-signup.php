@@ -1,7 +1,7 @@
 <?php include('config.php');
 session_start();
 $_SESSION['membership'] = $_POST['membership'];
-echo $_SESSION['membership']; // Individual
+#echo $_SESSION['membership']; // Individual
 ?>
 <!DOCTYPE html>
 <!-- ==============================
