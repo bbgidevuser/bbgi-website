@@ -81,7 +81,7 @@
                     <div class="label-input100">Services / Products</div>
                     <div>
                         <select class="js-select2" name="service">
-                            <option>Please chooses</option>
+                            <option>Please choose</option>
                             <option value="Software Development">Software Development</option>
                             <option value="Interior Design">Interior Design</option>
                             <option value="Property Development">Property Development</option>
@@ -102,7 +102,7 @@
                     <div class="label-input100">Industry</div>
                     <div>
                         <select class="js-select2" name="industry">
-                            <option >Please chooses</option>
+                            <option >Please choose</option>
                             <option value="Information Technology">Information Technology</option>
                             <option value="Engineering">Engineering</option>
                             <option value="Accounting">Accounting</option>
@@ -117,7 +117,7 @@
                     <div class="label-input100">Legal Structure</div>
                     <div>
                         <select class="js-select2" name="legal">
-                            <option>Please chooses</option>
+                            <option>Please choose</option>
                             <option value="Sole Proprietor">Sole Proprietor</option>
                             <option value="Trust">Trust</option>
                             <option value="Private Company">Private Company</option>
