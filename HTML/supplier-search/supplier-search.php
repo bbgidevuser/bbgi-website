@@ -93,7 +93,7 @@
           function fetch() {
               // GET SEARCH TERM
               var data = new FormData();
-              /*data.append('search', document.getElementById("search").value);*/
+              data.append('search', document.getElementById("search").value);
               data.append('service', document.getElementById("service").value);
               data.append('industry', document.getElementById("industry").value);
               data.append('company', document.getElementById("company").value);
@@ -137,7 +137,7 @@
   </head>
   <body>
     <div class="s009">
-      <form onsubmit="return fetch();">
+      <form action="phpSearch.php" method="post">
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
