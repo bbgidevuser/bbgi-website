@@ -139,10 +139,7 @@
   </head>
   <body>
     <div class="s009">
-      <!--<form action="phpSearch.php" method="post">-->
-      <!--<form onsubmit="return fetchSuppliers(this.value);">-->
       <form onsubmit="return fetch();">
-      <!--<form onsubmit="return fetchSuppliers();">-->
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
@@ -194,7 +191,6 @@
                 <div class="result-count">
                   <span>108 </span>results</div>
                 <div class="group-btn">
-                    <!--<button class="btn-delete" onclick="document.getElementById('results').value = ''" type="reset" id="delete">-->
                     <button class="btn-delete" onclick="clearTable()" type="reset" id="delete">
                     RESET</button>
                   <button class="btn-search submit">SEARCH</button>
