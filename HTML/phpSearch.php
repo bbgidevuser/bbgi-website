@@ -1,4 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+th {text-align: left;}
+</style>
+</head>
+<body>
+
 <?php
+//$q = intval($_GET['q']);
+$q = $_GET['q'];
+$serverName = "localhost";
+$dbUsername = "bbgicgch_admin";
+$dbPassword = "Ch4ng31sg00d";
+$dbName = "bbgicgch_bbgi";
 
 $service = $_POST['service'];
 
@@ -6,21 +31,19 @@ $company = $_POST['company'];
 
 $industry = $_POST['industry'];
 
-$servername = "localhost";
-$dbUsername = "bbgicgch_admin";
-$dbPassword = "Ch4ng31sg00d";
-$dbname = "bbgicgch_bbgi";
+$con = mysqli_connect($serverName,$dbUsername,$dbPassword,$dbName);
+if (!$con) {
+  die('Could not connect: ' . mysqli_error($con));
+}
 
-    //create connection
-    //$conn = mysqli_connect($servername, $dbUsername, $dbPassword, $dbname);
+mysqli_select_db($con,$dbName);
+if($_SERVER['REQUEST_METHOD'] == "POST"){
 
-    $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
+$service = $_POST['service'];
+$company = $_POST['company'];
+$industry = $_POST['industry'];
 
-    if($conn->connect_error){
-        die("Connection failed ". $conn->connect_error);
-    }
-
-    if(!empty($service) || !empty($company) || !empty($industry)){
+if(!empty($service) || !empty($company) || !empty($industry)){
 
     if(!empty($service)){
       $sql = "select * from suppliers where service like '%$service%'";
@@ -34,31 +57,24 @@ $dbname = "bbgicgch_bbgi";
        $sql = "select * from suppliers where industry like '%$industry%'";
     }
 
-    $result = $conn->query($sql);
+//$sql="SELECT * FROM user WHERE id = '".$q."'";
+$result = mysqli_query($con,$sql);
 
-    if(mysqli_num_rows($result) > 0){
-         while ($row = mysqli_fetch_array($result))
-              {
-                $name = $row['name'];
-                $surname = $row['surname'];
-                $profession = $row['profession'];
-                $company = $row['company'];
-                $service = $row['service'];
-                $industry = $row['industry'];
-         }
-    }
-
-    if($result->num_rows > 0){
-        while($row = $result->fetch_assoc()){
-            echo $row["name"]." ".$row["surname"]." ".$row["profession"]."<br>";
-            //echo "Returned from fetch "<br>";
-        }
-    } else {
-        echo "0 records";
-    }
-
-    }
-
-    $conn->close();
-
+echo "<table>
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+</tr>";
+while($row = mysqli_fetch_array($result)) {
+  echo "<tr>";
+  echo "<td>" . $row['name'] . "</td>";
+  echo "<td>" . $row['surname'] . "</td>";
+  echo "</tr>";
+}
+echo "</table>";
+mysqli_close($con);
 ?>
+</body>
+</html>
+}
+}

@@ -133,11 +133,33 @@
               xhr.send(data);
               return false;
           }
+
+         //function fetchSuppliers(str) {
+         function fetchSuppliers() {
+           //if (str == "") {
+             //document.getElementById("results").innerHTML = "";
+             //return;
+           //} else {
+             var xmlhttp = new XMLHttpRequest();
+             xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+                 document.getElementById("results").innerHTML = this.responseText;
+               }
+             };
+             //xmlhttp.open("GET","phpSearch.php?q="+str,true);
+             //xmlhttp.open("GET","phpSearch.php?q="+str,true);
+             xmlhttp.open("POST","phpSearch.php,true);
+             xmlhttp.send();
+           //}
+         }
+
       </script>
   </head>
   <body>
     <div class="s009">
-      <form action="phpSearch.php" method="post">
+      <!--<form action="phpSearch.php" method="post">-->
+      <!--<form onsubmit="return fetchSuppliers(this.value);">-->
+      <form onsubmit="return fetchSuppliers();">
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
