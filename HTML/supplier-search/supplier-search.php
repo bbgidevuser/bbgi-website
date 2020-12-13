@@ -52,24 +52,7 @@
           }
 
           function clearTable(){
-              var table = document.getElementById("table");
-              table = "";
-              var thead = document.getElementById("thead");
-              thead = "";
-              var tbody = document.getElementById("tbody");
-              var tbody = "";
-              var headRow = document.getElementById("tr");
-              var headRow = "";
-              var tableRow = document.getElementById("tr");
-              var tableRow = "";
-              var tableDef = document.getElementById("td");
-              var tableDef = "";
-              //thead.appendChild(headRow);
-              //tableRow.appendChild(tableDef);
-              //tbody.appendChild(tableRow);
-              //table.appendChild(thead);
-              //table.appendChild(tbody);
-              return table;
+              $("#results tr").detach();
           }
 
           function buildNoResults() {
@@ -96,13 +79,12 @@
               data.append('search', document.getElementById("search").value);
               data.append('service', document.getElementById("service").value);
               data.append('industry', document.getElementById("industry").value);
-              data.append('company', document.getElementById("company").value);
-              //data.append('name', document.getElementById("name").value);
+              data.append('com', document.getElementById("com").value);
               data.append('ajax', 1);
 
               // AJAX SEARCH REQUEST
               var xhr = new XMLHttpRequest();
-              xhr.open('POST', "supplier-search/2-search.php", true);
+              xhr.open('POST', "phpSearch.php", true);
               xhr.onload = function () {
                   if (this.status==200) {
                       if(this.response) {
@@ -134,23 +116,23 @@
               return false;
           }
 
-         //function fetchSuppliers(str) {
-         function fetchSuppliers() {
-           //if (str == "") {
-             //document.getElementById("results").innerHTML = "";
-             //return;
-           //} else {
+         function fetchSuppliers(str) {
+         //function fetchSuppliers() {
+           if (str == "") {
+             document.getElementById("results").innerHTML = "";
+             return;
+           } else {
              var xmlhttp = new XMLHttpRequest();
              xmlhttp.onreadystatechange = function() {
                if (this.readyState == 4 && this.status == 200) {
                  document.getElementById("results").innerHTML = this.responseText;
                }
              };
+             xmlhttp.open("GET","phpSearch.php?service="+str,true);
              //xmlhttp.open("GET","phpSearch.php?q="+str,true);
-             //xmlhttp.open("GET","phpSearch.php?q="+str,true);
-             xmlhttp.open("POST","phpSearch.php,true);
+             //xmlhttp.open("POST","phpSearch.php,true);
              xmlhttp.send();
-           //}
+           }
          }
 
       </script>
@@ -159,7 +141,8 @@
     <div class="s009">
       <!--<form action="phpSearch.php" method="post">-->
       <!--<form onsubmit="return fetchSuppliers(this.value);">-->
-      <form onsubmit="return fetchSuppliers();">
+      <form onsubmit="return fetch();">
+      <!--<form onsubmit="return fetchSuppliers();">-->
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
@@ -186,7 +169,7 @@
               </div>
                 <div class="input-field">
                     <div class="input-select">
-                        <select id="company" data-trigger="" name="company">
+                        <select id="com" data-trigger="" name="com">
                             <option placeholder="" value="">Company</option>
                             <option value="Go">Go</option>
                             <option value="Subject c">Subject c</option>
@@ -211,8 +194,9 @@
                 <div class="result-count">
                   <span>108 </span>results</div>
                 <div class="group-btn">
-                  <!--<button class="btn-delete" id="delete">RESET</button>-->
-                    <button class="btn-delete" type="reset" id="delete">RESET</button>
+                    <!--<button class="btn-delete" onclick="document.getElementById('results').value = ''" type="reset" id="delete">-->
+                    <button class="btn-delete" onclick="clearTable()" type="reset" id="delete">
+                    RESET</button>
                   <button class="btn-search submit">SEARCH</button>
                 </div>
               </div>
