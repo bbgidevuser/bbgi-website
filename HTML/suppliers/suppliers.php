@@ -11,7 +11,7 @@
 </head>
 <body>
 
-
+ <div id="supplier-signup">
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">
@@ -199,6 +199,20 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+<div id="add-service">
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <!--<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">-->
+            <form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">
+                <span class="contact100-form-title">
+                			Add Service Type
+                </span>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 

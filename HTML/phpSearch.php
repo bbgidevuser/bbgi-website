@@ -37,9 +37,13 @@ $search = $_POST['search'];
              service like '%$search%' or company like '%$search%' or industry like '%$search%'";
     }
 
-$results = mysqli_query($con,$sql);
-
+    if(!empty($sql)){
+        $results = mysqli_query($con,$sql);
+    } else {
+        $results = [];
+    }
 }
+
 
 if($results){
     if (isset($_POST['ajax'])) {

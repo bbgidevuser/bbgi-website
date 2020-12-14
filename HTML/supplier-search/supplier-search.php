@@ -1,4 +1,4 @@
-<?php?>
+<?php ?>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -22,6 +22,11 @@
           }
       </style>
       <script>
+
+          window.onload = function(){
+            document.getElementById("no-results").style.display='none';
+          };
+
           function buildTable(data) {
               var table = document.createElement("table");
               table.className="gridtable";
@@ -53,6 +58,8 @@
 
           function clearTable(){
               $("#results tr").detach();
+              $("#no-results tr").detach();
+              document.getElementById("no-results").style.display = "none";
           }
 
           function buildNoResults() {
@@ -100,13 +107,15 @@
                               console.log('Inside no results section');
                               var line = buildNoResults();
                               wrapper.appendChild(line);
+                              document.getElementById("no-results").style.display = "block";
                               //wrapper.innerHTML = "No results found";
                           }
                       } else {
                           console.log('Inside alternative no results section');
-                          wrapper = document.getElementById("results");
+                          wrapper = document.getElementById("no-results");
                           var line = buildNoResults();
                           wrapper.appendChild(line);
+                          document.getElementById("no-results").style.display = "block";
                       }
                       } else {
                       alert("ERROR LOADING FILE!");
@@ -115,25 +124,6 @@
               xhr.send(data);
               return false;
           }
-
-         function fetchSuppliers(str) {
-         //function fetchSuppliers() {
-           if (str == "") {
-             document.getElementById("results").innerHTML = "";
-             return;
-           } else {
-             var xmlhttp = new XMLHttpRequest();
-             xmlhttp.onreadystatechange = function() {
-               if (this.readyState == 4 && this.status == 200) {
-                 document.getElementById("results").innerHTML = this.responseText;
-               }
-             };
-             xmlhttp.open("GET","phpSearch.php?service="+str,true);
-             //xmlhttp.open("GET","phpSearch.php?q="+str,true);
-             //xmlhttp.open("POST","phpSearch.php,true);
-             xmlhttp.send();
-           }
-         }
 
       </script>
   </head>
@@ -210,6 +200,9 @@
                                   <h3>SEARCH RESULTS</h3>
                                   <div class="row">
                                       <div id="results"></div>
+                                  </div>
+                                  <div class="row">
+                                      <div id="no-results"></div>
                                   </div>
                               </div>
                           </div>
