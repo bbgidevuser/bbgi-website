@@ -57,6 +57,10 @@
         <link rel="stylesheet" type="text/css" href="suppliers/css/main.css">
         <link rel="stylesheet" type="text/css" href="supplier-search/css/main.css">
         <!--===============================================================================================-->
+        <!--<script>-->
+            <!--var noresults=localStorage.getItem("no-results");-->
+            <!--document.getElementById("no-results").src = (noresults);-->
+        <!--</script>-->
     </head>
     <!-- END HEAD -->
 
@@ -131,7 +135,20 @@
 
             </div>
         </div>
+        <!--=======================================================-->
+        <!-- Conditional display of suppliers and add service type -->
+        <!--=======================================================-->
+
+        <!--=======================================================-->
+        <!--         Display of suppliers to go in here            -->
         <?php include('suppliers/suppliers.php'); ?>
+        <!--=======================================================-->
+
+        <!--=======================================================-->
+        <!--         Display of service type to go in here         -->
+        <?php include('add-service/add-service.php'); ?>
+        <!--=======================================================-->
+
 
         <div class="bg-color-sky-light" data-auto-height="true">
             <div class="padding-t-sm container">

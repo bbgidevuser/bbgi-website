@@ -1,24 +1,31 @@
-<?php?>
+<?php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Suppliers</title>
+	<title>New Service</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="add-service/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
 </head>
+<!--========== PARALLAX ==========-->
+    <div class="parallax-window" data-parallax="scroll" data-image-src="add-service/images/1920x1080/24.jpg">
+         <div class="parallax-content container">
+                <h1 class="carousel-title">Add Service</h1>
+                <!--<p>Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>-->
+         </div>
+     </div>
+<!--========== PARALLAX ==========-->
 <body>
 
- <div id="supplier-signup">
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">
-				<span class="contact100-form-title">
-					Sign up as a supplier
-				</span>
-
+			<form class="contact100-form validate-form" action="email-add-service/send-email.php" method="POST">
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<label class="label-input100" for="name">Name</label>
@@ -79,16 +86,7 @@
 
                 <div class="wrap-input100">
                     <div class="label-input100">Services / Products</div>
-                    <div>
-                        <select class="js-select2" name="service">
-                            <option>Please choose</option>
-                            <option value="Software Development">Software Development</option>
-                            <option value="Interior Design">Interior Design</option>
-                            <option value="Property Development">Property Development</option>
-                            <option value="Business Coaching">Business Coaching</option>
-                        </select>
-                        <div class="dropDownSelect2"></div>
-                    </div>
+                    <input id="service-product" class="input100" type="text" name="service-product" placeholder="Enter service or product...">
                     <span class="focus-input100"></span>
                 </div>
 
@@ -100,31 +98,13 @@
 
                 <div class="wrap-input100">
                     <div class="label-input100">Industry</div>
-                    <div>
-                        <select class="js-select2" name="industry">
-                            <option >Please choose</option>
-                            <option value="Information Technology">Information Technology</option>
-                            <option value="Engineering">Engineering</option>
-                            <option value="Accounting">Accounting</option>
-                            <option value="Internal Auditing">Internal Auditing</option>
-                        </select>
-                        <div class="dropDownSelect2"></div>
-                    </div>
+                    <input id="industry" class="input100" type="text" name="industry" placeholder="Enter industry...">
                     <span class="focus-input100"></span>
                 </div>
 
                 <div class="wrap-input100">
                     <div class="label-input100">Legal Structure</div>
-                    <div>
-                        <select class="js-select2" name="legal">
-                            <option>Please choose</option>
-                            <option value="Sole Proprietor">Sole Proprietor</option>
-                            <option value="Trust">Trust</option>
-                            <option value="Private Company">Private Company</option>
-                            <option value="Close Corporation">Close Corporation</option>
-                        </select>
-                        <div class="dropDownSelect2"></div>
-                    </div>
+                    <input id="legal" class="input100" type="text" name="legal" placeholder="Enter legal structure...">
                     <span class="focus-input100"></span>
                 </div>
 
@@ -178,6 +158,9 @@
 					<button class="contact100-form-btn">
 						Submit
 					</button>
+					<button class="contact100-form-btn">
+                    	Cancel
+                    </button>
 				</div>
 
 				<div class="contact100-form-social flex-c-m">
@@ -195,11 +178,11 @@
 				</div>
 			</form>
 
-			<div class="contact100-more flex-col-c-m" style="background-image: url('img/bg-01.jpg');">
+			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
 			</div>
 		</div>
 	</div>
-</div>
+
 
 <!--===============================================================================================-->
 	<!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->

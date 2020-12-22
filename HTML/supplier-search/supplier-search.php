@@ -203,6 +203,7 @@
                                   </div>
                                   <div class="row">
                                       <div id="no-results"></div>
+                                      <button id="no-results" onclick="popup('add-service/add-service.php')">Add Service</button>
                                   </div>
                               </div>
                           </div>
@@ -234,6 +235,12 @@
         }
       });
 
+    </script>
+    <script>
+        function popup (url) {
+            win = window.open(url, "window1", "width=600,height=400,status=yes,scrollbars=yes,resizable=yes");
+            win.focus();
+        }
     </script>
 
   </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
