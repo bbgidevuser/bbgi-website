@@ -25,7 +25,7 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="email-add-service/send-email.php" method="POST">
+			<form class="contact100-form validate-form" action="/email-add-service/send-email.php" method="POST">
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<label class="label-input100" for="name">Name</label>

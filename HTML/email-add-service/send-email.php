@@ -8,10 +8,10 @@ if(empty($_POST['name'])  ||
     empty($_POST['profession']) ||
     empty($_POST['company']) ||
     empty($_POST['email']) ||
-    empty($_POST['phone'])) ||
-    empty($_POST['service-product'])) ||
-    empty($_POST['description'])) ||
-    empty($_POST['industry'])) ||
+    empty($_POST['phone']) ||
+    empty($_POST['service_product']) ||
+    empty($_POST['description']) ||
+    empty($_POST['industry']) ||
     empty($_POST['legal']))
 
 {
@@ -26,7 +26,7 @@ $profession = $_POST['profession'];
 $company = $_POST['company'];
 $email_address = $_POST['email'];
 $phone = $_POST['phone'];
-$service-product = $_POST['service-product'];
+$service_product = $_POST['service_product'];
 $description = $_POST['description'];
 $industry = $_POST['industry'];
 $legal = $_POST['legal'];
@@ -60,10 +60,10 @@ if( empty($errors))
 
     $email_body = "You have received a new message for adding a service on bbgi.co.za. ".
 
-        " Here are the client details:\n Name: $name \n Surname: $surname \n Profession: $profession \n".
+        " Here are the client details:\n Name: $name \n Surname: $surname \n Profession: $profession \n ".
 
-        "Company: $company\n Email: $email_address\n Phone: $phone\n New Service or Product: $service-product\n Description: \n $description"
-        "Industry: $industry\n Legal: $legal\n";
+        "Company: $company \n Email: $email_address \n Phone: $phone \n New Service or Product: $service_product \n Description: $description \n ".
+        "Industry: $industry \n Legal: $legal ";
 
     $headers = "From: $myemail\n";
 
@@ -72,11 +72,11 @@ if( empty($errors))
     if(mysqli_connect_error()){
         die('Connect Error('. mysqli_connect_errorno().')'.mysqli_connect());
     } else {
-        //$sql="INSERT INTO add_service (name, surname, profession, company, email, phone, service-product, description, industry, legal) VALUES ('".$name."','".$surname."', '".$profession."', '".$company."', '".$email_address."', '".$phone."',
-        '".$service-product."', '".$description."', '".$industry."', '".$legal."')";
-        $sql="INSERT INTO add_service (name, surname, profession, company, email, phone, service-product, description, industry, legal) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        //$sql="INSERT INTO add_service (name, surname, profession, company, email, phone, service_product, description, industry, legal) VALUES ('".$name."','".$surname."', '".$profession."', '".$company."', '".$email_address."', '".$phone."',
+        //'".$service_product."', '".$description."', '".$industry."', '".$legal."')";
+        $sql="INSERT INTO add_service (name, surname, profession, company, email, phone, service_product, description, industry, legal) VALUES (?,?,?,?,?,?,?,?,?,?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssssssssss", $name, $surname, $profession, $company, $email_address, $phone, $service-product, $description, $industry, $legal);
+        $stmt->bind_param("ssssssssss", $name, $surname, $profession, $company, $email_address, $phone, $service_product, $description, $industry, $legal);
         $stmt->execute();
     }
   /*  if(!$result = $conn->query($sql)){
