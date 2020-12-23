@@ -100,6 +100,7 @@
                           wrapper.innerHTML = "";
                           if (results.length > 0) {
                               for (var res of results) {
+                                  document.getElementById("no-results").style.display = "none";
                                   var line = buildTable(results);
                                   wrapper.appendChild(line);
                               }

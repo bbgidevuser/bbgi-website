@@ -86,7 +86,7 @@
 
                 <div class="wrap-input100">
                     <div class="label-input100">Services / Products</div>
-                    <input id="service_product" class="input100" type="text" name="service_product" placeholder="Enter service or product...">
+                    <input id="service" class="input100" type="text" name="service" placeholder="Enter service or product...">
                     <span class="focus-input100"></span>
                 </div>
 
