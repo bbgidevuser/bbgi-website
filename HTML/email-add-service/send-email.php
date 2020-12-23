@@ -72,9 +72,9 @@ if( empty($errors))
     if(mysqli_connect_error()){
         die('Connect Error('. mysqli_connect_errorno().')'.mysqli_connect());
     } else {
-        //$sql="INSERT INTO add_service (name, surname, profession, company, email, phone, service_product, description, industry, legal) VALUES ('".$name."','".$surname."', '".$profession."', '".$company."', '".$email_address."', '".$phone."',
+        //$sql="INSERT INTO add_service (name, surname, profession, company, email_address, phone, service_product, description, industry, legal) VALUES ('".$name."','".$surname."', '".$profession."', '".$company."', '".$email_address."', '".$phone."',
         //'".$service_product."', '".$description."', '".$industry."', '".$legal."')";
-        $sql="INSERT INTO add_service (name, surname, profession, company, email, phone, service_product, description, industry, legal) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        $sql="INSERT INTO add_service (name, surname, profession, company, email_address, phone, service_product, description, industry, legal) VALUES (?,?,?,?,?,?,?,?,?,?)";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ssssssssss", $name, $surname, $profession, $company, $email_address, $phone, $service_product, $description, $industry, $legal);
         $stmt->execute();

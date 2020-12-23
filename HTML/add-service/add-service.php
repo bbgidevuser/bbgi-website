@@ -74,7 +74,7 @@
 
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<label class="label-input100" for="email">Email Address</label>
-					<input id="email" class="input100" type="text" name="email" placeholder="Enter your email...">
+					<input id="email" class="input100" type="email" name="email" placeholder="Enter your email...">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -86,7 +86,7 @@
 
                 <div class="wrap-input100">
                     <div class="label-input100">Services / Products</div>
-                    <input id="service-product" class="input100" type="text" name="service-product" placeholder="Enter service or product...">
+                    <input id="service_product" class="input100" type="text" name="service_product" placeholder="Enter service or product...">
                     <span class="focus-input100"></span>
                 </div>
 
