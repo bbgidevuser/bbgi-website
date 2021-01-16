@@ -3,13 +3,14 @@ header("Content-Security-Policy: script-src 'self' 'unsafe-inline' send-email.ph
 require_once("../config.php");
 $errors = '';
 $myemail = 'sazi.mtandabuzo@goldours.co.za';//<-----Put Your email address here.
+//$myemail = 's_mtandabuzo@yahoo.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  ||
     empty($_POST['surname']) ||
     empty($_POST['profession']) ||
     empty($_POST['company']) ||
     empty($_POST['email']) ||
     empty($_POST['phone']) ||
-    empty($_POST['service_product']) ||
+    empty($_POST['service']) ||
     empty($_POST['description']) ||
     empty($_POST['industry']) ||
     empty($_POST['legal']))
@@ -24,16 +25,16 @@ $surname = $_POST['surname'];
 
 $profession = $_POST['profession'];
 $company = $_POST['company'];
-$email_address = $_POST['email'];
+$email = $_POST['email'];
 $phone = $_POST['phone'];
-$service_product = $_POST['service_product'];
+$service = $_POST['service'];
 $description = $_POST['description'];
 $industry = $_POST['industry'];
 $legal = $_POST['legal'];
 
 if (!preg_match(
     "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-    $email_address))
+    $email))
 {
     $errors .= "\n Error: Invalid email address";
 }
@@ -62,21 +63,22 @@ if( empty($errors))
 
         " Here are the client details:\n Name: $name \n Surname: $surname \n Profession: $profession \n ".
 
-        "Company: $company \n Email: $email_address \n Phone: $phone \n New Service or Product: $service_product \n Description: $description \n ".
+        "Company: $company \n Email: $email \n Phone: $phone \n New Service or Product: $service \n Description: $description \n ".
         "Industry: $industry \n Legal: $legal ";
 
     $headers = "From: $myemail\n";
 
-    $headers .= "Reply-To: $email_address";
+    $headers .= "Reply-To: $email";
 
     if(mysqli_connect_error()){
         die('Connect Error('. mysqli_connect_errorno().')'.mysqli_connect());
     } else {
-        //$sql="INSERT INTO add_service (name, surname, profession, company, email_address, phone, service_product, description, industry, legal) VALUES ('".$name."','".$surname."', '".$profession."', '".$company."', '".$email_address."', '".$phone."',
-        //'".$service_product."', '".$description."', '".$industry."', '".$legal."')";
-        $sql="INSERT INTO add_service (name, surname, profession, company, email_address, phone, service_product, description, industry, legal) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        //$sql="INSERT INTO suppliers (name, surname, profession, company, email, phone, service_product, description, industry, legal) VALUES ('".$name."','".$surname."', '".$profession."', '".$company."', '".$email."', '".$phone."',
+        //'".$service."', '".$description."', '".$industry."', '".$legal."')";
+        //$sql="INSERT INTO add_service (name, surname, profession, company, email, phone, service_product, description, industry, legal) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        $sql="INSERT INTO suppliers (name, surname, profession, company, email, phone, service, description, industry, legal) VALUES (?,?,?,?,?,?,?,?,?,?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssssssssss", $name, $surname, $profession, $company, $email_address, $phone, $service_product, $description, $industry, $legal);
+        $stmt->bind_param("ssssssssss", $name, $surname, $profession, $company, $email, $phone, $service, $description, $industry, $legal);
         $stmt->execute();
     }
   /*  if(!$result = $conn->query($sql)){

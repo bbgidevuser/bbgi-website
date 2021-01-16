@@ -203,8 +203,9 @@
                                       <div id="results"></div>
                                   </div>
                                   <div class="row">
-                                      <div id="no-results"></div>
+                                      <div id="no-results">
                                       <button id="no-results" onclick="popup('add-service/add-service.php')">Add Service</button>
+                                      </div>
                                   </div>
                               </div>
                           </div>
