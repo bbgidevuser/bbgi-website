@@ -89,8 +89,10 @@ if( empty($errors))
 
 
 
-        echo "<script type='text/javascript'>alert(' New service or product details sent successfully');
-                                          window.location.href='http://bbgi.co.za/suppliers.php';</script>";
+        //echo "<script type='text/javascript'>alert(' New service or product details sent successfully');
+        window.close();
+        window.opener.location.reload(true);
+
     $stmt->close();
     $conn->close();
     //}

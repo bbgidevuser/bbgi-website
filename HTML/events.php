@@ -124,7 +124,7 @@
                     <h3><a href="#"><?php echo $b['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $b['venue']; ?></span></h3>
                     <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
                     <p><?php echo $b['event_description']; ?></p>
-                    <a class="link" href="#" target="myFrame">View More</a>
+                    <!--<a class="link" href="#" target="myFrame">View More</a>-->
 
                     <!--<iframe src="https://www.facebook.com/events/583714235883856/" frameborder="0" name="myFrame"></iframe>-->
 
@@ -243,7 +243,7 @@
                     <h4><a href="#"><?php echo $l['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $l['venue']; ?></span></h4>
                     <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
                     <p><?php echo $l['event_description']; ?></p>
-                    <a class="link" href="https://www.facebook.com/events/197147864704264/">View More</a>
+                    <!--<a class="link" href="https://www.facebook.com/events/197147864704264/">View More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
 
@@ -262,16 +262,16 @@
                     <h4><a href="https://www.facebook.com/events/714040099082985/"><?php echo $n['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $n['venue']; ?></span></h4>
                     <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
                     <p><?php echo $n['event_description']; ?></p>
-                    <a class="link" href="https://www.facebook.com/events/714040099082985/">View More</a>
+                    <!--<a class="link" href="https://www.facebook.com/events/714040099082985/">View More</a>-->
                 </div>
                 <!-- End Our Exceptional Solutions -->
                 <!--<form action="payment-processing/PayWeb3/index.php" method="GET">
-                    <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="PURCHASE TICKETS">
+                    <!--<input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="PURCHASE TICKETS">
                 </form>-->
 
-                <form action="payment.php" method="GET">
+                <!--<form action="payment.php" method="GET">
                     <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="PURCHASE TICKETS">
-                </form>
+                </form>-->
 
                 <form action="https://secure.paygate.co.za/payweb3/process.trans" method="POST" >
                     <input type="hidden" name="PAY_REQUEST_ID" value="23B785AE-C96C-32AF-4879-D2C9363DB6E8">
@@ -283,7 +283,7 @@
                     <input type="hidden" name="CHECKSUM" value="95f0248893367b8fe3a8983e398d5fc0">
                 </form>-->
 
-               <!-- --><?php /*include('payment-processing/PayWeb3/index.php'); */?>
+               <!--<?php /*include('payment-processing/PayWeb3/index.php'); */?>-->
 
             </div>
 
@@ -410,71 +410,7 @@
         <!--========== END PAGE LAYOUT ==========-->
 
         <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <!-- Links -->
-            <div class="footer-seperator">
-                <div class="content-lg container">
-                    <div class="row">
-                        <div class="col-sm-2 sm-margin-b-50">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="index.php">Home</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="about.php">About</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="events.php">Events</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="membership.php">Membership</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="suppliers.php">Suppliers</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="tickets.php">Tickets</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="contact.php">Contact</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Terms</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="faq.php">FAQ</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="https://www.facebook.com/blackbusinessgrowthinitiative/">Facebook</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Instagram</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <form action="insert-events.php" method="POST">
-                        <div class="col-sm-5 sm-margin-b-30">
-                            <h2 class="color-white">Supplier Database</h2>
-                            <p>It is our passion to nurture and develop black business. Benefit from and service our community by signing up on our supplier database.</p>
-                            <input type="text" name="name" class="form-control footer-input margin-b-20" placeholder="Name" required>
-                            <input type="email" name="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
-                            <input type="text" name="phone" class="form-control footer-input margin-b-20" placeholder="Phone" required>
-                            <input type="text" name="company" class="form-control footer-input margin-b-20" placeholder="Company" required>
-                            <input type="text" name="industry" class="form-control footer-input margin-b-20" placeholder="Industry" required>
-                            <textarea name="message" class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
-                            <button id="submit" name="submit" type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Submit</button>
-                        </div>
-                        </form>
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-            <!-- End Links -->
-
-            <!-- Copyright -->
-            <div class="content container">
-                <div class="row">
-                    <div class="col-xs-6">
-                        <img class="footer-logo" src="img/transparent.png" alt="Asentus Logo">
-                    </div>
-                    <div class="col-xs-6 text-right">
-                        <!--<p class="margin-b-0"><a class="color-base fweight-700" href="http://keenthemes.com/preview/asentus/">Asentus</a> Theme Powered by: <a class="color-base fweight-700" href="http://www.keenthemes.com/">KeenThemes.com</a></p>-->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-            <!-- End Copyright -->
-        </footer>
+        <?php include('footer.php'); ?>
         <!--========== END FOOTER ==========-->
 
         <!-- Back To Top -->

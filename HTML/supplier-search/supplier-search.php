@@ -27,6 +27,12 @@
             document.getElementById("no-results").style.display='none';
           };
 
+          function loadAddService(form) {
+            document.search_form.action = "add-service.php";
+            window.open(document.search_form.action,_self);
+            return false;
+          }
+
           function buildTable(data) {
               var table = document.createElement("table");
               table.className="gridtable";
@@ -113,6 +119,7 @@
                           }
                       } else {
                           console.log('Inside alternative no results section');
+
                           wrapper = document.getElementById("no-results");
                           var line = buildNoResults();
                           wrapper.appendChild(line);
@@ -129,8 +136,10 @@
       </script>
   </head>
   <body>
+
     <div class="s009">
-      <form onsubmit="return fetch();">
+      <!--<form name="search_form" onsubmit="return fetch(this);">-->
+      <form name="search_form">
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
@@ -177,14 +186,15 @@
 
             </div>
 
+
             <div class="row third">
               <div class="input-field">
                 <div class="result-count">
                   <span>108 </span>results</div>
                 <div class="group-btn">
-                    <button class="btn-delete" onclick="clearTable()" type="reset" id="delete">
+                    <button class="btn-delete" value="Reset" onclick="return clearTable()" type="reset" id="delete">
                     RESET</button>
-                  <button class="btn-search submit">SEARCH</button>
+                  <button type="submit" value="Searches" onclick="return fetch()" class="btn-search">SEARCH</button>
                 </div>
               </div>
             </div>
@@ -194,7 +204,7 @@
           <div class="bg-color-sky-light">
               <div class="content-lg container">
                   <div class="row row-space-1">
-                      <form action="">
+                      <!--<form id="addService">-->
                           <!-- [SEARCH RESULTS] -->
                           <div class="inner-form">
                               <div class="advanced-search">
@@ -203,13 +213,15 @@
                                       <div id="results"></div>
                                   </div>
                                   <div class="row">
-                                      <div id="no-results">
-                                      <button id="no-results" onclick="popup('add-service/add-service.php')">Add Service</button>
-                                      </div>
+                                    <div id="no-results">
+                                      <button type="submit" value="Services" id="services" onclick="return loadAddService(this)" class="contact100-form-btn">
+                                           Add Service
+                                      </button>
+                                    </div>
                                   </div>
                               </div>
                           </div>
-                      </form>
+                      <!--</form>-->
                   </div>
               </div>
           </div>

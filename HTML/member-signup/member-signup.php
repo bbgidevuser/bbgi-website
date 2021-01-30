@@ -143,7 +143,7 @@ session_start();
                         <label class="label-input100" for="terms">Agree to terms</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="terms" class="input100" type="checkbox" name="terms" checked="checked" value="1" placeholder="Terms and conditions...">
+                        <input type="checkbox" id="terms" class="input100" value="1" name="terms" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -153,7 +153,7 @@ session_start();
                         <label class="label-input100" for="bbbee">BBBEE</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="bbbee" class="input100" type="checkbox" name="bbbee" checked="checked" value="1" placeholder="BBBEE...">
+                        <input type="checkbox" id="bbbee" class="input100" value="1" name="bbbee" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -163,7 +163,7 @@ session_start();
                         <label class="label-input100" for="commission">Commission</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="commission" class="input100" type="checkbox" name="commission" checked="checked" value="1" placeholder="Commission...">
+                        <input type="checkbox" id="commission" class="input100" value="1" name="commission" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -173,12 +173,13 @@ session_start();
                         <label class="label-input100" for="subscription">Subscription</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="subscription" class="input100" type="checkbox" name="subscription" checked="checked" value="1" placeholder="Subscription...">
+                        <input type="checkbox" id="subscription" class="input100" value="1" name="subscription" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-checkbox100 validate-input" data-validate = "Rules">
+                <!--<div class="wrap-checkbox100 validate-input" data-validate = "Rules">-->
+                <div data-validate = "Rules">
                     <a href="">View rules & constitution</a>
                     <span class="focus-input100"></span>
                 </div>
@@ -224,6 +225,16 @@ session_start();
 	<!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
 <!--===============================================================================================-->
 	<script>
+	    function terms_change(checkbox){
+                //If it is checked.
+                if(checkbox.checked){
+                    //alert('Checkbox has been ticked!');
+                }
+                //If it has been unchecked.
+                else{
+                    //alert('Checkbox has been unticked!');
+                }
+        }
 		$(".js-select2").each(function(){
 			$(this).select2({
 				minimumResultsForSearch: 20,

@@ -26,9 +26,9 @@
           //var endMonth = options.endtimeMonth;
           var endMonth = 1;
           //var endDate = options.endtimeDate;
-          var endDate = 29;
+          var endDate = 30;
           //var endHours = options.endtimeHours;
-          var endHours = 9;
+          var endHours = 21;
           //var endMinutes = options.endtimeMinutes;
           var endMinutes = 0;
           //var endSeconds = options.endtimeSeconds;
