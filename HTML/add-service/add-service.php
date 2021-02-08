@@ -24,7 +24,7 @@ session_start();
 	<div class="container-contact100">
 		<div class="wrap-contact100">
             <form id="individualPaymentForm" action="payment.php" method="get"></form>
-			<form class="contact100-form validate-form" action="insert-members.php" method="POST">
+			<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">
 				<span class="contact100-form-title">
 					Add Service or Product
 				</span>
@@ -151,17 +151,19 @@ session_start();
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-checkbox100 validate-input" data-validate = "Rules">
+                <!--<div class="wrap-checkbox100 validate-input" data-validate = "Rules">-->
+                <div data-validate = "Rules">
                     <a href="">View rules & constitution</a>
                     <span class="focus-input100"></span>
                 </div>
+                <!-- Disable payment button until we relook payment solution -->
 
-                <div class="container-contact100-form-btn">
+                <!--<div class="container-contact100-form-btn">
                         <input type="hidden" Name="membership" Value="$_SESSION['membership']" >
                         <button form="individualPaymentForm" class="contact100-form-btn">
                             Member Payment
                         </button>
-                </div>
+                </div>-->
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">
@@ -197,6 +199,7 @@ session_start();
 	<!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
 <!--===============================================================================================-->
 	<script>
+
 	    function terms_change(checkbox){
                         //If it is checked.
              if(checkbox.checked){
@@ -207,6 +210,7 @@ session_start();
                 //alert('Checkbox has been unticked!');
              }
         }
+
 		$(".js-select2").each(function(){
 			$(this).select2({
 				minimumResultsForSearch: 20,

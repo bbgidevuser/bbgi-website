@@ -98,7 +98,7 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-item-child nav-item-hover active" href="membership.php">Membership</a>
+                                    <a class="nav-item-child nav-item-hover" href="membership.php">Membership</a>
                                     <div class="dropdown-menu">
                                         <a class="dropdown-item" href="#">Business</a>
                                         <a class="dropdown-item" href="#">Individuals</a>

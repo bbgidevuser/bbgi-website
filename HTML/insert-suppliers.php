@@ -1,24 +1,16 @@
 <?php
-header("Content-Security-Policy: script-src 'self' 'unsafe-inline' insert-members.php");
+header("Content-Security-Policy: script-src 'self' 'unsafe-inline' insert-suppliers.php");
 if(empty($_SERVER['CONTENT_TYPE']))
 {
   $_SERVER['CONTENT_TYPE'] = "application/x-www-form-urlencoded";
 }
-
-//print "CONTENT_TYPE: " . $_SERVER['CONTENT_TYPE'] . "<BR />";
-/*$data = file_get_contents('php://input');
-print "DATA: <pre>";
-var_dump($data);
-var_dump($_POST);
-print "</pre>";*/
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
 $name = $_REQUEST['name'];
 $surname = $_REQUEST['surname'];
 $profession = $_REQUEST['profession'];
-$company = $_REQUEST['com'];
-$register = $_REQUEST['register'];
+$company = $_REQUEST['company'];
 $email = $_REQUEST['email'];
 $phone = $_REQUEST['phone'];
 $service = $_REQUEST['service'];
@@ -31,8 +23,7 @@ $commission = $_REQUEST['commission'];
 $subscription = $_REQUEST['subscription'];
 
 
-//if(isset($_POST(['submit']))){
-if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) || !empty($register) || !empty($email) || !empty($phone) || !empty($service) ||
+if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) || !empty($email) || !empty($phone) || !empty($service) ||
     !empty($description) || !empty($industry) || !empty($legal) || !empty($terms) || !empty($bbbee) || !empty($commission) ||
     !empty($subscription)){
    $host = "localhost";
@@ -53,8 +44,8 @@ if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) ||
    if(mysqli_connect_error()){
      die('Connect Error('. mysqli_connect_errorno().')'.mysqli_connect());
    } else {
-    $SELECT = "SELECT name From members Where email = ? Limit 1";
-    $INSERT = "INSERT Into members (name, surname, profession, company, email, phone, service, description, industry, legal, terms, bbbee, commission, subscription) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    $SELECT = "SELECT name From suppliers Where email = ? Limit 1";
+    $INSERT = "INSERT Into suppliers (name, surname, profession, company, email, phone, service, description, industry, legal, terms, bbbee, commission, subscription) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     //Prepare statement
     $stmt = $conn->prepare($SELECT);
@@ -71,20 +62,11 @@ if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) ||
      $stmt->bind_param("ssssssssssssss", $name, $surname, $profession, $company, $email, $phone, $service, $description, $industry, $legal, $terms, $bbbee, $commission, $subscription );
      $stmt->execute();
 
-     echo "<script type='text/javascript'>alert(' Value of register inside script ' + $register);</script>";
-
-     if($register === 'true'){
-        echo "<script type='text/javascript'>alert(' New member inserted successfully. Please proceed to capture supplier details');
+        echo "<script type='text/javascript'>alert(' New product or service inserted successfully.');
                                                      window.location.href='http://bbgi.co.za/suppliers.php';</script>";
-     } else {
-        echo "<script type='text/javascript'>alert(' New member inserted successfully.');
-                                                             window.location.href='http://bbgi.co.za/member-signup.php';</script>";
-     }
-
     } else {
-     //echo " Supplier already registered in our database";
-       echo "<script type='text/javascript'>alert(' Member already registered in our database');
-                                             window.location.href='http://bbgi.co.za/member-signup.php';</script>";
+       echo "<script type='text/javascript'>alert(' Product or service already registered in our database.');
+                                             window.location.href='http://bbgi.co.za/add-service.php';</script>";
     }
     $stmt->close();
     $conn->close();
@@ -93,6 +75,6 @@ if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) ||
   echo "All fields are required";
   die();
 }
-//}
+
 }
 ?>

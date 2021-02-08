@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
       <style>
           table, th, td
           {
@@ -25,6 +26,7 @@
 
           window.onload = function(){
             document.getElementById("no-results").style.display='none';
+            document.getElementById("services").style.display='none';
           };
 
           function loadAddService(form) {
@@ -105,11 +107,9 @@
                               wrapper = document.getElementById("results");
                           wrapper.innerHTML = "";
                           if (results.length > 0) {
-                              for (var res of results) {
                                   document.getElementById("no-results").style.display = "none";
                                   var line = buildTable(results);
                                   wrapper.appendChild(line);
-                              }
                           } else {
                               console.log('Inside no results section');
                               var line = buildNoResults();
@@ -138,7 +138,6 @@
   <body>
 
     <div class="s009">
-      <!--<form name="search_form" onsubmit="return fetch(this);">-->
       <form name="search_form">
         <div class="inner-form">
           <div class="basic-search">
@@ -156,14 +155,19 @@
             <div class="row">
               <div class="input-field">
                 <div class="input-select">
+
+                  <!--<select id="service" data-trigger="" name="service" onchange="newService(this)">-->
                   <select id="service" data-trigger="" name="service">
                     <option placeholder="" value="">Service</option>
                     <option value="Interior Design">Interior Design</option>
                     <option value="Software Development">Software Development</option>
-                      <option value="Other">Other</option>
+                    <option value="Other Service">Other</option>
                   </select>
                 </div>
               </div>
+
+
+
                 <div class="input-field">
                     <div class="input-select">
                         <select id="com" data-trigger="" name="com">
@@ -171,6 +175,7 @@
                             <option value="Go">Go</option>
                             <option value="Subject c">Subject c</option>
                             <option value="New">New</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                 </div>
@@ -180,17 +185,18 @@
                     <option placeholder="" value="">Industry</option>
                     <option value="Engineering">Engineering</option>
                     <option value="Subject c">Subject c</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
-
             </div>
-
 
             <div class="row third">
               <div class="input-field">
                 <div class="result-count">
-                  <span>108 </span>results</div>
+                  <!-- Go in initially without results count -->
+                  <!--<span>108 </span>results-->
+                </div>
                 <div class="group-btn">
                     <button class="btn-delete" value="Reset" onclick="return clearTable()" type="reset" id="delete">
                     RESET</button>
@@ -204,7 +210,6 @@
           <div class="bg-color-sky-light">
               <div class="content-lg container">
                   <div class="row row-space-1">
-                      <!--<form id="addService">-->
                           <!-- [SEARCH RESULTS] -->
                           <div class="inner-form">
                               <div class="advanced-search">
@@ -214,23 +219,31 @@
                                   </div>
                                   <div class="row">
                                     <div id="no-results">
-                                      <button type="submit" value="Services" id="services" onclick="return loadAddService(this)" class="contact100-form-btn">
-                                           Add Service
+                                      <!--<button type="submit" value="Services" id="services" onclick="return loadAddService(this)" class="search100-form-btn">-->
+                                      <button type="submit" onclick="return loadAddService(this)" class="search100-form-btn">
+                                           Add Product or Service
                                       </button>
                                     </div>
                                   </div>
                               </div>
                           </div>
-                      <!--</form>-->
                   </div>
               </div>
           </div>
-
       </form>
     </div>
 
     <script src="js/extention/choices.js"></script>
     <script>
+      function newService(selTag) {
+
+        var x = selTag.options[selTag.selectedIndex].value;
+        if(x === "Other Service"){
+            //document.getElementById("services").style.display='none';
+            document.getElementById("services").style.display="block";
+        }
+
+      }
       const customSelects = document.querySelectorAll("select");
       const deleteBtn = document.getElementById('delete')
       const choices = new Choices('select',
@@ -249,12 +262,6 @@
         }
       });
 
-    </script>
-    <script>
-        function popup (url) {
-            win = window.open(url, "window1", "width=600,height=400,status=yes,scrollbars=yes,resizable=yes");
-            win.focus();
-        }
     </script>
 
   </body><!-- This templates was made by Colorlib (https://colorlib.com) -->

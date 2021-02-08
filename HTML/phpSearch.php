@@ -47,7 +47,6 @@ $search = $_POST['search'];
 
 if($results){
     if (isset($_POST['ajax'])) {
-
     while($row = mysqli_fetch_assoc($results))
      $test[] = $row;
      if(!empty($test)){
