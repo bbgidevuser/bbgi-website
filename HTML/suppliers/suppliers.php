@@ -16,7 +16,8 @@ include('global.php');
  <div id="supplier-signup">
 	<div class="container-contact100">
 	  <div class="wrap-contact100">
-		<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">
+		<!--<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">-->
+		<form class="contact100-form validate-form" action="/email-add-service/send-email-supplier.php" method="POST">
 			<span class="contact100-form-title">
             	Sign up as a supplier
             </span>

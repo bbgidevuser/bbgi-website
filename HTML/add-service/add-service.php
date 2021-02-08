@@ -24,7 +24,7 @@ session_start();
 	<div class="container-contact100">
 		<div class="wrap-contact100">
             <form id="individualPaymentForm" action="payment.php" method="get"></form>
-			<form class="contact100-form validate-form" action="insert-suppliers.php" method="POST">
+			<form class="contact100-form validate-form" action="/email-add-service/send-email.php" method="POST">
 				<span class="contact100-form-title">
 					Add Service or Product
 				</span>

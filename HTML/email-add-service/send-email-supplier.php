@@ -94,12 +94,12 @@ if( empty($errors))
             $stmt = $conn->prepare($INSERT);
             $stmt->bind_param("ssssssssssssss", $name, $surname, $profession, $company, $email, $phone, $service, $description, $industry, $legal, $terms, $bbbee, $commission, $subscription);
             $stmt->execute();
-            mail($to,$email_subject,$email_body,$headers);
             echo "<script type='text/javascript'>alert(' New supplier product or service inserted successfully.');
-                                                                 window.location.href='http://bbgi.co.za/add-service.php';</script>";
+                                                                             window.location.href='http://bbgi.co.za/suppliers.php';</script>";
+            mail($to,$email_subject,$email_body,$headers);
         } else {
             echo "<script type='text/javascript'>alert(' Supplier product or service already registered in our database.');
-                                                        window.location.href='http://bbgi.co.za/add-service.php';</script>";
+                                                        window.location.href='http://bbgi.co.za/suppliers.php';</script>";
         }
     }
 
