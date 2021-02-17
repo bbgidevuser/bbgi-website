@@ -1,4 +1,4 @@
-<?php?>
+<?php ?>
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="colorlib.com">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
       <style>
           table, th, td
           {
@@ -22,6 +23,18 @@
           }
       </style>
       <script>
+
+          window.onload = function(){
+            document.getElementById("no-results").style.display='none';
+            document.getElementById("services").style.display='none';
+          };
+
+          function loadAddService(form) {
+            document.search_form.action = "add-service.php";
+            window.open(document.search_form.action,_self);
+            return false;
+          }
+
           function buildTable(data) {
               var table = document.createElement("table");
               table.className="gridtable";
@@ -52,24 +65,9 @@
           }
 
           function clearTable(){
-              var table = document.getElementById("table");
-              table = "";
-              var thead = document.getElementById("thead");
-              thead = "";
-              var tbody = document.getElementById("tbody");
-              var tbody = "";
-              var headRow = document.getElementById("tr");
-              var headRow = "";
-              var tableRow = document.getElementById("tr");
-              var tableRow = "";
-              var tableDef = document.getElementById("td");
-              var tableDef = "";
-              //thead.appendChild(headRow);
-              //tableRow.appendChild(tableDef);
-              //tbody.appendChild(tableRow);
-              //table.appendChild(thead);
-              //table.appendChild(tbody);
-              return table;
+              $("#results tr").detach();
+              $("#no-results tr").detach();
+              document.getElementById("no-results").style.display = "none";
           }
 
           function buildNoResults() {
@@ -96,13 +94,12 @@
               data.append('search', document.getElementById("search").value);
               data.append('service', document.getElementById("service").value);
               data.append('industry', document.getElementById("industry").value);
-              data.append('company', document.getElementById("company").value);
-              //data.append('name', document.getElementById("name").value);
+              data.append('com', document.getElementById("com").value);
               data.append('ajax', 1);
 
               // AJAX SEARCH REQUEST
               var xhr = new XMLHttpRequest();
-              xhr.open('POST', "supplier-search/2-search.php", true);
+              xhr.open('POST', "phpSearch.php", true);
               xhr.onload = function () {
                   if (this.status==200) {
                       if(this.response) {
@@ -110,21 +107,23 @@
                               wrapper = document.getElementById("results");
                           wrapper.innerHTML = "";
                           if (results.length > 0) {
-                              for (var res of results) {
+                                  document.getElementById("no-results").style.display = "none";
                                   var line = buildTable(results);
                                   wrapper.appendChild(line);
-                              }
                           } else {
                               console.log('Inside no results section');
                               var line = buildNoResults();
                               wrapper.appendChild(line);
+                              document.getElementById("no-results").style.display = "block";
                               //wrapper.innerHTML = "No results found";
                           }
                       } else {
                           console.log('Inside alternative no results section');
-                          wrapper = document.getElementById("results");
+
+                          wrapper = document.getElementById("no-results");
                           var line = buildNoResults();
                           wrapper.appendChild(line);
+                          document.getElementById("no-results").style.display = "block";
                       }
                       } else {
                       alert("ERROR LOADING FILE!");
@@ -133,11 +132,13 @@
               xhr.send(data);
               return false;
           }
+
       </script>
   </head>
   <body>
+
     <div class="s009">
-      <form action="phpSearch.php" method="post">
+      <form name="search_form">
         <div class="inner-form">
           <div class="basic-search">
             <div class="input-field">
@@ -154,21 +155,27 @@
             <div class="row">
               <div class="input-field">
                 <div class="input-select">
+
+                  <!--<select id="service" data-trigger="" name="service" onchange="newService(this)">-->
                   <select id="service" data-trigger="" name="service">
                     <option placeholder="" value="">Service</option>
                     <option value="Interior Design">Interior Design</option>
                     <option value="Software Development">Software Development</option>
-                      <option value="Other">Other</option>
+                    <option value="Other Service">Other</option>
                   </select>
                 </div>
               </div>
+
+
+
                 <div class="input-field">
                     <div class="input-select">
-                        <select id="company" data-trigger="" name="company">
+                        <select id="com" data-trigger="" name="com">
                             <option placeholder="" value="">Company</option>
                             <option value="Go">Go</option>
                             <option value="Subject c">Subject c</option>
                             <option value="New">New</option>
+                            <option value="Other">Other</option>
                         </select>
                     </div>
                 </div>
@@ -178,20 +185,22 @@
                     <option placeholder="" value="">Industry</option>
                     <option value="Engineering">Engineering</option>
                     <option value="Subject c">Subject c</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
               </div>
-
             </div>
 
             <div class="row third">
               <div class="input-field">
                 <div class="result-count">
-                  <span>108 </span>results</div>
+                  <!-- Go in initially without results count -->
+                  <!--<span>108 </span>results-->
+                </div>
                 <div class="group-btn">
-                  <!--<button class="btn-delete" id="delete">RESET</button>-->
-                    <button class="btn-delete" type="reset" id="delete">RESET</button>
-                  <button class="btn-search submit">SEARCH</button>
+                    <button class="btn-delete" value="Reset" onclick="return clearTable()" type="reset" id="delete">
+                    RESET</button>
+                  <button type="submit" value="Searches" onclick="return fetch()" class="btn-search">SEARCH</button>
                 </div>
               </div>
             </div>
@@ -201,7 +210,6 @@
           <div class="bg-color-sky-light">
               <div class="content-lg container">
                   <div class="row row-space-1">
-                      <form action="">
                           <!-- [SEARCH RESULTS] -->
                           <div class="inner-form">
                               <div class="advanced-search">
@@ -209,18 +217,33 @@
                                   <div class="row">
                                       <div id="results"></div>
                                   </div>
+                                  <div class="row">
+                                    <div id="no-results">
+                                      <!--<button type="submit" value="Services" id="services" onclick="return loadAddService(this)" class="search100-form-btn">-->
+                                      <button type="submit" onclick="return loadAddService(this)" class="search100-form-btn">
+                                           Add Product or Service
+                                      </button>
+                                    </div>
+                                  </div>
                               </div>
                           </div>
-                      </form>
                   </div>
               </div>
           </div>
-
       </form>
     </div>
 
     <script src="js/extention/choices.js"></script>
     <script>
+      function newService(selTag) {
+
+        var x = selTag.options[selTag.selectedIndex].value;
+        if(x === "Other Service"){
+            //document.getElementById("services").style.display='none';
+            document.getElementById("services").style.display="block";
+        }
+
+      }
       const customSelects = document.querySelectorAll("select");
       const deleteBtn = document.getElementById('delete')
       const choices = new Choices('select',

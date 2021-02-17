@@ -17,7 +17,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 $name = $_REQUEST['name'];
 $surname = $_REQUEST['surname'];
 $profession = $_REQUEST['profession'];
-$company = $_REQUEST['company'];
+$company = $_REQUEST['com'];
+$register = $_REQUEST['register'];
 $email = $_REQUEST['email'];
 $phone = $_REQUEST['phone'];
 $service = $_REQUEST['service'];
@@ -31,7 +32,7 @@ $subscription = $_REQUEST['subscription'];
 
 
 //if(isset($_POST(['submit']))){
-if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) || !empty($email) || !empty($phone) || !empty($service) ||
+if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) || !empty($register) || !empty($email) || !empty($phone) || !empty($service) ||
     !empty($description) || !empty($industry) || !empty($legal) || !empty($terms) || !empty($bbbee) || !empty($commission) ||
     !empty($subscription)){
    $host = "localhost";
@@ -69,12 +70,21 @@ if(!empty($name) ||!empty($surname) ||!empty($profession) || !empty($company) ||
      $stmt = $conn->prepare($INSERT);
      $stmt->bind_param("ssssssssssssss", $name, $surname, $profession, $company, $email, $phone, $service, $description, $industry, $legal, $terms, $bbbee, $commission, $subscription );
      $stmt->execute();
-        echo "<script type='text/javascript'>alert(' New member inserted successfully');
-                                             window.location.href='http://bbgi.co.za/members.php';</script>";
+
+     echo "<script type='text/javascript'>alert(' Value of register inside script ' + $register);</script>";
+
+     if($register === 'true'){
+        echo "<script type='text/javascript'>alert(' New member inserted successfully. Please proceed to capture supplier details');
+                                                     window.location.href='http://bbgi.co.za/suppliers.php';</script>";
+     } else {
+        echo "<script type='text/javascript'>alert(' New member inserted successfully.');
+                                                             window.location.href='http://bbgi.co.za/member-signup.php';</script>";
+     }
+
     } else {
      //echo " Supplier already registered in our database";
        echo "<script type='text/javascript'>alert(' Member already registered in our database');
-                                             window.location.href='http://bbgi.co.za/members.php';</script>";
+                                             window.location.href='http://bbgi.co.za/member-signup.php';</script>";
     }
     $stmt->close();
     $conn->close();

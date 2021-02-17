@@ -17,14 +17,14 @@ session_start();
 <!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
+
 </head>
 <body>
 
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-            <form id="individualPaymentForm" action="payment.php" method="get"></form>
-			<form class="contact100-form validate-form" action="insert-members.php" method="POST">
+			<form name="member_form" action="insert-members.php" class="contact100-form validate-form" method="POST">
 				<span class="contact100-form-title">
 					Sign up as a member
 				</span>
@@ -50,20 +50,21 @@ session_start();
 
                 <div class="wrap-input100 validate-input" data-validate="Company is required">
                     <label class="label-input100" for="profession">Company</label>
-                    <input id="company" class="input100" type="text" name="company" placeholder="Enter your company...">
+                    <input id="company" class="input100" type="text" name="com" placeholder="Enter your company...">
                     <span class="focus-input100"></span>
                 </div>
 
-                <!--<div class="wrap-input100 validate-input">
+                <div class="wrap-input100 validate-input">
                     <label class="label-input100" for="register">Register on BBGI Supplier Database?</label>
                     <span class="focus-input100"></span>
                 </div>
 
                 <label class="label-input100" for="register">Yes</label>
-                <input id="register" class="input100" type="radio" name="register" placeholder="Register on BBGI Supplier Database...">
+                <!--<input id="register" class="input100" value="true" onclick="launch_supplier(this)" type="radio" name="register" placeholder="Register on BBGI Supplier Database...">-->
+                <input id="register" class="input100" value="true" type="radio" name="register" placeholder="Register on BBGI Supplier Database...">
 
                 <label class="label-input100" for="register">No</label>
-                <input id="register" class="input100" type="radio" name="register" placeholder="Register on BBGI Supplier Database...">-->
+                <input id="register" class="input100" value="false" onclick="launch_supplier(this)" type="radio" name="register" placeholder="Register on BBGI Supplier Database...">
 
                 <!--<div class="wrap-input100 validate-input" data-validate = "Subscription">
                     <div class="col-sm-4">
@@ -143,7 +144,7 @@ session_start();
                         <label class="label-input100" for="terms">Agree to terms</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="terms" class="input100" type="checkbox" name="terms" checked="checked" value="1" placeholder="Terms and conditions...">
+                        <input type="checkbox" id="terms" class="input100" value="1" name="terms" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -153,7 +154,7 @@ session_start();
                         <label class="label-input100" for="bbbee">BBBEE</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="bbbee" class="input100" type="checkbox" name="bbbee" checked="checked" value="1" placeholder="BBBEE...">
+                        <input type="checkbox" id="bbbee" class="input100" value="1" name="bbbee" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -163,7 +164,7 @@ session_start();
                         <label class="label-input100" for="commission">Commission</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="commission" class="input100" type="checkbox" name="commission" checked="checked" value="1" placeholder="Commission...">
+                        <input type="checkbox" id="commission" class="input100" value="1" name="commission" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
@@ -173,25 +174,28 @@ session_start();
                         <label class="label-input100" for="subscription">Subscription</label>
                     </div>
                     <div class="col-sm-6">
-                        <input id="subscription" class="input100" type="checkbox" name="subscription" checked="checked" value="1" placeholder="Subscription...">
+                        <input type="checkbox" id="subscription" class="input100" value="1" name="subscription" onclick="terms_change(this)" />
                     </div>
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="wrap-checkbox100 validate-input" data-validate = "Rules">
+                <!--<div class="wrap-checkbox100 validate-input" data-validate = "Rules">-->
+                <div data-validate = "Rules">
                     <a href="">View rules & constitution</a>
                     <span class="focus-input100"></span>
                 </div>
 
-                <div class="container-contact100-form-btn">
+                <!-- Hiding member payment until payment integration is sorted -->
+                <!--<div class="container-contact100-form-btn">
                         <input type="hidden" Name="membership" Value="$_SESSION['membership']" >
                         <button form="individualPaymentForm" class="contact100-form-btn">
                             Member Payment
                         </button>
-                </div>
+                </div>-->
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<!--<button type="submit" onclick="return fetch()" class="contact100-form-btn">-->
+					<button type="submit" class="contact100-form-btn">
 						Submit
 					</button>
 				</div>
@@ -224,6 +228,28 @@ session_start();
 	<!--<script src="vendor/bootstrap/js/bootstrap.min.js"></script>-->
 <!--===============================================================================================-->
 	<script>
+	    var launchSupplier = false;
+
+        function launch_supplier(radioButton) {
+
+            if(radioButton.checked){
+                //alert(radioButton.value);
+                this.launchSupplier = radioButton.value;
+                //alert(this.launchSupplier);
+            }
+            return this.launchSupplier;
+        }
+
+	    function terms_change(checkbox){
+                //If it is checked.
+                if(checkbox.checked){
+                    //alert('Checkbox has been ticked!');
+                }
+                //If it has been unchecked.
+                else{
+                    //alert('Checkbox has been unticked!');
+                }
+        }
 		$(".js-select2").each(function(){
 			$(this).select2({
 				minimumResultsForSearch: 20,
