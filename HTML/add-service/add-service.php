@@ -158,12 +158,12 @@ session_start();
                 </div>
                 <!-- Disable payment button until we relook payment solution -->
 
-                <!--<div class="container-contact100-form-btn">
+                <div class="container-contact100-form-btn">
                         <input type="hidden" Name="membership" Value="$_SESSION['membership']" >
                         <button form="individualPaymentForm" class="contact100-form-btn">
                             Member Payment
                         </button>
-                </div>-->
+                </div>
 
 				<div class="container-contact100-form-btn">
 					<button class="contact100-form-btn">

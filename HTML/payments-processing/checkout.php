@@ -101,8 +101,6 @@ echo $htmlForm;
                 <input type="hidden" name="payment_method" value="dc">
                 <input type="hidden" name="payment_method" value="mp">
 
-
-
             </div>
         </div>
     </body>
