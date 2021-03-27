@@ -73,7 +73,7 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="marketplace.php">Marketplace</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>
@@ -187,7 +187,7 @@
                                     <h3>Art Of Coding</h3>
                                     <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                                     <h3>Responsive Design</h3>
                                     <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
                                     <h3>Feature Reach</h3>
                                     <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -233,7 +233,7 @@
                                     <h3>Useful Documentation</h3>
                                     <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                                     <h3>Fast Delivery</h3>
                                     <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                                     <h3>Free Plugins</h3>
                                     <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>

@@ -10,7 +10,7 @@
                         <li class="footer-list-item"><a class="footer-list-link" href="about.php">About</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="events.php">Events</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="membership.php">Membership</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="suppliers.php">Suppliers</a></li>
+                        <li class="footer-list-item"><a class="footer-list-link" href="marketplace.php">Marketplace</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="tickets.php">Tickets</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>

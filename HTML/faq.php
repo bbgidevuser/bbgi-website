@@ -71,7 +71,7 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="marketplace.php">Marketplace</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>
@@ -108,7 +108,7 @@
                                 <h3><?php echo $b['header']; ?></h3>
                                 <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
                                 <p class="margin-b-5"><?php echo $b['description']; ?></p>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@
                                 <h3><?php echo $d['header']; ?></h3>
                                 <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
                                 <p class="margin-b-5"><?php echo $d['description']; ?></p>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +140,7 @@
                                 <h3><?php echo $f['header']; ?></h3>
                                 <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
                                 <p class="margin-b-5"><?php echo $f['description']; ?></p>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                                 <h3><?php echo $h['header']; ?></h3>
                                 <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
                                 <p class="margin-b-5"><?php echo $h['description']; ?></p>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                                 <h3><?php echo $k['header']; ?></h3>
                                 <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
                                 <p class="margin-b-5"><?php echo $k['description']; ?></p>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                                 <h3><?php echo $m['header']; ?></h3>
                                 <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
                                 <p class="margin-b-5"><?php echo $m['description']; ?></p>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
