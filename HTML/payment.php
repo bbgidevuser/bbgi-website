@@ -103,7 +103,9 @@ session_start();
         <div class="content-lg container">
             <div class="row">
                 <div class="col-sm-12">
-                    <iframe src="payment-processing/PayWeb3/index.php" width="100%" frameborder="0" allowfullscreen="true" height="600"></iframe>
+                    <!--<iframe src="payment-processing/PayWeb3/index.php" width="100%" frameborder="0" allowfullscreen="true" height="600"></iframe>-->
+                    <!--<iframe src="payfast_php_sdk_master/examples/custom/index.php" width="100%" frameborder="0" allowfullscreen="true" height="600"></iframe>-->
+                    <iframe src="payments-processing/checkout.php" width="100%" frameborder="0" allowfullscreen="true" height="600"></iframe>
                 </div>
             </div>
         </div>

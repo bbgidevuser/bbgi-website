@@ -1,6 +1,3 @@
-<?php
-include('global.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,6 +136,12 @@ include('global.php');
             <div data-validate = "Rules">
                     <a href="">View rules & constitution</a>
                     <span class="focus-input100"></span>
+            </div>
+            <div class="container-contact100-form-btn">
+                        <!--<input type="hidden" Name="membership" Value="$_SESSION['membership']" >-->
+                        <button form="individualPaymentForm" class="contact100-form-btn">
+                            Member Payment
+                        </button>
             </div>
             <div class="container-contact100-form-btn">
             	    <button class="contact100-form-btn">

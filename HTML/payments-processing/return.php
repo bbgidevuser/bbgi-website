@@ -1,4 +1,7 @@
-<?php?>
+<?php
+#session_start();
+#echo $_SESSION['membership']; // individual
+?>
 <html>
 <head>
     <meta charset="UTF-8">
