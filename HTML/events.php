@@ -69,10 +69,9 @@
                             <ul class="navbar-nav navbar-nav-right">
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="events.php">Events</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="marketplace.php">Marketplace</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>
@@ -408,6 +407,104 @@
         </div>-->
         <!-- End Promo Section -->
         <!--========== END PAGE LAYOUT ==========-->
+
+        <!-- Pricing -->
+        <div class="bg-color-sky-light">
+          <div class="content-lg container">
+
+            <div class="row margin-b-40">
+              <div class="col-sm-6">
+                <h2>Purchase Event Tickets</h2>
+              </div>
+            </div>
+
+            <div class="row row-space-1">
+              <div class="col-sm-4 sm-margin-b-2">
+                <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                  <!-- Pricing -->
+                  <?php $a= mysql_query("select * from pricing where id=1");
+                  $b = mysql_fetch_array($a);
+                  ?>
+                  <div class="pricing">
+                    <div class="margin-b-30">
+                      <i class="pricing-icon icon-chemistry"></i>
+                      <!--<h3>Student Special <span> - R</span> 50</h3>-->
+                      <h3><?php echo $b['type']; ?> <span> - R</span> </span> <?php echo $b['price']; ?></h3>
+                      <!--<p>Take advantage of our student special and pay half the price of a normal ticket</p>-->
+                      <p><?php echo $b['description']; ?></p>
+                    </div>
+                    <ul class="list-unstyled pricing-list margin-b-50">
+                      <!--<li class="pricing-list-item">Discounted price</li>-->
+                      <li class="pricing-list-item"><?php echo $b['option-one']; ?></li>
+                      <!--<li class="pricing-list-item">Networking opportunity</li>-->
+                      <li class="pricing-list-item"><?php echo $b['option-two']; ?></li>
+                      <!--<li class="pricing-list-item">Business opportunity</li>-->
+                      <li class="pricing-list-item"><?php echo $b['option-three']; ?></li>
+                    </ul>
+                    <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
+                  </div>
+                  <!-- End Pricing -->
+                </div>
+              </div>
+              <div class="col-sm-4 sm-margin-b-2">
+                <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
+                  <!-- Pricing -->
+                  <?php $c= mysql_query("select * from pricing where id=2");
+                  $d = mysql_fetch_array($c);
+                  ?>
+                  <div class="pricing pricing-active">
+                    <div class="margin-b-30">
+                      <i class="pricing-icon icon-badge"></i>
+                      <!--<h3>Social Media <span> - R</span> 100</h3>-->
+                      <h3><?php echo $d['type']; ?> <span> - R</span> <?php echo $d['price']; ?></h3>
+                      <!--<p>Purchase tickets on our social media platforms</p>-->
+                      <p><?php echo $d['description']; ?></p>
+                    </div>
+                    <ul class="list-unstyled pricing-list margin-b-50">
+                      <!--<li class="pricing-list-item">Facebook</li>-->
+                      <li class="pricing-list-item"><?php echo $d['option-one']; ?></li>
+                      <!--<li class="pricing-list-item">Webtickets</li>-->
+                      <li class="pricing-list-item"><?php echo $d['option-two']; ?></li>
+                      <!--<li class="pricing-list-item">Instagram</li>-->
+                      <li class="pricing-list-item"><?php echo $d['option-three']; ?></li>
+                    </ul>
+                    <a href="https://www.facebook.com/pg/blackbusinessgrowthinitiative/events/?ref=page_internal" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
+                  </div>
+                  <!-- End Pricing -->
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".1s">
+                  <!-- Pricing -->
+                  <?php $e= mysql_query("select * from pricing where id=3");
+                  $f = mysql_fetch_array($e);
+                  ?>
+                  <div class="pricing">
+                    <div class="margin-b-30">
+                      <i class="pricing-icon icon-shield"></i>
+                      <!--<h3>Website Platform <span> - R</span> 100</h3>-->
+                      <h3><?php echo $f['type']; ?> <span> - R</span> <?php echo $f['price']; ?></h3>
+                      <!--<p>Use your credit or debit card to purchase tickets directly from our website</p>-->
+                      <p><?php echo $f['description']; ?></p>
+                    </div>
+                    <ul class="list-unstyled pricing-list margin-b-50">
+                      <!-- <li class="pricing-list-item">Credit Card Purchase</li>-->
+                      <li class="pricing-list-item"><?php echo $f['option-one']; ?></li>
+                      <!--<li class="pricing-list-item">Debit Card Purchase</li>-->
+                      <li class="pricing-list-item"><?php echo $f['option-two']; ?></li>
+                      <!--<li class="pricing-list-item">Paypal</li>-->
+                      <li class="pricing-list-item"><?php echo $f['option-three']; ?></li>
+                    </ul>
+                    <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
+                  </div>
+                  <!-- End Pricing -->
+                </div>
+              </div>
+            </div>
+            <!--// end row -->
+          </div>
+        </div>
+        <!-- End Pricing -->
 
         <!--========== FOOTER ==========-->
         <?php include('footer.php'); ?>
