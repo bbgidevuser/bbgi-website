@@ -129,32 +129,34 @@
         <!--========== PARALLAX ==========-->
 
         <!--========== PAGE LAYOUT ==========-->
-        <div class="bg-color-sky-light" data-auto-height="true">
-            <div class="content-lg container">
-
-            </div>
-        </div>
+        <!--<div class="bg-color-sky-light" data-auto-height="true">-->
+            <!--<div class="content-lg container">-->
+              <div>
+                <iframe src="https://webpanel.bbgi.co.za/" width="1450" height="1350" frameborder="0"></iframe>
+              </div>
+            <!--</div>-->
+        <!--</div>-->
         <!--=======================================================-->
         <!-- Conditional display of suppliers and add service type -->
         <!--=======================================================-->
 
         <!--=======================================================-->
         <!--         Display of suppliers to go in here            -->
-        <?php include('suppliers/suppliers.php'); ?>
+        <?php /*include('suppliers/suppliers.php'); */?>
         <!--=======================================================-->
 
         <!--=======================================================-->
         <!--         Display of service type to go in here         -->
-        <?php include('add-service/add-service.php'); ?>
+        <?php /*include('add-service/add-service.php'); */?>
         <!--=======================================================-->
 
 
-        <div class="bg-color-sky-light" data-auto-height="true">
+        <!--<div class="bg-color-sky-light" data-auto-height="true">
             <div class="padding-t-sm container">
                 <h2 class="text-c-align">Supplier Search</h2>
             </div>
-        </div>
-        <?php include('supplier-search/supplier-search.php'); ?>
+        </div>-->
+        <?php /*include('supplier-search/supplier-search.php'); */?>
         <!--========== END PAGE LAYOUT ==========-->
 
 

@@ -170,7 +170,7 @@
         <!--<div id="map" class="map height-400"></div>-->
         <div>
             <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13576.173707691703!2d28.68970693176874!3d-31.71470869728018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x31db05bfafafccb6!2sIdwala+Lam+Guest+House!5e0!3m2!1sen!2sza!4v1480009670975" width="1300" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.8554004396547!2d18.502267815476717!3d-33.893377727766776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5c10cac442ef%3A0x302a343737bbf168!2sSpaces%20-%20Cape%20Town%2C%20Century%20City!5e0!3m2!1sen!2sza!4v1585970838545!5m2!1sen!2sza" width="1300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.8554004396547!2d18.502267815476717!3d-33.893377727766776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5c10cac442ef%3A0x302a343737bbf168!2sSpaces%20-%20Cape%20Town%2C%20Century%20City!5e0!3m2!1sen!2sza!4v1585970838545!5m2!1sen!2sza" width="1350" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
 
