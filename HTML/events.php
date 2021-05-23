@@ -70,7 +70,6 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="events.php">Events</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="marketplace.php">Marketplace</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
@@ -97,15 +96,40 @@
         <!-- Our Exceptional Solutions -->
         <div class="content-lg container">
 
+          <div class="row margin-b-40">
+            <div class="col-sm-6">
+              <h2>Upcoming Events</h2>
+              <p>Please see below for an outline of all the events we have in the next couple of months </p>
+            </div>
+          </div>
+
+          <div class="row margin-b-50">
+
+            <!-- Our Exceptional Solutions -->
+            <div class="col-sm-4 sm-margin-b-50">
+              <div class="margin-b-20">
+                <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                  <img class="img-responsive" src="img/970x647/05.jpg" alt="Our Exceptional Solutions Image">
+                </div>
+              </div>
+              <h3><a href="#">02 June 2021</a> <span class="text-uppercase margin-l-20">Online platform launch</span></h3>
+              <p>Join us as we launch our website and online platform for black business to transact in a secure and friendly way. This will be an online presentation </p>
+              <!--<a class="link" href="#" target="myFrame">View More</a>-->
+
+              <!--<iframe src="https://www.facebook.com/events/583714235883856/" frameborder="0" name="myFrame"></iframe>-->
+
+            </div>
+        </div>
+
+        <div class="content-lg container">
+
             <div class="row margin-b-40">
                 <?php $a= mysql_query("select * from upcoming_events where id=1");
                 $b = mysql_fetch_array($a);
                 ?>
                 <div class="col-sm-6">
-                    <!--<h2>Upcoming Events</h2>-->
-                    <h2><?php echo $b['header']; ?></h2>
-                    <!--<p>Please see below for an outline of all the events we have in the next couple of months</p>-->
-                    <p><?php echo $b['description']; ?></p>
+                    <h2>Past Events</h2>
+                    <p>Please see below for an outline of all the events we have had in the last couple of months</p>
                 </div>
             </div>
 
@@ -194,162 +218,6 @@
             </div>
             <!--// end row -->
         </div>
-
-        <div class="content-lg container">
-            <?php $i= mysql_query("select * from past_events where id=1");
-            $j = mysql_fetch_array($i);
-            ?>
-            <div class="row margin-b-40">
-                <div class="col-sm-6">
-                    <!--<h2>Past Events</h2>-->
-                    <h2><?php echo $j['header']; ?></h2>
-                    <!--<p>These are some of the events that we as a community have held in the last couple of months</p>-->
-                    <p><?php echo $j['description']; ?></p>
-                </div>
-            </div>
-            <!--// end row -->
-
-            <div class="row margin-b-50">
-
-                <!-- Our Exceptional Solutions -->
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!--<img class="img-responsive" src="img/970x647/04.jpg" alt="Our Exceptional Solutions Image">-->
-                            <img class="img-responsive" src="img/970x647/<?php echo $j['image']; ?>" alt="Our Exceptional Solutions Image">
-                        </div>
-                    </div>
-                    <!--<h3><a href="#">01 April 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>-->
-                    <h3><a href="#"><?php echo $j['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $j['venue']; ?></span></h3>
-                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
-                    <p><?php echo $j['event_description']; ?></p>
-                    <!--<a class="link" href="#">Read More</a>-->
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <?php $k= mysql_query("select * from past_events where id=2");
-                $l = mysql_fetch_array($k);
-                ?>
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!--<img class="img-responsive" src="img/970x647/09.jpg" alt="Our Exceptional Solutions Image">-->
-                            <img class="img-responsive" src="img/970x647/<?php echo $l['image']; ?>" alt="Our Exceptional Solutions Image">
-                        </div>
-                    </div>
-                    <!--<h4><a href="#">04 March 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
-                    <h4><a href="#"><?php echo $l['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $l['venue']; ?></span></h4>
-                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
-                    <p><?php echo $l['event_description']; ?></p>
-                    <!--<a class="link" href="https://www.facebook.com/events/197147864704264/">View More</a>-->
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <?php $m= mysql_query("select * from past_events where id=3");
-                $n = mysql_fetch_array($m);
-                ?>
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!--<img class="img-responsive" src="img/970x647/10.jpg" alt="Our Exceptional Solutions Image">-->
-                            <img class="img-responsive" src="img/970x647/<?php echo $n['image']; ?>" alt="Our Exceptional Solutions Image">
-                        </div>
-                    </div>
-                    <!--<h4><a href="#">12 February 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
-                    <h4><a href="https://www.facebook.com/events/714040099082985/"><?php echo $n['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $n['venue']; ?></span></h4>
-                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
-                    <p><?php echo $n['event_description']; ?></p>
-                    <!--<a class="link" href="https://www.facebook.com/events/714040099082985/">View More</a>-->
-                </div>
-                <!-- End Our Exceptional Solutions -->
-                <!--<form action="payment-processing/PayWeb3/index.php" method="GET">
-                    <!--<input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="PURCHASE TICKETS">
-                </form>-->
-
-                <!--<form action="payment.php" method="GET">
-                    <input type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase" value="PURCHASE TICKETS">
-                </form>-->
-
-                <form action="https://secure.paygate.co.za/payweb3/process.trans" method="POST" >
-                    <input type="hidden" name="PAY_REQUEST_ID" value="23B785AE-C96C-32AF-4879-D2C9363DB6E8">
-                    <input type="hidden" name="CHECKSUM" value="b41a77f83a275a849f23e30b4666e837">
-                </form>
-
-                <!--<form action="https://secure.paygate.co.za/payweb3/process.trans" method="POST" >
-                    <input type="hidden" name="PAY_REQUEST_ID" value="A2AB16AB-D24B-25FD-510A-B2E63686D62C">
-                    <input type="hidden" name="CHECKSUM" value="95f0248893367b8fe3a8983e398d5fc0">
-                </form>-->
-
-               <!--<?php /*include('payment-processing/PayWeb3/index.php'); */?>-->
-
-            </div>
-
-            <!--// end row -->
-
-            <div class="row">
-
-                <!-- Our Exceptional Solutions -->
-                <?php $o= mysql_query("select * from past_events where id=4");
-                $p = mysql_fetch_array($o);
-                ?>
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <img class="img-responsive" src="img/970x647/13.jpg" alt="Our Exceptional Solutions Image">
-                            <!--<img class="img-responsive" src="img/970x647/<?php /*echo $p['image']; */?>" alt="Our Exceptional Solutions Image">-->
-                        </div>
-                    </div>
-                    <!--<h4><a href="#">13 November 2019</a> <span class="text-uppercase margin-l-20">Nia on 131</span></h4>-->
-                    <h4><a href="#"><?php echo $p['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $p['venue']; ?></span></h4>
-                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
-                    <p><?php echo $p['event_description']; ?></p>
-                    <!--<a class="link" href="#">Read More</a>-->
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <?php $q= mysql_query("select * from past_events where id=5");
-                $r = mysql_fetch_array($q);
-                ?>
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!--<img class="img-responsive" src="img/970x647/12.jpg" alt="Our Exceptional Solutions Image">-->
-                            <img class="img-responsive" src="img/970x647/<?php echo $r['image']; ?>" alt="Our Exceptional Solutions Image">
-                        </div>
-                    </div>
-                    <!--<h4><a href="#">02 October 2019</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
-                    <h4><a href="#"><?php echo $r['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $r['venue']; ?></span></h4>
-                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
-                    <p><?php echo $r['event_description']; ?></p>
-                    <!--<a class="link" href="#">Read More</a>-->
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-                <!-- Our Exceptional Solutions -->
-                <?php $s= mysql_query("select * from past_events where id=6");
-                $t = mysql_fetch_array($s);
-                ?>
-                <div class="col-sm-4 sm-margin-b-50">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!--<img class="img-responsive" src="img/970x647/13.jpg" alt="Our Exceptional Solutions Image">-->
-                            <img class="img-responsive" src="img/970x647/<?php echo $t['image']; ?>" alt="Our Exceptional Solutions Image">
-                        </div>
-                    </div>
-                    <!--<h4><a href="#">21 August 2019</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h4>-->
-                    <h4><a href="#"><?php echo $t['event_date']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $t['venue']; ?></span></h4>
-                    <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
-                    <p><?php echo $t['event_description']; ?></p>
-                    <!--<a class="link" href="#">Read More</a>-->
-                </div>
-                <!-- End Our Exceptional Solutions -->
-
-            </div>
-            <!--// end row -->
-        <!--</div>-->
         </div>
         <!-- End Our Exceptional Solutions -->
 
@@ -420,33 +288,6 @@
 
             <div class="row row-space-1">
               <div class="col-sm-4 sm-margin-b-2">
-                <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                  <!-- Pricing -->
-                  <?php $a= mysql_query("select * from pricing where id=1");
-                  $b = mysql_fetch_array($a);
-                  ?>
-                  <div class="pricing">
-                    <div class="margin-b-30">
-                      <i class="pricing-icon icon-chemistry"></i>
-                      <!--<h3>Student Special <span> - R</span> 50</h3>-->
-                      <h3><?php echo $b['type']; ?> <span> - R</span> </span> <?php echo $b['price']; ?></h3>
-                      <!--<p>Take advantage of our student special and pay half the price of a normal ticket</p>-->
-                      <p><?php echo $b['description']; ?></p>
-                    </div>
-                    <ul class="list-unstyled pricing-list margin-b-50">
-                      <!--<li class="pricing-list-item">Discounted price</li>-->
-                      <li class="pricing-list-item"><?php echo $b['option-one']; ?></li>
-                      <!--<li class="pricing-list-item">Networking opportunity</li>-->
-                      <li class="pricing-list-item"><?php echo $b['option-two']; ?></li>
-                      <!--<li class="pricing-list-item">Business opportunity</li>-->
-                      <li class="pricing-list-item"><?php echo $b['option-three']; ?></li>
-                    </ul>
-                    <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
-                  </div>
-                  <!-- End Pricing -->
-                </div>
-              </div>
-              <div class="col-sm-4 sm-margin-b-2">
                 <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
                   <!-- Pricing -->
                   <?php $c= mysql_query("select * from pricing where id=2");
@@ -492,10 +333,11 @@
                       <li class="pricing-list-item"><?php echo $f['option-one']; ?></li>
                       <!--<li class="pricing-list-item">Debit Card Purchase</li>-->
                       <li class="pricing-list-item"><?php echo $f['option-two']; ?></li>
-                      <!--<li class="pricing-list-item">Paypal</li>-->
-                      <li class="pricing-list-item"><?php echo $f['option-three']; ?></li>
+                      <li class="pricing-list-item">PayFast</li>
+                      <!--<li class="pricing-list-item"><?php /*echo $f['option-three']; */?></li>-->
                     </ul>
-                    <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
+                    <!--<a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>-->
+                    <a href="payment.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
                   </div>
                   <!-- End Pricing -->
                 </div>
@@ -503,7 +345,6 @@
             </div>
             <!--// end row -->
           </div>
-        </div>
         <!-- End Pricing -->
 
         <!--========== FOOTER ==========-->

@@ -1,9 +1,10 @@
 <?php
+
 // Tell PayFast that this page is reachable by triggering a header 200
 header( 'HTTP/1.0 200 OK' );
 flush();
 
-define( 'SANDBOX_MODE', true );
+define( 'SANDBOX_MODE', false );
 $pfHost = SANDBOX_MODE ? 'sandbox.payfast.co.za' : 'www.payfast.co.za';
 // Posted variables from ITN
 $pfData = $_POST;
@@ -65,8 +66,10 @@ function pfValidIP() {
 
 function pfValidPaymentData( $cartTotal, $pfData ) {
     return !(abs((float)$cartTotal - (float)$pfData['amount_gross']) > 0.01);
-}
 
+  //return !(abs((float)$GLOBALS['price'] - (float)$pfData['amount_gross']) > 0.01);
+}
+?>
 <?php
 function pfValidServerConfirmation( $pfParamString, $pfHost = 'sandbox.payfast.co.za', $pfProxy = null ) {
     // Use cURL (if available)
@@ -106,8 +109,8 @@ $myFile = fopen('notify.txt', 'wb') or die();
 
 $check1 = pfValidSignature($pfData, $pfParamString);
 $check2 = pfValidIP();
-//$check3 = pfValidPaymentData($cartTotal, $pfData);
-$check3 = pfValidPaymentData(150, $pfData);
+$check3 = pfValidPaymentData($cartTotal, $pfData);
+//$check3 = pfValidPaymentData(150, $pfData);
 $check4 = pfValidServerConfirmation($pfParamString, $pfHost);
 
 if($check1 && $check2 && $check3 && $check4) {

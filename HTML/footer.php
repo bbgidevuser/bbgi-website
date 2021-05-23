@@ -9,22 +9,21 @@
                         <li class="footer-list-item"><a class="footer-list-link" href="index.php">Home</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="about.php">About</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="events.php">Events</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="membership.php">Membership</a></li>
                         <li class="footer-list-item"><a class="footer-list-link" href="marketplace.php">Marketplace</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
+                        <!--<li class="footer-list-item"><a class="footer-list-link" href="#">Clients</a></li>-->
+                        <!--<li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>-->
                         <li class="footer-list-item"><a class="footer-list-link" href="contact.php">Contact</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Terms</a></li>
+                        <!--<li class="footer-list-item"><a class="footer-list-link" href="#">Terms</a></li>-->
                     </ul>
                     <!-- End List -->
                 </div>
                 <div class="col-sm-4 sm-margin-b-30">
                     <!-- List -->
                     <ul class="list-unstyled footer-list">
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>
+                        <!--<li class="footer-list-item"><a class="footer-list-link" href="#">Twitter</a></li>-->
                         <li class="footer-list-item"><a class="footer-list-link" href="https://www.facebook.com/blackbusinessgrowthinitiative/">Facebook</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">Instagram</a></li>
-                        <li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>
+                        <!--<li class="footer-list-item"><a class="footer-list-link" href="#">Instagram</a></li>-->
+                        <!--<li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>-->
                     </ul>
                     <!-- End List -->
                 </div>

@@ -69,7 +69,6 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="marketplace.php">Marketplace</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
@@ -100,13 +99,17 @@
                     <div class="col-sm-6 sm-margin-b-2">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
                             <div class="service" data-height="height">
-                                <?php $a= mysql_query("select * from faq_header where id=1");
-                                $b = mysql_fetch_array($a);
-                                ?>
-                                <!--<h3>Art Of Coding</h3>-->
-                                <h3><?php echo $b['header']; ?></h3>
+                                <?php /*$a= mysql_query("select * from faq_header where id=1");*/
+                                /*$b = mysql_fetch_array($a);*/
+                                /**/?>
+                                <h2>Alternative mode of payment</h2>
+                                <!--<h3><?php /*echo $b['header']; */?></h3>-->
                                 <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
-                                <p class="margin-b-5"><?php echo $b['description']; ?></p>
+                                <p class="margin-b-5">I'm struggling to make payment on the platform, is there any other option?</p>
+                                <h2></h2>
+                                <h3>Answer</h3>
+                                <p class="margin-b-5">If you cannot make payment via our platform, please get in touch with us through the details in our contact us page or please refer to our EFT section for payment details </p>
+                                <!--<p class="margin-b-5"><?php /*echo $b['description']; */?></p>-->
                                 <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
@@ -114,13 +117,17 @@
                     <div class="col-sm-6">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
                             <div class="service" data-height="height">
-                                <?php $c= mysql_query("select * from faq_header where id=2");
+                               <!-- --><?php /*$c= mysql_query("select * from faq_header where id=2");
                                 $d = mysql_fetch_array($c);
-                                ?>
+                                */?>
                                 <!--<h3>Responsive Design</h3>-->
-                                <h3><?php echo $d['header']; ?></h3>
-                                <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
-                                <p class="margin-b-5"><?php echo $d['description']; ?></p>
+                                <h2>Signing up as a supplier</h2>
+                                <!--<h3><?php /*echo $d['header']; */?></h3>-->
+                                <p class="margin-b-5">How can I get on the data base as a supplier? </p>
+                                <h2></h2>
+                                <h3>Answer</h3>
+                                <p class="margin-b-5">You can sign up as a supplier on the BBGI platform by navigating to the marketplace menu. When on the marketplace, click on Partner with us. Your request will then be sent to our administrators for vetting and on approval, your company will be added to our list of suppliers </p>
+                                <!--<p class="margin-b-5"><?php /*echo $d['description']; */?></p>-->
                                 <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
@@ -132,13 +139,17 @@
                     <div class="col-sm-6 sm-margin-b-2">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
                             <div class="service" data-height="height">
-                                <?php $e= mysql_query("select * from faq_header where id=3");
+                                <?php /*$e= mysql_query("select * from faq_header where id=3");
                                 $f = mysql_fetch_array($e);
-                                ?>
+                                */?>
                                 <!--<h3>Feature Reach</h3>-->
-                                <h3><?php echo $f['header']; ?></h3>
-                                <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
-                                <p class="margin-b-5"><?php echo $f['description']; ?></p>
+                                <h2>Non South African individual and business membership - BBGI</h2>
+                                <p class="margin-b-5">Can non-South Africans join the BBGI? </p>
+                                <h2></h2>
+                                <h3>Answer</h3>
+                                <!--<h3><?php /*echo $f['header']; */?></h3>-->
+                                <p class="margin-b-5">Yes, non South Africans are welcome to join BBGI. The organisation is pro black, does not discriminate against any race or creed and welcomes members regardless of their country of origin </p>
+                                <!--<p class="margin-b-5"><?php /*echo $f['description']; */?></p>-->
                                 <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
@@ -146,13 +157,17 @@
                     <div class="col-sm-6">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
                             <div class="service" data-height="height">
-                                <?php $g= mysql_query("select * from faq_header where id=4");
+                                <?php /*$g= mysql_query("select * from faq_header where id=4");
                                 $h = mysql_fetch_array($g);
-                                ?>
+                                */?>
                                 <!--<h3>Useful Documentation</h3>-->
-                                <h3><?php echo $h['header']; ?></h3>
-                                <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
-                                <p class="margin-b-5"><?php echo $h['description']; ?></p>
+                                <h2>Membership</h2>
+                                <!--<h3><?php /*echo $h['header']; */?></h3>-->
+                                <p class="margin-b-5">How can I become a member of BBGI?</p>
+                                <h2></h2>
+                                <h3>Answer</h3>
+                                <p class="margin-b-5">You can sign up as a member by navigating to the marketplace, before purchasing any item on the platform you will be required to sign up as a member. Available options for members include individual, student and business membership </p>
+                                <!--<p class="margin-b-5"><?php /*echo $h['description']; */?></p>-->
                                 <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
@@ -164,13 +179,17 @@
                     <div class="col-sm-6 sm-margin-b-2">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".4s">
                             <div class="service" data-height="height">
-                                <?php $j= mysql_query("select * from faq_header where id=5");
+                                <?php /*$j= mysql_query("select * from faq_header where id=5");
                                 $k = mysql_fetch_array($j);
-                                ?>
+                                */?>
+                                <h2>Joining fee</h2>
+                                <p class="margin-b-5">What is the joining fee?</p>
+                                <h2></h2>
+                                <h3>Answer</h3>
                                 <!--<h3>Fast Delivery</h3>-->
-                                <h3><?php echo $k['header']; ?></h3>
-                                <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
-                                <p class="margin-b-5"><?php echo $k['description']; ?></p>
+                                <!--<h3><?php /*echo $k['header']; */?></h3>-->
+                                <p class="margin-b-5">The joining fee to the platform depends on the membership type selected. Student membership is R100 p/m, Individual membership is valued at R150 p/m and business membership at R200 p/m </p>
+                                <!--<p class="margin-b-5"><?php /*echo $k['description']; */?></p>-->
                                 <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
@@ -178,13 +197,17 @@
                     <div class="col-sm-6">
                         <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
                             <div class="service" data-height="height">
-                                <?php $l= mysql_query("select * from faq_header where id=6");
+                                <?php /*$l= mysql_query("select * from faq_header where id=6");
                                 $m = mysql_fetch_array($l);
-                                ?>
+                                */?>
+                                <h2>Supplier commission</h2>
+                                <p class="margin-b-5">Do suppliers pay commission to BBGI? If so, how is it structured? </p>
+                                <h2></h2>
                                 <!--<h3>Free Plugins</h3>-->
-                                <h3><?php echo $m['header']; ?></h3>
-                                <!--<p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>-->
-                                <p class="margin-b-5"><?php echo $m['description']; ?></p>
+                                <!--<h3><?php /*echo $m['header']; */?></h3>-->
+                                <h3>Answer</h3>
+                                <p class="margin-b-5">Lorem ipsum dolor amet consectetur ut consequat siad esqudiat dolor</p>
+                                <!--<p class="margin-b-5"><?php /*echo $m['description']; */?></p>-->
                                 <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
@@ -226,96 +249,6 @@
         </div>
         <!-- End General Questions -->
 
-        <!-- Pricing -->
-        <div class="bg-color-sky-light">
-            <div class="content-lg container">
-                <div class="row row-space-1">
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!-- Pricing -->
-                            <?php $p= mysql_query("select * from pricing where id=1");
-                            $q = mysql_fetch_array($p);
-                            ?>
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-chemistry"></i>
-                                    <!--<h3>Student Special <span> - R</span> 50</h3>-->
-                                    <h3><?php echo $q['type']; ?> <span> - R</span> <?php echo $q['price']; ?></h3>
-                                    <!--<p>Take advantage of our student special and pay half the price of a normal ticket</p>-->
-                                    <p><?php echo $q['description']; ?></p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <!--<li class="pricing-list-item">Discounted price</li>-->
-                                    <li class="pricing-list-item"><?php echo $q['option-one']; ?></li>
-                                    <!--<li class="pricing-list-item">Networking opportunity</li>-->
-                                    <li class="pricing-list-item"><?php echo $q['option-two']; ?></li>
-                                    <!--<li class="pricing-list-item">Business opportunity</li>-->
-                                    <li class="pricing-list-item"><?php echo $q['option-three']; ?></li>
-                                </ul>
-                                <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                            <!-- Pricing -->
-                            <?php $r= mysql_query("select * from pricing where id=2");
-                            $s = mysql_fetch_array($r);
-                            ?>
-                            <div class="pricing pricing-active">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-badge"></i>
-                                    <!--<h3>Social Media <span> - R</span> 100</h3>-->
-                                    <h3><?php echo $s['type']; ?> <span> - R</span> <?php echo $s['price']; ?></h3>
-                                    <!--<p>Purchase tickets on our social media platforms</p>-->
-                                    <p><?php echo $s['description']; ?></p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <!--<li class="pricing-list-item">Facebook</li>-->
-                                    <li class="pricing-list-item"><?php echo $s['option-one']; ?></li>
-                                    <!--<li class="pricing-list-item">Webtickets</li>-->
-                                    <li class="pricing-list-item"><?php echo $s['option-two']; ?></li>
-                                    <!--<li class="pricing-list-item">Instagram</li>-->
-                                    <li class="pricing-list-item"><?php echo $s['option-three']; ?></li>
-                                </ul>
-                                <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!-- Pricing -->
-                            <?php $t= mysql_query("select * from pricing where id=3");
-                            $u = mysql_fetch_array($t);
-                            ?>
-                            <div class="pricing">
-                                <div class="margin-b-30">
-                                    <i class="pricing-icon icon-shield"></i>
-                                    <!--<h3>Website Platform <span> - R</span> 100</h3>-->
-                                    <h3><?php echo $u['type']; ?> <span> - R</span> <?php echo $u['price']; ?></h3>
-                                    <!--<p>Use your credit or debit card to purchase tickets directly from our website</p>-->
-                                    <p><?php echo $u['description']; ?></p>
-                                </div>
-                                <ul class="list-unstyled pricing-list margin-b-50">
-                                    <!--<li class="pricing-list-item">Credit Card Purchase</li>-->
-                                    <li class="pricing-list-item"><?php echo $u['option-one']; ?></li>
-                                    <!--<li class="pricing-list-item">Debit Card Purchase</li>-->
-                                    <li class="pricing-list-item"><?php echo $u['option-two']; ?></li>
-                                    <!--<li class="pricing-list-item">Paypal</li>-->
-                                    <li class="pricing-list-item"><?php echo $u['option-three']; ?></li>
-                                </ul>
-                                <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
-                            </div>
-                            <!-- End Pricing -->
-                        </div>
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End Pricing -->
         <!--========== END PAGE LAYOUT ==========-->
 
         <!--========== FOOTER ==========-->

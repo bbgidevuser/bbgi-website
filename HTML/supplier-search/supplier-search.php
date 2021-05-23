@@ -30,7 +30,7 @@
           };
 
           function loadAddService(form) {
-            document.search_form.action = "add-service.php";
+            document.search_form.action = "/add-service.php";
             window.open(document.search_form.action,_self);
             return false;
           }

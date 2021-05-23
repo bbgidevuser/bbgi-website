@@ -1,6 +1,6 @@
 <?php
-session_start();
-#echo $_SESSION['membership']; // individual
+//session_start();
+//echo + $_GET['price'];
 ?>
 <!DOCTYPE html>
 <!-- ==============================
@@ -23,6 +23,7 @@ session_start();
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="" name="description"/>
         <meta content="" name="author"/>
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' insert-about.php">
         <meta http-equiv="Content-Security-Policy" content="script-src 'self' insert-about.php">
 
         <!-- GLOBAL MANDATORY STYLES -->
@@ -73,10 +74,8 @@ session_start();
                             <ul class="navbar-nav navbar-nav-right">
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="tickets.php">Tickets</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="membership.php">Membership</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="suppliers.php">Suppliers</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="marketplace.php">Marketplace</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
                             </ul>

@@ -70,14 +70,6 @@
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="index.php">Home</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.php">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="events.php">Events</a></li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-item-child nav-item-hover" href="membership.php">Membership</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Business</a>
-                                        <a class="dropdown-item" href="#">Individuals</a>
-                                        <a class="dropdown-item" href="#">Students</a>
-                                    </div>
-                                </li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="marketplace.php">Marketplace</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.php">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.php">Contact</a></li>
@@ -378,11 +370,10 @@
                                 <blockquote class="blockquote">
                                     <div class="margin-b-20">
                                         <!--Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.-->
-                                        <?php echo $l['testim-quote-one']; ?>
+                                      <iframe src="https://www.facebook.com/plugins/video.php?height=322&href=https%3A%2F%2Fwww.facebook.com%2Fblackbusinessgrowthinitiative%2Fvideos%2F322771152251100%2F&show_text=false&width=560" width="560" height="322" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
                                     </div>
                                     <div class="margin-b-20">
                                         <!--Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua.-->
-                                        <?php echo $l['testim-quote-two']; ?>
                                     </div>
                                     <p><span class="fweight-700 color-link">Joh Milner</span>, Metronic Customer</p>
                                     <!--<p><span class="fweight-700 color-link"><?php /*echo $l['testim-author']; */?></span>, <?php /*echo $l['testim-company']; */?></p>-->
@@ -392,18 +383,30 @@
                             $n = mysql_fetch_array($m);
                             ?>
                             <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        <!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
-                                        <?php echo $n['testim-quote-one']; ?>
-                                    </div>
-                                    <div class="margin-b-20">
-                                        <!--Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
-                                        <?php echo $n['testim-quote-two']; ?>
-                                    </div>
-                                    <p><span class="fweight-700 color-link"><?php echo $n['testim-author']; ?></span>, <?php echo $n['testim-company']; ?></p>
-                                </blockquote>
-                            </div>
+                            <blockquote class="blockquote">
+                              <div class="margin-b-20">
+                                <!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fblackbusinessgrowthinitiative%2Fvideos%2F218336206090302%2F&show_text=false&width=476" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                              </div>
+                              <div class="margin-b-20">
+                                <!--Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+                              </div>
+                              <p><span class="fweight-700 color-link">Luntu Masiza</span>, Actor and Entrepreneur</p>
+                            </blockquote>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <blockquote class="blockquote">
+                              <div class="margin-b-20">
+                                <!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
+                                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fblackbusinessgrowthinitiative%2Fvideos%2F184159169585178%2F&show_text=false&width=261" width="261" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                              </div>
+                              <div class="margin-b-20">
+                                <!--Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
+                              </div>
+                              <p><span class="fweight-700 color-link">Lonwabo Jobodwana</span>, Entrepreneur</p>
+                            </blockquote>
+                          </div>
                         </div>
                         <!-- End Swiper Wrapper -->
 
@@ -416,91 +419,6 @@
             <!--// end row -->
         </div>
         <!-- End Testimonials -->
-
-        <!-- Pricing -->
-        <div class="bg-color-sky-light">
-            <div class="content-lg container">
-                <div class="row row-space-1">
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <!-- Pricing -->
-                        <?php $o= mysql_query("select * from pricing where id=1");
-                        $p = mysql_fetch_array($o);
-                        ?>
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-chemistry"></i>
-                                <!--<h3>Student Special <span> - R</span> 50</h3>-->
-                                <h3><?php echo $p['type']; ?> <span> - R</span> <?php echo $p['price']; ?></h3>
-                                <!--<p>Take advantage of our student special and pay half the price of a normal ticket</p>-->
-                                <p><?php echo $p['description']; ?></p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <!--<li class="pricing-list-item">Discounted price</li>-->
-                                <li class="pricing-list-item"><?php echo $p['option-one']; ?></li>
-                                <!--<li class="pricing-list-item">Networking opportunity</li>-->
-                                <li class="pricing-list-item"><?php echo $p['option-two']; ?></li>
-                                <!--<li class="pricing-list-item">Business opportunity</li>-->
-                                <li class="pricing-list-item"><?php echo $p['option-three']; ?></li>
-                            </ul>
-                            <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                    <div class="col-sm-4 sm-margin-b-2">
-                        <!-- Pricing -->
-                        <?php $q= mysql_query("select * from pricing where id=2");
-                        $r = mysql_fetch_array($q);
-                        ?>
-                        <div class="pricing pricing-active">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-badge"></i>
-                                <!--<h3>Social Media <span> - R</span> 100</h3>-->
-                                <h3><?php echo $r['type']; ?> <span> - R</span> <?php echo $r['price']; ?></h3>
-                                <!--<p>Purchase tickets on our social media platforms</p>-->
-                                <p><?php echo $r['description']; ?></p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <!--<li class="pricing-list-item">Facebook</li>-->
-                                <li class="pricing-list-item"><?php echo $r['option-one']; ?></li>
-                                <!--<li class="pricing-list-item">Webtickets</li>-->
-                                <li class="pricing-list-item"><?php echo $r['option-two']; ?></li>
-                                <!--<li class="pricing-list-item">Instagram</li>-->
-                                <li class="pricing-list-item"><?php echo $r['option-three']; ?></li>
-                            </ul>
-                            <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                    <div class="col-sm-4">
-                        <!-- Pricing -->
-                        <?php $s= mysql_query("select * from pricing where id=3");
-                        $t = mysql_fetch_array($s);
-                        ?>
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-shield"></i>
-                                <!--<h3>Website Platform <span> - R</span> 100</h3>-->
-                                <h3><?php echo $t['type']; ?> <span> - R</span> <?php echo $t['price']; ?></h3>
-                                <!--<p>Use your credit or debit card to purchase tickets directly on our website</p>-->
-                                <p><?php echo $t['description']; ?></p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <!--<li class="pricing-list-item">Credit Card</li>-->
-                                <li class="pricing-list-item"><?php echo $t['option-one']; ?></li>
-                                <!--<li class="pricing-list-item">Debit Card</li>-->
-                                <li class="pricing-list-item"><?php echo $t['option-two']; ?></li>
-                                <!--<li class="pricing-list-item">PayU</li>-->
-                                <li class="pricing-list-item"><?php echo $t['option-three']; ?></li>
-                            </ul>
-                            <a href="tickets.php" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Choose</a>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                </div>
-                <!--// end row -->
-            </div>
-        </div>
-        <!-- End Pricing -->
 
         <!-- Promo Section -->
         <!--<div class="promo-section overflow-h">
