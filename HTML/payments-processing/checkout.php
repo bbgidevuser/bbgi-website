@@ -24,7 +24,7 @@ function generateSignature($data, $passPhrase) {
 
 // Construct variables
 //$cartTotal = window.sessionStorage.getItem('price');
-$cartTotal = 150.00;// This amount needs to be sourced from your application
+$cartTotal = 100.00;// This amount needs to be sourced from your application
 //$cartTotal = returnCartTotal();
 //$cartTotal = $GLOBALS['price'];// This amount needs to be sourced from your application
 
@@ -39,7 +39,8 @@ $data = array(
     // Buyer details
     'name_first' => 'First Name',
     'name_last'  => 'Last Name',
-    'email_address'=> 'test@test.com',
+    //'email_address'=> 'test@test.com',
+    'email_address'=> 'info@bbgi.co.za',
     // Transaction details
     'm_payment_id' => '000001', //Unique payment ID to pass through to notify_url
 
@@ -59,7 +60,7 @@ foreach($data as $name=> $value)
 {
     $htmlForm .= '<input name="'.$name.'" type="hidden" value="'.$value.'" />';
 }
-$htmlForm .= '<input type="submit" class="contact100-form-btn button-cta" value="Process Payment"></form>';
+$htmlForm .= '<input type="submit" class="contact200-form-btn button-cta" value="Process Payment"></form>';
 //$htmlForm .= '<button form="individualPaymentForm" class="contact100-form-btn">Process payment</button>';
 //echo $htmlForm;
 ?>
@@ -85,13 +86,14 @@ $htmlForm .= '<input type="submit" class="contact100-form-btn button-cta" value=
         <div class="checkout">
             <div class="order">
 
-              <form class="contact100-form validate-form" action="" method="POST">
+              <form class="contact200-form validate-form" action="" method="POST">
 			      <span class="contact100-form-title">
             	Process payment
             </span>
                 <div class="container">
                   <div class="row">
-                    <div class="col-sm-6">
+
+                    <div class="col-sm-4">
                       <div class="wrap-input100 validate-input" data-validate="Name is required">
                         <label class="label-input100" for="name">Name</label>
                         <input id="name" class="input100" type="text" name="name" placeholder="Enter your name...">
@@ -99,7 +101,7 @@ $htmlForm .= '<input type="submit" class="contact100-form-btn button-cta" value=
                       </div>
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                       <div class="wrap-input100 validate-input" data-validate="Surname is required">
                         <label class="label-input100" for="surname">Surname</label>
                         <input id="surname" class="input100" type="text" name="surname" placeholder="Enter your surname...">
@@ -107,13 +109,7 @@ $htmlForm .= '<input type="submit" class="contact100-form-btn button-cta" value=
                       </div>
                     </div>
 
-                  </div>
-                </div>
-
-                <div class="container">
-                  <div class="row">
-
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                       <div class="wrap-input100 validate-input" data-validate="Profession is required">
                         <label class="label-input100" for="profession">Profession</label>
                         <input id="profession" class="input100" type="text" name="profession" placeholder="Enter your profession...">
@@ -121,10 +117,38 @@ $htmlForm .= '<input type="submit" class="contact100-form-btn button-cta" value=
                       </div>
                     </div>
 
-                    <div class="col-sm-6">
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-sm-4">
                       <div class="wrap-input100 validate-input" data-validate="Company is required">
                         <label class="label-input100" for="company">Company</label>
                         <input id="company" class="input100" type="text" name="company" placeholder="Enter your company...">
+                        <span class="focus-input100"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="wrap-input100 validate-input" data-validate = "Contact number is required">
+                        <label class="label-input100" for="email">Contact Number</label>
+                        <input id="email" class="input100" type="text" name="phone" placeholder="Enter your contact number...">
+                        <span class="focus-input100"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="wrap-input100 validate-input" data-validate = "Service Description">
+                        <label class="label-input100" for="description">Attending as</label>
+                        <!--<select class="select2-dropdown" name="capacity" id="capacity" onChange="document.getElementById('price').value=this.value;">-->
+                        <select class="select2-dropdown" name="capacity" id="capacity" onChange="return saveForm(this.value)">
+                          <option data-capacity="0" class="select2-results__option" value="default">Please select</option>
+                          <option data-capacity="1" class="select2-results__option" value="100">Student</option>
+                          <option data-capacity="2" class="select2-results__option" value="100">Individual</option>
+                          <option data-capacity="3" class="select2-results__option" value="100">Business</option>
+                        </select>
                         <span class="focus-input100"></span>
                       </div>
                     </div>
@@ -134,28 +158,6 @@ $htmlForm .= '<input type="submit" class="contact100-form-btn button-cta" value=
 
                 <div class="container">
                   <div class="row">
-
-                    <div class="col-sm-6">
-                      <div class="wrap-input100 validate-input" data-validate = "Contact number is required">
-                        <label class="label-input100" for="email">Contact Number</label>
-                        <input id="email" class="input100" type="text" name="phone" placeholder="Enter your contact number...">
-                        <span class="focus-input100"></span>
-                      </div>
-                    </div>
-
-                    <div class="col-sm-6">
-                      <div class="wrap-input100 validate-input" data-validate = "Service Description">
-                        <label class="label-input100" for="description">Attending as</label>
-                        <!--<select class="select2-dropdown" name="capacity" id="capacity" onChange="document.getElementById('price').value=this.value;">-->
-                        <select class="select2-dropdown" name="capacity" id="capacity" onChange="return saveForm(this.value)">
-                          <option data-capacity="0" class="select2-results__option" value="default">Please select</option>
-                          <option data-capacity="1" class="select2-results__option" value="student">Student</option>
-                          <option data-capacity="2" class="select2-results__option" value="individual">Individual</option>
-                          <option data-capacity="3" class="select2-results__option" value="business">Business</option>
-                        </select>
-                        <span class="focus-input100"></span>
-                      </div>
-                    </div>
 
                   </div>
                 </div>

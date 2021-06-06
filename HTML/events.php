@@ -139,8 +139,8 @@
                 <div class="col-sm-4 sm-margin-b-50">
                     <div class="margin-b-20">
                         <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <!--<img class="img-responsive" src="img/970x647/05.jpg" alt="Our Exceptional Solutions Image">-->
-                            <img class="img-responsive" src="img/970x647/<?php echo $b['image']; ?>" alt="Our Exceptional Solutions Image">
+                            <img class="img-responsive" src="img/970x647/14.jpg" alt="Our Exceptional Solutions Image">
+                            <!--<img class="img-responsive" src="img/970x647/<?php echo $b['image']; ?>" alt="Our Exceptional Solutions Image">-->
                         </div>
                     </div>
                     <!--<h3><a href="#">06 May 2020</a> <span class="text-uppercase margin-l-20">Personal Trust</span></h3>-->
