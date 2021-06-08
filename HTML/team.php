@@ -64,7 +64,7 @@ $o = mysql_fetch_array($n);
                         <img class="img-responsive" src="img/770x860/<?php echo $s['image']; ?>" alt="Team Image">
                     </div>
                 </div>
-                <h4><a href="#"><?php echo $s['name']; ?></a> <span class="text-uppercase margin-l-20"><?php echo $s['title']; ?></span></h4>
+                <h4><a href="#">Zolisa Magadla</a> <span class="text-uppercase margin-l-20">Marketing Director: Events</span></h4>
                 <!--<p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>-->
                 <p><?php echo $s['description']; ?></p>
                 <p><?php echo $s['description-one']; ?></p>
@@ -104,7 +104,7 @@ $o = mysql_fetch_array($n);
                 <img class="img-responsive" src="img/770x860/08.jpg" alt="Team Image">
               </div>
             </div>
-            <h4><a href="#">Happy Tshirana</a> <span class="text-uppercase margin-l-20">Marketing</span></h4>
+            <h4><a href="#">Happy Tshirana</a> <span class="text-uppercase margin-l-20">Marketing Director: Marketplace</span></h4>
 
             <p>Happy is an accomplished Senior Leader with a with proven record of delivery, business development and leadership in the ICT space across both public and private sector client segments. </p>
 
