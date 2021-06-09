@@ -22,16 +22,16 @@
         <meta content="" name="author"/>
 
         <!-- GLOBAL MANDATORY STYLES -->
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" media="all" type="text/css">
+        <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" media="all" type="text/css"/>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all" type="text/css"/>
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.css" rel="stylesheet" media="all">
+        <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" media="all" type="text/css"/>
 
         <!-- THEME STYLES -->
-        <link href="css/layout.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/layout.min.css" rel="stylesheet" media="all" type="text/css"/>
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="favicon.ico"/>
@@ -39,23 +39,23 @@
         <!--===============================================================================================-->
         <link rel="icon" type="image/png" href="suppliers/images/icons/favicon.ico"/>
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/vendor/animate/animate.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/vendor/css-hamburgers/hamburgers.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/vendor/animsition/css/animsition.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/vendor/select2/select2.min.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/vendor/daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/vendor/daterangepicker/daterangepicker.css">
         <!--===============================================================================================-->
-        <link rel="stylesheet" type="text/css" href="suppliers/css/util.css">
-        <link rel="stylesheet" type="text/css" href="suppliers/css/main.css">
-        <link rel="stylesheet" type="text/css" href="supplier-search/css/main.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/css/util.css">
+        <link rel="stylesheet" type="text/css" media="all" href="suppliers/css/main.css">
+        <link rel="stylesheet" type="text/css" media="all" href="supplier-search/css/main.css">
         <!--===============================================================================================-->
         <!--<script>-->
             <!--var noresults=localStorage.getItem("no-results");-->

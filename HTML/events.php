@@ -112,7 +112,7 @@
                   <img class="img-responsive" src="img/970x647/05.jpg" alt="Our Exceptional Solutions Image">
                 </div>
               </div>
-              <h3><a href="#">02 June 2021</a> <span class="text-uppercase margin-l-20">Online platform launch</span></h3>
+              <h3><a href="#">10 June 2021</a> <span class="text-uppercase margin-l-20">Online platform launch</span></h3>
               <p>Join us as we launch our website and online platform for black business to transact in a secure and friendly way. This will be an online presentation </p>
               <!--<a class="link" href="#" target="myFrame">View More</a>-->
 
