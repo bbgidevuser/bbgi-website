@@ -297,23 +297,6 @@
                                     <p><span class="fweight-700 color-link"><?php echo $k['author']; ?></span>, <?php echo $k['company']; ?></p>
                                 </blockquote>
                             </div>
-                            <?php $l= mysql_query("select * from notes where id=2");
-                            $m = mysql_fetch_array($l);
-                            ?>
-                            <div class="swiper-slide">
-                                <blockquote class="blockquote">
-                                    <div class="margin-b-20">
-                                        <!--Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.-->
-                                        <?php echo $m['text-one']; ?>
-                                    </div>
-                                    <div class="margin-b-20">
-                                        <!--Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.-->
-                                        <?php echo $m['text-two']; ?>
-                                    </div>
-                                    <!--<p><span class="fweight-700 color-link">Alex Clarson</span>, Metronic Customer</p>-->
-                                    <p><span class="fweight-700 color-link"><?php echo $m['author']; ?></span>, <?php echo $m['company']; ?></p>
-                                </blockquote>
-                            </div>
                         </div>
                         <!-- End Swiper Wrapper -->
 
