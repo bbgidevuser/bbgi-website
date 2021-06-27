@@ -296,9 +296,45 @@
                                     <!--<p><span class="fweight-700 color-link">Sazi Asanda Ndwandwa</span>, Black Business Growth Initiative</p>-->
                                     <p><span class="fweight-700 color-link"><?php echo $k['author']; ?></span>, <?php echo $k['company']; ?></p>
                                 </blockquote>
+                                <!--<p><span class="fweight-700 color-link">Sazi Asanda Ndwandwa</span>, Black Business Growth Initiative</p>-->
+
+                              </blockquote>
                             </div>
+                            <div class="swiper-slide">
+                              <?php $k= mysql_query("select * from notes where id=2");
+                              $l = mysql_fetch_array($k);
+                              ?>
+                              <blockquote class="blockquote">
+                                <div class="margin-b-20">
+                                  <!--An opportunity to network, learn and to grow. Come through and see for yourself!-->
+                                  <?php echo $l['text-one']; ?>
+                                </div>
+                                <div class="margin-b-20">
+                                  <!--There is great value to be derived from these events both for professionals and for business owners.-->
+                                  <p><span class="fweight-700 color-link"><?php echo $l['author']; ?></span>, <?php echo $l['company']; ?></p>
+                                </div>
+                            </div>
+
+                          <div class="swiper-slide">
+                            <?php $m= mysql_query("select * from notes where id=3");
+                            $n = mysql_fetch_array($m);
+                            ?>
+                            <blockquote class="blockquote">
+                              <div class="margin-b-20">
+                                <!--An opportunity to network, learn and to grow. Come through and see for yourself!-->
+                                <?php echo $n['text-one']; ?>
+                              </div>
+                              <div class="margin-b-20">
+                                <!--There is great value to be derived from these events both for professionals and for business owners.-->
+                                <p><span class="fweight-700 color-link"><?php echo $n['author']; ?></span>, <?php echo $n['company']; ?></p>
+                              </div>
+                          </div>
                         </div>
                         <!-- End Swiper Wrapper -->
+
+                      <!-- Swiper Wrapper -->
+
+                      <!-- End Swiper Wrapper -->
 
                         <!-- Pagination -->
                         <div class="swiper-testimonials-pagination"></div>
